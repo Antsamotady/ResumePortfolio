@@ -1,91 +1,46 @@
-.main {
-    font-family: "Lato", Arial, Helvetica, sans-serif;
-    font-size: x-large;
-    margin: 8px;
-    height: 100vh;
+/*
+    =====================================
+    CSS reset
+    =====================================
+*/
+/* http://meyerweb.com/eric/tools/css/reset/v2.0 | 20110126 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-
-.container {
-    display: flex;
-    justify-content: center;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
 }
-
-.container2 {
-    display: flex;
-    flex-direction: column;
+ol, ul {
+    list-style: none;
 }
+blockquote, q {
+    quotes: none;
 
-h2 {
-    padding-top: 10px;
-    text-align: center;
 }
-
-.text-info {
-    font-size: .8em;
-    font-weight: 300;
-    text-align: center;
-
-    display: flex;
-    justify-content: space-between;
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
 }
-
-.badge {
-    margin: 10px 10px;
-    color: rgb(246, 249, 252);
-    border-radius: .2em;
-}
-
-.badge-zero {
-    background-color: #e6c448;
-}
-
-.badge-positive {
-    background-color: #4ff8f5;
-}
-
-.badge-negative {
-    background-color: #c4eae9;
-}
-
-.delete {
-    font-size: .9em;
-    background-color: #ff1111;
-}
-
-.reset {
-    background-color: #df9622;
-}
-
-.badge-nb {
-    background-color: #46b2da;
-    font-weight: 600;
-}
-
-.incr {
-    color: #4ff8f5;
-}
-
-.decr {
-    color: #e6c448;
-}
-
-.add-item {
-    color: #46b2da;
-    background-color: #daef57;
-}
-
-.item-line {
-    display: flex;
-    justify-content: space-between;
-}
-
-.item-nb {
-    line-height: 2rem;
-}
-
-.dedicace {
-    position: fixed;
-    bottom: 0;
-    right: 5px;
-    color: #5a46da;
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }

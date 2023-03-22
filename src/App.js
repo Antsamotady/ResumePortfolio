@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Stylesheets/main.css';
+import './Stylesheets/counters.css';
 import Counters from './Components/Counters';
 
 class App extends Component {
@@ -55,9 +56,8 @@ class App extends Component {
   render() {
     return (
       <React.StrictMode>
-        <div className='main'>
-          <h2>Hi!!</h2>
-          <div className='container'>
+        <div className='main-container'>
+          {/* <div className='counter-container'>
             <Counters 
               counters = {this.state.counters}
               totalCounters = {this.totalCount()}
@@ -67,9 +67,8 @@ class App extends Component {
               onDecrement={this.handleDecrement}
               onDelete={this.handleDelete}
             />
-          </div>
+          </div> */}
         </div>
-        <div className='dedicace'>&lt;3&nbsp;&nbsp;&nbsp;Ly</div>
       </React.StrictMode>
     );
   }
