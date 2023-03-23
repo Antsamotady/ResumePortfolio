@@ -109,8 +109,16 @@ a, a:visited {
     .left-side-container h1 {
         font-size: calc(2rem + 3vw);
         padding-top: 25px;
+        border-bottom: none;
+        margin-bottom: 0;
     }
     .left-side-container p {
         font-size: calc(0.5rem + 1vw);
+    }
+    .underlining {
+        width: 50%;
+        border-bottom: 1px solid var(--color-lightyellow);
+        margin-left: auto;
+        margin-right: auto;
     }
 }

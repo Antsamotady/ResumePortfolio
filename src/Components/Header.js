@@ -28,6 +28,7 @@ function Header() {
           <div className="left-side">
             <div className="left-side-container">
               <h1>Lorem Ipsum</h1>
+              <div className="underlining"></div>
               <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta labore iusto illum voluptate quis omnis opti</p>
               <button>More</button>
             </div>
