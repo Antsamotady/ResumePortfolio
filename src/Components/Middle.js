@@ -4,7 +4,9 @@ import '../Stylesheets/middle.css';
 
 function Middle() {
   return (
-    <div className="middle">Middle Scene</div>
+    <div className="middle">
+      Middle Scene
+    </div>
   )
 }
 
