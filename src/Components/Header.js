@@ -19,15 +19,15 @@ function Header() {
         <div className="header-body">
           <div className="left-side">
             <div className="left-side-container">
-              <a href="#">
-                <h5>Speakers</h5>
-                <h3>World-Class Speakers</h3>
-              </a>
-              <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, veritatis.</p>
+              <h1>Lorem Ipsum</h1>
+              <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta labore iusto illum voluptate quis omnis opti</p>
+              <button>More</button>
             </div>
           </div>
           <div className="right-side">
-            <img src={img1} alt="" />
+            <div className="right-side-container">
+              <img src={img1} alt="" />
+            </div>
           </div>
         </div>
       </div>

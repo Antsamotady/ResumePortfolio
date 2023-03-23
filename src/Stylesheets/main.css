@@ -48,7 +48,7 @@ blockquote:before, blockquote:after, q:before, q:after {
     =====================================
 */
 
-a {
+a, a:visited {
     text-decoration: none;
 }
 
