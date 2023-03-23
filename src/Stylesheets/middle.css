@@ -1,0 +1,5 @@
+/* middle part */
+.middle {
+    background: var(--color-bg-middle);
+    height: calc(12rem + 20vw);
+}

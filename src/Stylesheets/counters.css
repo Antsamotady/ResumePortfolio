@@ -1,10 +1,8 @@
-.main-container {
+.counter-container {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-size: x-large;
     height: 100vh;
-}
 
-.counter-container {
     display: flex;
     justify-content: center;
 }
