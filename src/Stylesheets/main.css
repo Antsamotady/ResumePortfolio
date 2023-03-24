@@ -100,7 +100,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 .container {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 980px;
     padding-left: 15px;
     padding-right: 15px;
 }
