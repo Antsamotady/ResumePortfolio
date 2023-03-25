@@ -1,5 +1,5 @@
 /* footer part */
 .footer {
     background: var(--color-bg-footer);
-    height: calc(12rem + 2vw);
+    height: auto;
 }

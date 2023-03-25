@@ -18,7 +18,7 @@ function Header() {
 
   return (      
     <div className="header">
-      <div className="container">
+      <div className="app-container">
         <div className="primary-header">
           <span className="logo">LOGO</span>
           <div className="menu-links">

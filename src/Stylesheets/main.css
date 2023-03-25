@@ -98,7 +98,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 
 
-.container {
+.app-container {
     margin: 0 auto;
     max-width: 980px;
     padding-left: 15px;

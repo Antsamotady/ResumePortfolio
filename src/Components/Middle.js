@@ -49,6 +49,16 @@ function Middle() {
           </ul>
         </div>
       </div>
+        <div className="app-container">
+          <div className="middle-info-box">
+            <div className="info-box-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique, blanditiis officia provident in maxime?</div>
+            <div className="info-box-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique, blanditiis officia provident in maxime?</div>
+            <div className="info-box-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique, blanditiis officia provident in maxime?</div>
+            <div className="info-box-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique, blanditiis officia provident in maxime?</div>
+            <div className="info-box-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique, blanditiis officia provident in maxime?</div>
+            <div className="info-box-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique, blanditiis officia provident in maxime?</div>
+        </div>
+      </div>
     </div>
   )
 }
