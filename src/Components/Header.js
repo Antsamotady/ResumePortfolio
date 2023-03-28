@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
@@ -14,34 +14,9 @@ import img6 from '../Images/logo_texture_2.png';
 
 
 function Header() {
-  const [toggleMenu, setToggleMenu] = useState(false);
-
   return (      
     <div className="header">
       <div className="app-container">
-        {/* <div className="primary-header">
-          <span className="logo">LOGO</span>
-          <div className="menu-links">
-            <a href="#">About me</a>
-            <a href="#">Capabilities</a>
-            <a href="#">Contact me</a>
-          </div>
-          <div className="menu-mobile">
-            <div className="menu-mobile-icon">
-              {toggleMenu
-                ? <RiCloseLine className="ri-closeline" size={27} onClick={() => setToggleMenu(false)}/>
-                : <RiMenu3Line className="ri-menu3line" size={27} onClick={() => setToggleMenu(true)}/>
-              }
-            </div>
-            {toggleMenu && (
-              <div className="menu-mobile-links scale-up-center">
-                <a href="#">About me</a>
-                <a href="#">Capabilities</a>
-                <a href="#">Contact me</a>
-              </div>
-            )}
-          </div>
-        </div> */}
         <div className="header-body">
           <div className="left-side">
             <div className="left-side-container">
