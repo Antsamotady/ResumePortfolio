@@ -2,4 +2,91 @@
 .footer {
     background: var(--color-bg-footer);
     height: auto;
+
+    font-family: var(--font-family-fox_trot);
+    color: var(--color-lightyellow);
+}
+.footer-body {
+    padding: 2rem 1rem 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line-column {
+    font-size: 0.7rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.line-column.to-center {
+    text-align: center;
+}
+.horizontal-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.horizontal-links ul {
+    list-style: none;
+    margin: 0;
+
+    display: flex;
+}
+.horizontal-links li {
+    width: 16px;
+    height: 16px;
+    margin: 0 5px 0 0;
+    background-color: var(--color-bg-middle);
+    font-size: 0.9rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.horizontal-links li a {
+    color: var(--color-bg-footer);
+}
+.horizontal-links ul li:nth-child(1) {
+    position: relative;
+    top:4px
+}
+.horizontal-links ul li:nth-child(2) {
+    position: relative;
+    top:-2px
+}
+.horizontal-links ul li:nth-child(3) {
+    position: relative;
+    top:2px
+}
+
+.horizontal-links li:last-child {
+    margin-right: 0px;
+}
+
+
+.footer-bottom {
+    font-size: 0.6rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.dedicace {
+    font-size: 0.8rem;
+}
+.author-part {
+    font-family: var(--font-family-handwriting);
+
+    display: flex;
+    justify-content: flex-end;
+}
+.author-part span {
+    padding: 0 0.4rem;
 }

@@ -53,8 +53,9 @@
     justify-content: center;
 }
 .info-box-item {
-    width: 300px;
-    height: 185px;
+    --my-box-width: 275px;
+    width: var(--my-box-width);
+    height: calc(var(--my-box-width) / var(--golden-ratio));
     color: var(--color-bg-footer);
     border: 2px solid var(--color-bg-footer);
     margin: 2rem auto;
@@ -66,6 +67,11 @@
     justify-content: center;
     align-items: center;
 }
+/* margin collapse */
+.info-box-item:not(:last-child) {
+    margin-bottom: 0;
+}
+
 .info-box-item:nth-of-type(odd) {
     font-family: var(--font-family-fox_trot);
     font-size: small;

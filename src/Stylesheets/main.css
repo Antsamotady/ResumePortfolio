@@ -58,6 +58,8 @@ blockquote:before, blockquote:after, q:before, q:after {
     --color-bg-header: #b19c7d;
     --color-bg-middle: #e19825;
     --color-bg-footer: #323232;
+
+    --golden-ratio: 1.61803398875;
 }
 
 .scale-up-center {
@@ -100,7 +102,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 .app-container {
     margin: 0 auto;
-    max-width: 980px;
+    max-width: 960px;
     padding-left: 15px;
     padding-right: 15px;
 }

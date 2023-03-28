@@ -55,9 +55,13 @@ a, a:visited {
 .left-side-container h1 {
     font-family: var(--font-family-fox_trot);
     font-size: calc(1rem + 2vw);
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--color-lightyellow);
     color: var(--color-bg-footer);
+}
+.underlining {
+    width: 50%;
+    border-bottom: 1px solid var(--color-lightyellow);
+    margin-left: auto;
+    margin-right: auto;
 }
 .left-side-container p {
     padding-top: 20px;
@@ -154,3 +158,15 @@ a, a:visited {
         margin-right: auto;
     }
 }
+@media screen and (min-width: 1500px){
+    .left-side-container h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (min-width: 1040px) {
+    .left-side-container p {
+        font-size: 0.7rem;
+    }
+}
+
