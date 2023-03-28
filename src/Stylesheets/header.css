@@ -17,21 +17,6 @@ a, a:visited {
     display: flex;
     justify-content: space-between;
 }
-.logo {
-    color: var(--color-bg-footer);
-    font-size: 2rem;
-}
-.menu-links{
-    font-size: 0.8rem;
-}
-.menu-links a {
-    color: var(--color-lightyellow);
-    padding: 2rem;
-    padding-right: 0px;
-}
-.menu-mobile {
-    display: none;
-}
 
 .header-body {
     padding-top: 25px;
@@ -98,36 +83,6 @@ a, a:visited {
     .header-body {
         flex-direction: column;
         align-items: center;
-    }
-    .menu-links{
-        display: none;
-    }
-    .menu-mobile {
-        display: block;
-        text-align: right;
-    }
-    .menu-mobile-links {
-        display: flex;
-        flex-direction: column;
-
-        background: var(--color-bg-footer);
-        background-color: rgba(0, 0, 0, 0.8);
-        border-radius: 3px;
-
-        margin-top: 1rem;
-        padding: 1rem;
-        position: absolute;
-        right: 12px;
-        z-index: 999;
-    }
-    .menu-mobile-icon {
-        cursor: pointer;
-    }
-    .menu-mobile-links a {
-        color: var(--color-lightyellow);
-        font-size: 0.7rem;
-        font-size: 1rem;
-        padding: .4rem;
     }
 
     .left-side {

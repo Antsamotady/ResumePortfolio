@@ -40,11 +40,11 @@
     display: flex;
 }
 .horizontal-links li {
-    width: 16px;
-    height: 16px;
-    margin: 0 5px 0 0;
+    width: 14px;
+    height: 14px;
+    margin: 0 3px 0 0;
     background-color: var(--color-bg-middle);
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 
     display: flex;
     justify-content: center;
@@ -73,9 +73,10 @@
 
 .footer-bottom {
     font-size: 0.6rem;
+    padding: 2rem 0 0.4rem 0;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .dedicace {

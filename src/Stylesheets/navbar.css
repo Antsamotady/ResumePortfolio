@@ -1,0 +1,66 @@
+/* header part */
+a, a:visited {
+    text-decoration: none;
+}
+.app-navbar {
+    background: var(--color-bg-header);
+    height: auto;
+}
+.primary-header {
+    font-family: var(--font-family-fox_trot);
+    color: var(--color-lightyellow);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    color: var(--color-bg-footer);
+    font-size: 2rem;
+}
+.menu-links{
+    font-size: 0.8rem;
+}
+.menu-links span {
+    color: var(--color-lightyellow);
+    padding: 2rem;
+    padding-right: 0px;
+}
+.menu-mobile {
+    display: none;
+}
+
+/* Mobile behaviors */
+@media screen and (max-width:450px) {
+    .menu-links{
+        display: none;
+    }
+    .menu-mobile {
+        display: block;
+        text-align: right;
+    }
+    .menu-mobile-links {
+        display: flex;
+        flex-direction: column;
+
+        background: var(--color-bg-footer);
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 3px;
+
+        margin-top: 1rem;
+        padding: 1rem;
+        position: absolute;
+        right: 12px;
+        z-index: 999;
+    }
+    .menu-mobile-icon {
+        cursor: pointer;
+    }
+    .menu-mobile-links a {
+        color: var(--color-lightyellow);
+        font-size: 0.7rem;
+        font-size: 1rem;
+        padding: .4rem;
+    }
+}

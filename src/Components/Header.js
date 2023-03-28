@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
-import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
 
 import '../Stylesheets/header.css';
 
@@ -13,13 +12,14 @@ import img4 from '../Images/TL_texture.png';
 import img5 from '../Images/Sal_122.7.png';
 import img6 from '../Images/logo_texture_2.png';
 
+
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (      
     <div className="header">
       <div className="app-container">
-        <div className="primary-header">
+        {/* <div className="primary-header">
           <span className="logo">LOGO</span>
           <div className="menu-links">
             <a href="#">About me</a>
@@ -41,7 +41,7 @@ function Header() {
               </div>
             )}
           </div>
-        </div>
+        </div> */}
         <div className="header-body">
           <div className="left-side">
             <div className="left-side-container">
