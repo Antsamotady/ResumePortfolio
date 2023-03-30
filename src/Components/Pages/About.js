@@ -15,7 +15,7 @@ function About() {
               <p className="my-name">RAJAONARISON Garry Hasintsilavina</p>
               <p className="name-underlining"></p>
               <p className="parag">
-                As a true introvert, I have a deep passion for design in all its forms - from drawing to typography and beyond. I am also a tech enthusiast and love exploring new gadgets and software, which is why I enjoy watching sci-fi movies. Professionally, I work as a web developer and have gained expertise in using PHP Symfony framework and Laravel, which I have been using recently.
+                As a true introvert, I have a deep passion for design in all its forms - from drawing to typography and beyond. I am also a tech enthusiast and love exploring new gadgets and software, which is why I enjoy watching sci-fi movies. I have developed a strong proficiency in utilizing PHP Symfony framework and Laravel through my recent experience as a web developer.
               </p>
             </div>
             <div className="bottom-text">

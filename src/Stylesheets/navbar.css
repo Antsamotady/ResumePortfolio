@@ -19,6 +19,9 @@ a, a:visited {
     color: var(--color-bg-footer);
     font-size: 2rem;
 }
+.logo:hover {
+    color: var(--color-bg-middle);
+}
 .menu-links{
     font-size: 0.8rem;
 }
@@ -26,6 +29,9 @@ a, a:visited {
     color: var(--color-bg-footer);
     padding: 2rem;
     padding-right: 0px;
+}
+.menu-links span:hover {
+    color: var(--color-bg-middle);
 }
 .menu-mobile {
     display: none;

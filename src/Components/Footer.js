@@ -19,7 +19,7 @@ function Footer() {
           <div className="footer-logo">LOGO</div>
           <div className="line-column">
             <span>Introvert</span>
-            <span>Design</span>
+            <span><a href="https://tsl-portfolio.netlify.app/">Design</a></span>
             <span>Tech enthusiast</span>
             <span>Creative</span>
             <span>IT roles</span>

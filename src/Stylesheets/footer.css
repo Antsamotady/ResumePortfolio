@@ -25,6 +25,12 @@
     flex-direction: column;
     justify-content: center;
 }
+.line-column span a {
+    color: var(--color-lightyellow);
+}
+.line-column span a:hover {
+    color: var(--color-bg-header);
+}
 .line-column.to-center {
     text-align: center;
 }

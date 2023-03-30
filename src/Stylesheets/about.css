@@ -47,6 +47,7 @@
 }
 .parag {
   text-align: center;
+  font-size: larger;
 }
 .bottom-text > span {
   font-family: var(--font-family-fox_trot);
