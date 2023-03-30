@@ -1,37 +1,36 @@
 .capabilities-container {
-  max-width: 800px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+.job-position {
+  margin-bottom: 20px;
 }
 
-h3 {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+.job-position h2 {
+  font-size: 2rem;
+  color: var(--color-bg-footer);
+  margin-bottom: 10px;
+}
+.tasks {
+  display: flex;
+  flex-direction: column;
 }
 
-h4 {
-  font-size: 1.2rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+.task {
+  margin-bottom: 10px;
 }
 
-p {
+.task h3 {
+  font-family: var(--font-family-fox_trot);
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--color-bg-header);
+  margin-bottom: 5px;
+}
+
+.task p {
+  font-family: var(--font-family-handwriting);
   font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-ul {
-  list-style-type: disc;
-  margin-left: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-li {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
 }

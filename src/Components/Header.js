@@ -20,14 +20,14 @@ function Header() {
         <div className="header-body">
           <div className="left-side">
             <div className="left-side-container">
-              <h1>Lorem Ipsum</h1>
+              <h1>Portfolio</h1>
               <div className="underlining"></div>
-              <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta labore iusto illum voluptate quis omnis opti</p>
-              <button>More</button>
+              <p>Introverted Web Developer and Tech Enthusiast with a Passion for Design</p>
+              <button><a href="https://test-tsl-portfolio.netlify.app/">More</a></button>
             </div>
           </div>
           <div className="right-side">
-            <div className="right-side-container">
+            <div className="right-side-container carousel-wrapper">
               <Carousel indicators={false}>
                 <Carousel.Item>
                   <img src={img1} alt="img1" />

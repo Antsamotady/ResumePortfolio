@@ -41,3 +41,8 @@
 .contact-container .icon {
   margin-right: 10px;
 }
+
+p > span {
+  font-family: var(--font-family-fox_trot);
+  color: var(--color-bg-footer);
+}

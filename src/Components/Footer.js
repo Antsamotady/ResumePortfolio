@@ -8,26 +8,31 @@ import { SiGmail } from 'react-icons/si';
 import '../Stylesheets/footer.css';
 
 function Footer() {
+  const now = new Date();
+  const month = now.toLocaleString('default', { month: 'long' });
+  const year = now.getFullYear();
+
   return (
     <div className="footer">
       <div className="app-container">
         <div className="footer-body">
           <div className="footer-logo">LOGO</div>
           <div className="line-column">
-            <span>Rem ipsum</span>
-            <span>Mdf  ipsum</span>
-            <span>Lorem ips um</span>
-            <span>Norem ipsum</span>
-            <span>Lordfsem ipsvcv um</span>
-            <span>fgdg  em ipsc</span>
+            <span>Introvert</span>
+            <span>Design</span>
+            <span>Tech enthusiast</span>
+            <span>Creative</span>
+            <span>IT roles</span>
+            <span>Client-focused</span>
           </div>
           <div className="line-column to-center">
-            <span>dsLorem ipsum</span>
-            <span>Lorem ipsudfd m</span>
-            <span>Vsdf Lorem ipsum</span>
-            <span>Lore</span>
-            <span>Lordfd em ipsum</span>
-            <span>Lorem ipsum</span>
+            <span>Web development</span>
+            <span>PHP</span>
+            <span>Symfony framework</span>
+            <span>Laravel</span>
+            <span>Reactjs</span>
+            <span>Linux</span>
+            <span>Bash scripting</span>
           </div>
           <div className="horizontal-links">
             <ul>
@@ -42,7 +47,7 @@ function Footer() {
           <div className="dedicace"></div>
           <div className="author-part">
             <span className="anarana">RAJAONARISON</span>
-            <span className="fanampinanarana">Garry Hasintsilavina</span>
+            <span className="fanampinanarana">Garry Hasintsilavina -- {month} {year}</span>
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ a, a:visited {
     font-size: 0.8rem;
 }
 .menu-links span {
-    color: var(--color-lightyellow);
+    color: var(--color-bg-footer);
     padding: 2rem;
     padding-right: 0px;
 }

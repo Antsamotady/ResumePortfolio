@@ -3,35 +3,42 @@ import "../../Stylesheets/capabilities.css";
 
 function Capabilities() {
   return (
-    <div className="capabilities-container">
-      <h2>Capabilities</h2>
-      <h3>Technical Skills</h3>
-      <ul>
-        <li>Proficient in Java and Python programming languages</li>
-        <li>Experience with front-end web development using HTML, CSS, and JavaScript</li>
-        <li>Experience with back-end web development using Node.js and MongoDB</li>
-        <li>Experience with data analysis using Python libraries such as NumPy and Pandas</li>
-        <li>Experience with machine learning algorithms and frameworks such as TensorFlow and Scikit-learn</li>
-      </ul>
+    <div className="app-container">
+      <div className="capabilities-container">
+        <div className="job-position">
+          <h2>Web Development</h2>
+          <div className="tasks">
+            <div className="task">
+              <h3>Laravel</h3>
+              <p>Login; Form validation; Password resetting; Listing; Live search; Navigation menu; Dynamic DB update via AJAX...</p>
+            </div>
+            <div className="task">
+              <h3>Symfony</h3>
+              <p>Docker containerization; Debugging and Troubleshooting; Application security with login rate limiting and URL obfuscation; Deployment; Remotely managing app through APIs...</p>
+            </div>
+          </div>
+        </div>
 
-      <h3>Professional Experience</h3>
-      <h4>Software Engineer - Acme Corporation</h4>
-      <p>September 2021 - Present</p>
-      <ul>
-        <li>Developed and maintained web applications using Java and Spring Framework</li>
-        <li>Designed and implemented REST APIs for various projects</li>
-        <li>Collaborated with cross-functional teams to deliver high-quality software products</li>
-        <li>Identified and fixed software defects to improve product quality</li>
-      </ul>
+        <div className="job-position">
+          <h2>Linux Programming</h2>
+          <div className="tasks">
+            <div className="task">
+              <h3>Bash programming</h3>
+              <p>Creating a script to automate page downloads; Cron automation; Web page parsing and data extraction; Database table optimization and data purification; Data integrity checks...</p>
+            </div>
+          </div>
+        </div>
 
-      <h4>Data Analyst - XYZ Corporation</h4>
-      <p>June 2020 - August 2021</p>
-      <ul>
-        <li>Analyzed large datasets using Python libraries such as Pandas and NumPy</li>
-        <li>Developed and maintained ETL pipelines using Python and SQL</li>
-        <li>Created interactive data visualizations using Python libraries such as Matplotlib and Seaborn</li>
-        <li>Collaborated with cross-functional teams to provide insights and recommendations based on data analysis</li>
-      </ul>
+        <div className="job-position">
+          <h2>CIO Assistant</h2>
+          <div className="tasks">
+            <div className="task">
+              <h3>System and Network Engineering</h3>
+              <p>Operating system installation; Structured network cabling; Firewall rule-based filtering of network connections...</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
