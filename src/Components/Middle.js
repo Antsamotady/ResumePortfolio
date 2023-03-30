@@ -55,7 +55,7 @@ function Middle() {
             <div className="info-box-item">From drawing to typography and beyond</div>
             <div className="info-box-item">Adventurous tech enthusiast always eager to embrace the unknown</div>
             <div className="info-box-item">Proficient in computer graphic design, the limits are always pushed beyond</div>
-            <div className="info-box-item">Mmultidisciplinary professional with a strong ability to focus on solving complex problems</div>
+            <div className="info-box-item">Multidisciplinary professional with a strong ability to focus on solving complex problems</div>
             <div className="info-box-item">Atypical interests fueled by a vivid imagination</div>
         </div>
       </div>

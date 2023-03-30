@@ -16,6 +16,10 @@ function Capabilities() {
               <h3>Symfony</h3>
               <p>Docker containerization; Debugging and Troubleshooting; Application security with login rate limiting and URL obfuscation; Deployment; Remotely managing app through APIs...</p>
             </div>
+            <div className="task">
+              <h3>Reactjs</h3>
+              <p>Portfolio design; <span>Mini app</span></p>
+            </div>
           </div>
         </div>
 

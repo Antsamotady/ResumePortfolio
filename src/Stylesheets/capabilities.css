@@ -34,3 +34,7 @@
   font-family: var(--font-family-handwriting);
   font-size: 1rem;
 }
+.task span {
+  font-family: var(--font-family-handwriting);
+  text-decoration: underline;
+}
