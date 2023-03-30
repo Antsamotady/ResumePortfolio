@@ -30,6 +30,9 @@ a, a:visited {
 .menu-mobile {
     display: none;
 }
+.text-link {
+    color: var(--color-lightyellow);
+}
 
 /* Mobile behaviors */
 @media screen and (max-width:450px) {
@@ -45,7 +48,7 @@ a, a:visited {
         flex-direction: column;
 
         background: var(--color-bg-footer);
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: var(--pop-up-menu-bg-color);
         border-radius: 3px;
 
         margin-top: 1rem;
@@ -55,6 +58,7 @@ a, a:visited {
         z-index: 999;
     }
     .menu-mobile-icon {
+        color: var(--color-bg-footer);
         cursor: pointer;
     }
     .menu-mobile-links a {

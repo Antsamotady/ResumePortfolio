@@ -29,6 +29,9 @@
     color: var(--color-lightyellow);
     font-size: small;
 }
+.right-floating-links_container li:hover {
+    background: var(--color-bg-header);
+}
 .hidden {
     opacity: 0;
     transition: opacity 0.5s ease-out;
@@ -75,4 +78,7 @@
 .info-box-item:nth-of-type(odd) {
     font-family: var(--font-family-fox_trot);
     font-size: small;
+}
+.info-box-item:hover {
+    background: var(--color-lightyellow);
 }

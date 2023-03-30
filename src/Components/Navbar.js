@@ -29,9 +29,9 @@ function Navbar({ onLinkClick }) {
               </div>
               {toggleMenu && (
                 <div className="menu-mobile-links scale-up-center">
-                  <Link to="/about" onClick={onLinkClick}><span>About me</span></Link>
-                  <Link to="/capabilities" onClick={onLinkClick}><span>Capabilities</span></Link>
-                  <Link to="/contact" onClick={onLinkClick}><span>Contact me</span></Link>
+                  <Link to="/about" onClick={onLinkClick}><span className="text-link">About me</span></Link>
+                  <Link to="/capabilities" onClick={onLinkClick}><span className="text-link">Capabilities</span></Link>
+                  <Link to="/contact" onClick={onLinkClick}><span className="text-link">Contact me</span></Link>
                 </div>
               )}
             </div>
