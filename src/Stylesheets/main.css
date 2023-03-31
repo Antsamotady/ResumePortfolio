@@ -47,6 +47,19 @@ blockquote:before, blockquote:after, q:before, q:after {
     Custom css
     =====================================
 */
+@font-face {
+  font-family: 'Fox Trot';
+  src: url('../fonts/FOXTROT.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AmbersHand';
+  src: url('../fonts/AMBER-H.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Variables */
 
