@@ -1,0 +1,86 @@
+.maini {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  margin: 8px;
+  height: 100vh;
+}
+
+.mini-app-container {
+  display: flex;
+  justify-content: center;
+}
+
+.mini-app-subcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-info {
+  font-size: .8em;
+  font-weight: 300;
+  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.badge {
+  margin: 10px 10px;
+  color: rgb(246, 249, 252);
+  border-radius: .2em;
+}
+
+.badge-zero {
+  background-color: #e6c448;
+}
+
+.badge-positive {
+  background-color: #4ff8f5;
+}
+
+.badge-negative {
+  background-color: #c4eae9;
+}
+
+.delete {
+  font-size: .9em;
+  background-color: #ff1111;
+}
+
+.reset {
+  background-color: #df9622;
+}
+
+.badge-nb {
+  background-color: #46b2da;
+  font-weight: 600;
+}
+
+.incr {
+  color: #4ff8f5;
+}
+
+.decr {
+  color: #e6c448;
+}
+
+.add-item {
+  color: #46b2da;
+  background-color: #daef57;
+}
+
+.item-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-nb {
+  line-height: 2rem;
+}
+
+.dedicace {
+  position: fixed;
+  bottom: 0;
+  right: 5px;
+  color: #5a46da;
+}
