@@ -4,8 +4,8 @@ import Counter from './Counter';
 const Counters = ({counters, totalCounters, onAddItem, onReset, onIncrement, onDecrement, onDelete}) => {
   return (
     <div className='mini-app-subcontainer'>
-      <div className='text-info'>nb of items : <span className='badge badge-nb'>{ counters.length }</span></div>
-      <div className='text-info'>total stuff : <span className='badge badge-nb'>{ totalCounters }</span></div>
+      <div className='head-text-info'>nb of items : <span className='badge badge-nb'>{ counters.length }</span></div>
+      <div className='head-text-info'>total stuff : <span className='badge badge-nb'>{ totalCounters }</span></div>
       <button className='badge add-item' onClick={onAddItem}>Add item</button>
       { counters.map(counter => 
         <Counter 

@@ -8,12 +8,7 @@ import Counters from '../Counters';
 class Capabilities extends Component {
   state = {
     shown: false,
-    counters: [
-      { id: 1, value: 0},
-      { id: 2, value: 2},
-      { id: 3, value: 6},
-      { id: 4, value: -1},
-    ]
+    counters: []
   }
   hideMe = () => {
     this.setState({shown : !this.state.shown})

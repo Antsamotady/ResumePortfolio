@@ -1,10 +1,3 @@
-.maini {
-  font-family: "Lato", Arial, Helvetica, sans-serif;
-  font-size: x-large;
-  margin: 8px;
-  height: 100vh;
-}
-
 .mini-app-container {
   display: flex;
   justify-content: center;
@@ -15,58 +8,61 @@
   flex-direction: column;
 }
 
-.text-info {
+.head-text-info {
   font-size: .8em;
   font-weight: 300;
   text-align: center;
+  color: var(--color-bg-footer);
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .badge {
   margin: 10px 10px;
-  color: rgb(246, 249, 252);
+  color: var(--color-bg-header);
   border-radius: .2em;
 }
 
 .badge-zero {
-  background-color: #e6c448;
+  background-color: var(--color-lightyellow);
 }
 
 .badge-positive {
-  background-color: #4ff8f5;
+  background-color: var(--color-bg-footer);
 }
 
 .badge-negative {
-  background-color: #c4eae9;
+  color: var(--color-bg-footer);
+  background-color: var(--color-bg-header);
 }
 
 .delete {
   font-size: .9em;
-  background-color: #ff1111;
+  background-color: var(--color-bg-middle);
 }
 
 .reset {
-  background-color: #df9622;
+  background-color: var(--color-bg-middle);
 }
 
 .badge-nb {
-  background-color: #46b2da;
+  background-color: var(--color-bg-footer);
   font-weight: 600;
 }
 
 .incr {
-  color: #4ff8f5;
+  color: var(--color-bg-footer);
 }
 
 .decr {
-  color: #e6c448;
+  color: var(--color-bg-middle);
 }
 
 .add-item {
-  color: #46b2da;
-  background-color: #daef57;
+  color: var(--color-lightyellow);
+  background-color: var(--color-bg-header);
 }
 
 .item-line {
@@ -76,11 +72,4 @@
 
 .item-nb {
   line-height: 2rem;
-}
-
-.dedicace {
-  position: fixed;
-  bottom: 0;
-  right: 5px;
-  color: #5a46da;
 }
