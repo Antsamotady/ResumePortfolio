@@ -65,6 +65,7 @@
     padding: 2rem;
     text-align: center;
     font-family: var(--font-family-handwriting);
+    font-size: 1.2rem;
 
     display: flex;
     justify-content: center;
@@ -77,8 +78,8 @@
 
 .info-box-item:nth-of-type(odd) {
     font-family: var(--font-family-fox_trot);
-    font-size: small;
+    font-size: large;
 }
 .info-box-item:hover {
-    background: var(--color-lightyellow);
+    background: var(--color-bg-header);
 }

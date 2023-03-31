@@ -46,11 +46,11 @@
     display: flex;
 }
 .horizontal-links li {
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
     margin: 0 3px 0 0;
     background-color: var(--color-bg-middle);
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 
     display: flex;
     justify-content: center;
