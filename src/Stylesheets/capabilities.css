@@ -14,6 +14,9 @@
   color: var(--color-bg-footer);
   margin-bottom: 10px;
 }
+.job-position > h2, mini-app {
+  font-family: 'Ubuntu', sans-serif;
+}
 .tasks {
   display: flex;
   flex-direction: column;
