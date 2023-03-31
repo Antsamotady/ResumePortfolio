@@ -48,12 +48,17 @@ blockquote:before, blockquote:after, q:before, q:after {
     =====================================
 */
 @font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Fox Trot';
   src: url('../fonts/FOXTROT.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'AmbersHand';
   src: url('../fonts/AMBER-H.TTF') format('truetype');
@@ -157,6 +162,8 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 
 .app-container {
+    font-family: 'Ubuntu', sans-serif;
+    
     margin: 0 auto;
     max-width: 960px;
     padding-left: 15px;
