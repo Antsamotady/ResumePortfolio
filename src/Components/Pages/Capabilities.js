@@ -120,6 +120,7 @@ class Capabilities extends Component {
     let total = 0;
     this.state.counters.map(c => {
       total += c.value;
+      return null;
     })
     
     return total;
