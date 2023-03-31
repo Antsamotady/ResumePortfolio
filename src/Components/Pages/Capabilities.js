@@ -8,7 +8,7 @@ import Counters from '../Counters';
 class Capabilities extends Component {
   state = {
     shown: false,
-    counters: []
+    counters: [{id:0, value:0}]
   }
   hideMe = () => {
     this.setState({shown : !this.state.shown})
@@ -75,7 +75,7 @@ class Capabilities extends Component {
               </div>
               <div className="mini-app">
                 {this.state.shown
-                  ? <div className="mini-app-container scale-up-center">
+                  ? <div className="mini-app-container scale-up-ver-center">
                       <Counters 
                         counters = {this.state.counters}
                         totalCounters = {this.totalCount()}
