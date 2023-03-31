@@ -1,3 +1,9 @@
+# Welcome!
+
+This repository contains a web-based resume that can be used as a tool to introduce my professional experience and skills to potential employers. The resume is built using modern web technologies such as React, HTML, CSS, and JavaScript, and is designed to be responsive and accessible. The repository also includes the necessary instructions for setting up and running the application locally or deploying it to a hosting service. This resume serves as an example of my web development skills and serves as a showcase of my experience and work.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
