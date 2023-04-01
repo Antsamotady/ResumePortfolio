@@ -4,12 +4,25 @@
     height: auto;
 }
 .footer-body {
-    padding: 2rem 1rem 0 0;
+    padding-top: 2rem;
     font-family: var(--font-family-fox_trot);
     color: var(--color-lightyellow);
 
     display: flex;
     justify-content: space-between;
+}
+.footer-body div:nth-child(1) {
+    flex-basis: 25%;
+    margin-right: .5rem;
+}
+.footer-body div:nth-child(2) {
+    flex-basis: 28%;
+}
+.footer-body div:nth-child(3) {
+    flex-basis: 27%;
+}
+.footer-body div:nth-child(4) {
+    flex-basis: 20%;
 }
 .footer-logo {
     font-size: 2rem;
@@ -42,15 +55,16 @@
 .horizontal-links ul {
     list-style: none;
     margin: 0;
+    padding: 0;
 
     display: flex;
 }
 .horizontal-links li {
-    width: 16px;
-    height: 16px;
+    width: 17px;
+    height: 17px;
     margin: 0 3px 0 0;
     background-color: var(--color-bg-middle);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 
     display: flex;
     justify-content: center;

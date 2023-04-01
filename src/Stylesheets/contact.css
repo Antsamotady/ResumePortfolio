@@ -6,20 +6,27 @@
 }
 
 .contact-container h2 {
-  font-size: 3rem;
+  font-family: var(--font-family-fox_trot);
+  font-size: 2rem;
   margin-bottom: 30px;
   text-align: center;
 }
 
 .contact-container p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5;
+  text-align: center;
   margin-bottom: 20px;
+}
+
+.contact-container p:last-child {
+  text-align: left;
+  font-size: 0.95rem;
 }
 
 .contact-container ul {
   list-style: none;
-  margin: 0;
+  margin: 1.5rem;
   padding: 0;
 }
 
@@ -36,7 +43,7 @@
 }
 
 .contact-container a:hover {
-  color: #007bff;
+  color: var(--color-bg-footer);
 }
 
 .contact-container .icon {
