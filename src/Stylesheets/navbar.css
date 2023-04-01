@@ -39,6 +39,9 @@ a, a:visited {
 .text-link {
     color: var(--color-lightyellow);
 }
+.text-link:hover {
+    border-bottom: 1px dashed var(--color-bg-header);
+}
 
 /* Mobile behaviors */
 @media screen and (max-width:450px) {
