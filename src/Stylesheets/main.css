@@ -72,6 +72,7 @@ blockquote:before, blockquote:after, q:before, q:after {
     --font-family-fox_trot: "Fox Trot", "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-family-handwriting: "AmbersHand",  Arial, sans-serif;
   
+    font-size: 125%;
     /* Theme #1 */
     /* --color-lightyellow: #ffffcc;
     --color-bg-header: #b19c7d;
