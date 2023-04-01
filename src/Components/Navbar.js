@@ -6,8 +6,7 @@ import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
 import '../Stylesheets/navbar.css';
 
 
-function Navbar({ onLinkClick }) {
-  const [toggleMenu, setToggleMenu] = useState(false);
+function Navbar({ onLinkClick, onCloseMenu, toggleMenu }) {
 
   return (
     <>
@@ -23,8 +22,8 @@ function Navbar({ onLinkClick }) {
             <div className="menu-mobile">
               <div className="menu-mobile-icon">
                 {toggleMenu
-                  ? <RiCloseLine className="ri-closeline" size={27} onClick={() => setToggleMenu(false)}/>
-                  : <RiMenu3Line className="ri-menu3line" size={27} onClick={() => setToggleMenu(true)}/>
+                  ? <RiCloseLine className="ri-closeline" size={27} onClick={onCloseMenu}/>
+                  : <RiMenu3Line className="ri-menu3line" size={27} onClick={onCloseMenu}/>
                 }
               </div>
               {toggleMenu && (

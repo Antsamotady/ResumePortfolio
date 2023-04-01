@@ -17,7 +17,8 @@ class App extends Component {
 
   state = {
     showHeader: true,
-    showMiddle: true
+    showMiddle: true,
+    closeMenu: false
   };
 
   handleLinkClick = () => {
@@ -27,22 +28,35 @@ class App extends Component {
     });
   };
 
+  handleOnCloseMenu = obj => {
+    obj.closeMenu
+      ? this.setState({closeMenu: false})
+      : this.setState({closeMenu: !this.state.closeMenu});
+  }
+
   render() {
-    const { showHeader, showMiddle } = this.state;
+    const { showHeader, showMiddle, closeMenu } = this.state;
 
     return (
       <Router>
-        <div className='main-container'>
-          <Navbar onLinkClick={this.handleLinkClick} />
-          {showHeader && <Header />}
-          <Routes>
-            <Route path="/" element={!showHeader && <Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/capabilities" element={<Capabilities />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-          {showMiddle && <Middle />}
-          <Footer />
+        <div className="main-container">
+          <Navbar onLinkClick={this.handleLinkClick} onCloseMenu={this.handleOnCloseMenu} toggleMenu={closeMenu}/>
+          
+          <div className="app-body" onClick={ () => this.handleOnCloseMenu({closeMenu: true})}>
+
+            {showHeader && <Header />}
+
+            <Routes>
+              <Route path="/" element={!showHeader && <Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/capabilities" element={<Capabilities />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+
+            {showMiddle && <Middle />}
+            
+            <Footer />
+          </div>
 
         </div>
       </Router>
