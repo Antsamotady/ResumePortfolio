@@ -36,7 +36,7 @@ function Footer() {
           </div>
           <div className="horizontal-links">
             <ul>
-              <li className="bottom-links-box"><a href="https://linkedin.com/in/antsamotady-tsilavina-618201153"><TfiLinkedin /></a></li>
+              <li className="bottom-links-box"><a href="https://linkedin.com/in/garry-hasintsilavina"><TfiLinkedin /></a></li>
               <li className="bottom-links-box"><a href="https://stackoverflow.com/users/9532910/antsamotady"><ImStackoverflow /></a></li>
               <li className="bottom-links-box"><a href="https://github.com/Antsamotady"><BsGithub /></a></li>
               <li className="bottom-links-box"><a href="mailto:tsilavinarj02@gmail.com?subject=Interested%20visitor&body=Hi%20Garry!"><SiGmail /></a></li>
