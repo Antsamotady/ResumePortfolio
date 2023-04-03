@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { BsGithub } from 'react-icons/bs';
+
 import "../../Stylesheets/capabilities.css";
 import "../../Stylesheets/miniapp.css";
 
@@ -62,16 +64,22 @@ class Capabilities extends Component {
             <h2>Web Development</h2>
             <div className="tasks">
               <div className="task">
-                <h3>Laravel</h3>
+                <div className="tech-header">
+                  <span className="tech-title">Laravel </span><span className="icon-link"><a href="https://github.com/Antsamotady/laravel6-test-dashdoard"><BsGithub /></a></span>
+                </div>
                 <p>Login; Form validation; Password resetting; Listing; Live search; Navigation menu; Dynamic DB update via AJAX...</p>
               </div>
               <div className="task">
-                <h3>Symfony</h3>
+                <div className="tech-header">
+                  <span className="tech-title">Symfony </span><span className="icon-link"><a href="https://github.com/Antsamotady/"></a></span>
+                </div>
                 <p>Docker containerization; Debugging and Troubleshooting; Application security with login rate limiting and URL obfuscation; Deployment; Remotely managing app through APIs...</p>
               </div>
               <div className="task">
-                <h3>Reactjs</h3>
-                <p>Portfolio design; <span onClick={this.hideMe}>Mini app</span></p>
+                <div className="tech-header">
+                  <span className="tech-title">Reactj </span><span className="icon-link"><a href="https://github.com/Antsamotady/ResumePortfolio"><BsGithub /></a></span>
+                </div>
+                <p>Portfolio design; <span className="mini-app-btn" onClick={this.hideMe}>Mini app</span></p>
               </div>
               <div className="mini-app">
                 {this.state.shown
@@ -96,7 +104,9 @@ class Capabilities extends Component {
             <h2>Linux Programming</h2>
             <div className="tasks">
               <div className="task">
-                <h3>Bash programming</h3>
+                <div className="tech-header">
+                  <span className="tech-title">Bash Programming </span><span className="icon-link"><a href="https://github.com/Antsamotady/"></a></span>
+                </div>
                 <p>Creating a script to automate page downloads; Cron automation; Web page parsing and data extraction; Database table optimization and data purification; Data integrity checks...</p>
               </div>
             </div>
@@ -106,7 +116,9 @@ class Capabilities extends Component {
             <h2>CIO Assistant</h2>
             <div className="tasks">
               <div className="task">
-                <h3>System and Network Engineering</h3>
+                <div className="tech-header">
+                  <span className="tech-title">System & Network Engineering </span><span className="icon-link"><a href="https://github.com/Antsamotady/"></a></span>
+                </div>
                 <p>Operating system installation; Structured network cabling; Firewall rule-based filtering of network connections...</p>
               </div>
             </div>
