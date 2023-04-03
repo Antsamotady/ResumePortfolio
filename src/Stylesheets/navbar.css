@@ -24,10 +24,15 @@ a, a:visited {
 }
 .menu-links{
     font-size: 0.8rem;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .menu-links span {
     color: var(--color-bg-footer);
-    padding: 2rem;
+    padding-left: 1rem;
     padding-right: 0px;
 }
 .menu-links span:hover {

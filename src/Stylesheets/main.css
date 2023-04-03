@@ -73,43 +73,9 @@ blockquote:before, blockquote:after, q:before, q:after {
     --font-family-handwriting: "AmbersHand",  Arial, sans-serif;
   
     font-size: 125%;
-    /* Theme #1 */
-    /* --color-lightyellow: #ffffcc;
-    --color-bg-header: #b19c7d;
-    --color-bg-middle: #e19825;
-    --color-bg-footer: #323232; */
-
-    /* Theme #2 */
-    /* --color-lightyellow: #FFF4E0;
-    --color-bg-header:  #FFBF9B;
-    --color-bg-middle: #B46060;
-    --color-bg-footer: #4D4D4D; */
-
-    /* Theme #3 */
-    /* --color-lightyellow: #2C3333;
-    --color-bg-header:  #2E4F4F;
-    --color-bg-middle: #0E8388;
-    --color-bg-footer: #CBE4DE; */
-
-    /* Theme #4 */
-    /* --color-lightyellow: #183A1D;
-    --color-bg-header: #E1EEDD;
-    --color-bg-middle: #FEFBE9;
-    --color-bg-footer: #F0A04B; */
-
-    /* Theme #5 */
-    --color-lightyellow: #20262E;
-    --color-bg-header: #E9E8E8;
-    --color-bg-middle: #CD5888;
-    --color-bg-footer: #913175;
-
 
     --golden-ratio: 1.61803398875;
-    --pop-up-menu-bg-color: var(--color-bg-middle);
 }
-
-
-
 
 .app-container {
     font-family: 'Ubuntu', sans-serif;

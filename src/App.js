@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import './Stylesheets/main.css';
-import './Stylesheets/animations.css'
+import './Stylesheets/themes.css';
+import './Stylesheets/animations.css';
 
 import Navbar from './Components/Navbar';
 import Header from './Components/Header';
@@ -19,7 +20,8 @@ class App extends Component {
   state = {
     showHeader: true,
     showMiddle: true,
-    closeMenu: false
+    closeMenu: false,
+    theme: "theme-orange"
   };
 
   handleLinkClick = () => {
@@ -35,13 +37,22 @@ class App extends Component {
       : this.setState({closeMenu: !this.state.closeMenu});
   }
 
+  handleThemeChange = e => {
+    this.setState({theme: e.target.value})
+  }
+
   render() {
-    const { showHeader, showMiddle, closeMenu } = this.state;
+    const { showHeader, showMiddle, closeMenu, theme } = this.state;
 
     return (
       <Router>
-        <div className="main-container">
-          <Navbar onLinkClick={this.handleLinkClick} onCloseMenu={this.handleOnCloseMenu} toggleMenu={closeMenu}/>
+        <div className={`main-container ${theme}`}>
+          <Navbar onLinkClick={this.handleLinkClick}
+                  onCloseMenu={this.handleOnCloseMenu}
+                  toggleMenu={closeMenu}
+                  onThemeSelected={this.handleThemeChange}
+                  theme={theme}
+          />
           
           <div className="app-body" onClick={ () => this.handleOnCloseMenu({closeMenu: true})}>
 
