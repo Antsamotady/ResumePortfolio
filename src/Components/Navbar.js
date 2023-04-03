@@ -18,10 +18,10 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
 
             <div className="theme-selector-btn">
               <div className="theme-btn">
-                <input type="radio" name="color" id="theme-default" value="theme-default"
-                      checked={theme === "theme-default"}
+                <input type="radio" name="color" id="theme-pink" value="theme-pink"
+                      checked={theme === "theme-pink"}
                       onChange={onThemeSelected} />
-                <label htmlFor="theme-default"><span className="theme-default"></span></label>
+                <label htmlFor="theme-pink"><span className="theme-pink"></span></label>
               </div>
 
               <div className="theme-btn">

@@ -33,7 +33,7 @@ label span {
   transition: transform 0.2s ease-in-out;
 }
 
-label span.theme-default {
+label span.theme-pink {
   background: #CD5888;
   border: 1px solid #E9E8E8;
   /* border: 1px solid darken(#E9E8E8, 25%); */
