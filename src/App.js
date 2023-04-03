@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import './Stylesheets/main.css';
+import './Stylesheets/animations.css'
 
 import Navbar from './Components/Navbar';
 import Header from './Components/Header';

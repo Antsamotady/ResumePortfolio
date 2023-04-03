@@ -82,4 +82,5 @@
 }
 .info-box-item:hover {
     background: var(--color-bg-header);
+    transition: 0.5s;
 }
