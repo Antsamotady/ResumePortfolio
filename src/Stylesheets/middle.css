@@ -59,8 +59,8 @@
     --my-box-width: 275px;
     width: var(--my-box-width);
     height: calc(var(--my-box-width) / var(--golden-ratio));
-    color: var(--color-bg-footer);
-    border: 2px solid var(--color-bg-footer);
+    color: var(--color-lightyellow);
+    border: 2px solid var(--color-lightyellow);
     margin: 2rem auto;
     padding: 2rem;
     text-align: center;
@@ -82,5 +82,7 @@
 }
 .info-box-item:hover {
     background: var(--color-bg-header);
+    color: var(--color-bg-footer);
+    border: 2px solid var(--color-bg-footer);
     transition: 0.5s;
 }

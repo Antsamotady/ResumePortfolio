@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { BsGithub } from 'react-icons/bs';
+import { ImStackoverflow } from 'react-icons/im';
 
 import "../../Stylesheets/capabilities.css";
 import "../../Stylesheets/miniapp.css";
@@ -105,7 +106,7 @@ class Capabilities extends Component {
             <div className="tasks">
               <div className="task">
                 <div className="tech-header">
-                  <span className="tech-title">Bash Programming </span><span className="icon-link"><a href="https://github.com/Antsamotady/"></a></span>
+                  <span className="tech-title">Bash Scripting </span><span className="icon-link"><a href="https://stackoverflow.com/users/9532910/antsamotady"><ImStackoverflow /></a></span>
                 </div>
                 <p>Creating a script to automate page downloads; Cron automation; Web page parsing and data extraction; Database table optimization and data purification; Data integrity checks...</p>
               </div>

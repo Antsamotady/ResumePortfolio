@@ -13,7 +13,7 @@ function Footer() {
   const year = now.getFullYear();
 
   return (
-    <div className="footer">
+    <div className="app-footer">
       <div className="app-container">
         <div className="footer-body">
           <div className="footer-logo">LOGO</div>

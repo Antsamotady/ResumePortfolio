@@ -67,8 +67,9 @@ class App extends Component {
 
             {showMiddle && <Middle />}
             
-            <Footer />
           </div>
+          
+          <Footer />
 
         </div>
       </Router>
