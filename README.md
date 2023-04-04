@@ -1,6 +1,19 @@
 # Welcome!
 
-This repository contains a web-based resume that can be used as a tool to introduce my professional experience and skills to potential employers. The resume is built using modern web technologies such as React, HTML, CSS, and JavaScript, and is designed to be responsive and accessible. The repository also includes the necessary instructions for setting up and running the application locally or deploying it to a hosting service. This resume serves as an example of my web development skills and serves as a showcase of my experience and work.
+  This repository contains a web-based resume that can be used as a tool to introduce my professional experience and skills to potential employers. The resume is built using modern web technologies such as React, HTML, CSS, and JavaScript, and is designed to be responsive and accessible. 
+The repository also includes the necessary instructions for setting up and running the application locally or deploying it to a hosting service. This resume serves as an example of my web development skills and serves as a showcase of my experience and work.
+
+Preview:
+
+![Screenshot 2023-04-04 at 13-36-02 Antsamotady](https://user-images.githubusercontent.com/24730063/229769056-9825a8c0-46b5-4532-aa65-1172f95979b5.png)
+
+![Screenshot 2023-04-04 at 13-47-32 Antsamotady](https://user-images.githubusercontent.com/24730063/229769075-a2658083-8da9-4e57-8e0a-2c283b91a64e.png)
+
+![Screenshot 2023-04-04 at 13-48-42 Antsamotady](https://user-images.githubusercontent.com/24730063/229769274-61e46ffc-f9c4-4ef0-a8a7-c3d1d526ad7b.png)
+
+![Screenshot 2023-04-04 at 13-36-23 Antsamotady](https://user-images.githubusercontent.com/24730063/229769140-27f59927-4b72-4363-97a3-05c973925814.png)
+
+
 
 ---
 
