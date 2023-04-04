@@ -13,7 +13,6 @@
 }
 .footer-body div:nth-child(1) {
     flex-basis: 25%;
-    margin-right: .5rem;
 }
 .footer-body div:nth-child(2) {
     flex-basis: 28%;
@@ -28,7 +27,7 @@
     font-size: 2rem;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .line-column {
@@ -110,4 +109,11 @@
 }
 .author-part span {
     padding: 0 0.4rem;
+}
+.tsifoh-logo-footer {
+    vertical-align: unset;
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    border: 2px solid var(--color-bg-middle);
 }

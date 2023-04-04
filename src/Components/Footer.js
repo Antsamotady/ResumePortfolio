@@ -18,7 +18,7 @@ function Footer() {
     <div className="app-footer">
       <div className="app-container">
         <div className="footer-body">
-          <div className="footer-logo"><img className="tsifoh-logo" src={tsifoh} alt="" /></div>
+          <div className="footer-logo"><img className="tsifoh-logo-footer" src={tsifoh} alt="" /></div>
           <div className="line-column">
             <span>Introvert</span>
             <span><a href="https://tsl-portfolio.netlify.app/">Design</a></span>
