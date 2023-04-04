@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
 
 import '../Stylesheets/navbar.css';
 import '../Stylesheets/theme-radio.css';
+
+import tsifoh from '../Images/Tsifoh_224.jpg';
 
 
 function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }) {
@@ -14,7 +15,9 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
       <div className="app-navbar">
         <div className="app-container">
           <div className="primary-header">
-            <Link to="/"><span className="logo">LOGO</span></Link>
+            <Link to="/">
+              <span className="logo"><img className="tsifoh-logo" src={tsifoh} alt="" /></span>
+            </Link>
 
             <div className="theme-selector-btn">
               <div className="theme-btn">

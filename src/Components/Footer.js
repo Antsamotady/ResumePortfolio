@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+import tsifoh from '../Images/Tsifoh_224.jpg';
 import { TfiLinkedin } from 'react-icons/tfi';
 import { ImStackoverflow } from 'react-icons/im';
 import { BsGithub } from 'react-icons/bs';
@@ -16,7 +18,7 @@ function Footer() {
     <div className="app-footer">
       <div className="app-container">
         <div className="footer-body">
-          <div className="footer-logo">LOGO</div>
+          <div className="footer-logo"><img className="tsifoh-logo" src={tsifoh} alt="" /></div>
           <div className="line-column">
             <span>Introvert</span>
             <span><a href="https://tsl-portfolio.netlify.app/">Design</a></span>
