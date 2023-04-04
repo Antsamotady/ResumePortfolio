@@ -1,0 +1,75 @@
+.mini-app-container {
+  display: flex;
+  justify-content: center;
+}
+
+.mini-app-subcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-text-info {
+  font-size: .8em;
+  font-weight: 300;
+  text-align: center;
+  color: var(--color-bg-footer);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  margin: 10px 10px;
+  color: var(--color-bg-header);
+  border-radius: .2em;
+}
+
+.badge-zero {
+  background-color: var(--color-lightyellow);
+}
+
+.badge-positive {
+  background-color: var(--color-bg-footer);
+}
+
+.badge-negative {
+  color: var(--color-bg-footer);
+  background-color: var(--color-bg-header);
+}
+
+.delete {
+  font-size: .9em;
+  background-color: var(--color-bg-middle);
+}
+
+.reset {
+  background-color: var(--color-bg-middle);
+}
+
+.badge-nb {
+  background-color: var(--color-bg-footer);
+  font-weight: 600;
+}
+
+.incr {
+  color: var(--color-bg-footer);
+}
+
+.decr {
+  color: var(--color-bg-middle);
+}
+
+.add-item {
+  color: var(--color-lightyellow);
+  background-color: var(--color-bg-header);
+}
+
+.item-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-nb {
+  line-height: 2rem;
+}

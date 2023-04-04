@@ -1,0 +1,52 @@
+.capabilities-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.job-position {
+  margin-bottom: 20px;
+}
+
+.job-position h2 {
+  font-size: 2rem;
+  color: var(--color-bg-footer);
+  margin-bottom: 10px;
+}
+.job-position > h2, mini-app {
+  font-family: 'Ubuntu', sans-serif;
+}
+.tasks {
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  margin-bottom: 10px;
+}
+
+.tech-header {
+  border-bottom: 1px solid var(--color-bg-header);
+  margin-bottom: 5px;
+}
+.task .tech-title {
+  font-family: var(--font-family-fox_trot);
+  font-size: 1.1rem;
+}
+
+.task p {
+  font-family: var(--font-family-handwriting);
+  font-size: 1rem;
+}
+.mini-app-btn {
+  font-family: var(--font-family-handwriting);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.icon-link a {
+  color: var(--color-bg-header);
+}
+.icon-link svg {
+  vertical-align: unset;
+}

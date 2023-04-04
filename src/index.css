@@ -1,0 +1,9 @@
+:root {
+  --font-family-fox_trot: "Fox Trot", "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-handwriting: "AmbersHand",  Arial, sans-serif;
+
+  --color-lightyellow: #ffffcc;
+  --color-bg-header: #b19c7d;
+  --color-bg-middle: #e19825;
+  --color-bg-footer: #323232;
+}

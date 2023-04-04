@@ -1,0 +1,75 @@
+.theme-selector-btn {
+  padding-left: 1rem;
+
+  display: flex;
+  justify-content: space-around;
+  flex: fit-content;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label + span {
+  transform: scale(1.25);
+}
+
+label {
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  margin-right: 22px;
+  cursor: pointer;
+}
+
+label:hover span {
+  transform: scale(1.25);
+}
+
+label span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+label span.theme-pink {
+  background: #CD5888;
+  border: 1px solid #E9E8E8;
+  /* border: 1px solid darken(#E9E8E8, 25%); */
+}
+
+label span.theme-green {
+  background: #0E8388;
+  border: 1px solid #CBE4DE;
+}
+
+label span.theme-pastel {
+  background: #F0A04B;
+  border: 1px solid #E1EEDD;
+}
+
+label span.theme-orange {
+  background: #B46060;
+  border: 1px solid #FFBF9B;
+}
+
+label span.theme-gray {
+  background: #979797;
+  border: 1px solid #fff;
+}
+
+label span.theme-red {
+  background: #ff0f0c;
+  border: 1px solid #c60719;
+}
+
+label span.theme-turquoise {
+  background: #7db1b0;
+  border: 1px solid #25e1e0;
+}
+
+label span.theme-purple {
+  background: #a07db1;
+  border: 1px solid #a725e1;
+}
