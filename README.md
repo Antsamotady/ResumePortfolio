@@ -7,7 +7,13 @@ Preview:
 
 ![Screenshot 2023-04-04 at 13-36-02 Antsamotady](https://user-images.githubusercontent.com/24730063/229769056-9825a8c0-46b5-4532-aa65-1172f95979b5.png)
 
+![Screenshot 2023-04-04 at 13-51-39 Antsamotady](https://user-images.githubusercontent.com/24730063/229770284-3b20d47a-8daf-4c1c-a9a4-b4b838cf17c9.png)
+
+
 ![Screenshot 2023-04-04 at 13-47-32 Antsamotady](https://user-images.githubusercontent.com/24730063/229769075-a2658083-8da9-4e57-8e0a-2c283b91a64e.png)
+
+![Screenshot 2023-04-04 at 13-54-30 Antsamotady](https://user-images.githubusercontent.com/24730063/229770785-2d50e9e5-2554-47f4-8af5-38b1940237c5.png)
+
 
 ![Screenshot 2023-04-04 at 13-48-42 Antsamotady](https://user-images.githubusercontent.com/24730063/229769274-61e46ffc-f9c4-4ef0-a8a7-c3d1d526ad7b.png)
 
