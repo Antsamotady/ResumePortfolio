@@ -53,3 +53,23 @@ label span.theme-orange {
   background: #B46060;
   border: 1px solid #FFBF9B;
 }
+
+label span.theme-gray {
+  background: #979797;
+  border: 1px solid #fff;
+}
+
+label span.theme-red {
+  background: #ff0f0c;
+  border: 1px solid #c60719;
+}
+
+label span.theme-turquoise {
+  background: #7db1b0;
+  border: 1px solid #25e1e0;
+}
+
+label span.theme-purple {
+  background: #a07db1;
+  border: 1px solid #a725e1;
+}

@@ -44,6 +44,34 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
                       onChange={onThemeSelected} />
                 <label htmlFor="theme-orange"><span className="theme-orange"></span></label>
               </div>
+
+              <div className="theme-btn">
+                <input type="radio" name="color" id="theme-gray" value="theme-gray"
+                      checked={theme === "theme-gray"}
+                      onChange={onThemeSelected} />
+                <label htmlFor="theme-gray"><span className="theme-gray"></span></label>
+              </div>
+
+              <div className="theme-btn">
+                <input type="radio" name="color" id="theme-red" value="theme-red"
+                      checked={theme === "theme-red"}
+                      onChange={onThemeSelected} />
+                <label htmlFor="theme-red"><span className="theme-red"></span></label>
+              </div>
+
+              <div className="theme-btn">
+                <input type="radio" name="color" id="theme-turquoise" value="theme-turquoise"
+                      checked={theme === "theme-turquoise"}
+                      onChange={onThemeSelected} />
+                <label htmlFor="theme-turquoise"><span className="theme-turquoise"></span></label>
+              </div>
+
+              <div className="theme-btn">
+                <input type="radio" name="color" id="theme-purple" value="theme-purple"
+                      checked={theme === "theme-purple"}
+                      onChange={onThemeSelected} />
+                <label htmlFor="theme-purple"><span className="theme-purple"></span></label>
+              </div>
             </div>
 
 

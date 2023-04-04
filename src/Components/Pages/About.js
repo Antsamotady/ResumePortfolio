@@ -1,7 +1,7 @@
 import React from 'react';
 
 import '../../Stylesheets/about.css'
-import profile from '../../Images/glitch_1.png';
+import profile from '../../Images/glitch_1_1.png';
 
 function About() {
   return (
