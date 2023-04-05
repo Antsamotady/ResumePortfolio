@@ -27,15 +27,15 @@ function About() {
             <div className="small-titles">
               <div className="work-experience">
                 <p>Web developer</p>
-                <img className="company-logo" src={celaneo} alt="" />
+                <a href="https://www.celaneo.com/"><img className="company-logo" src={celaneo} alt="" /></a>
               </div>
               <div className="work-experience">
-                <p>Web scraper</p>
+                <a href="http://corporate.autobiz.com/"><p>Web scraper</p></a>
                 <img className="company-logo" src={autobiz} alt="" />
               </div>
               <div className="work-experience">
                 <p>CIO Assistant</p>
-                <img className="company-logo" src={oti} alt="" />
+                <a href="https://oti-madagascar.net/"><img className="company-logo" src={oti} alt="" /></a>
               </div>
             </div>
           </div>
