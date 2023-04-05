@@ -62,7 +62,19 @@
 
   display: flex;
   justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: baseline;
 }
+.work-experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.company-logo {
+  width: 75px;
+}
+
 
 @media screen and (max-width:450px) {
   .about-me {

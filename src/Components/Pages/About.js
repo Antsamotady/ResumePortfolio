@@ -2,6 +2,10 @@ import React from 'react';
 
 import '../../Stylesheets/about.css'
 import profile from '../../Images/glitch_1_1.png';
+import celaneo from '../../Images/celaneo.png';
+import autobiz from '../../Images/autobiz.png';
+import oti from '../../Images/oti.png';
+
 
 function About() {
   return (
@@ -21,9 +25,18 @@ function About() {
           <div className="bottom-text">
             <span>I've been a...</span>
             <div className="small-titles">
-              <p>Web developer</p>
-              <p>Web scraper</p>
-              <p>CIO Assistant</p>
+              <div className="work-experience">
+                <p>Web developer</p>
+                <img className="company-logo" src={celaneo} alt="" />
+              </div>
+              <div className="work-experience">
+                <p>Web scraper</p>
+                <img className="company-logo" src={autobiz} alt="" />
+              </div>
+              <div className="work-experience">
+                <p>CIO Assistant</p>
+                <img className="company-logo" src={oti} alt="" />
+              </div>
             </div>
           </div>
         </div>
