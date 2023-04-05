@@ -54,3 +54,10 @@ p > span {
   font-family: var(--font-family-fox_trot);
   color: var(--color-bg-footer);
 }
+.contact-email-btn {
+  width: 100%;
+  margin: 1rem 0;
+  color: var(--color-bg-footer);
+  background-color: var(--color-bg-header);
+  border: none;
+}
