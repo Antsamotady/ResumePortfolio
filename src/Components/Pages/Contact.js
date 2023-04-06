@@ -45,57 +45,61 @@ function Contact() {
     <div className="contact-container">
       <h2>Contact Me</h2>
 
-      <div className="contact-form">
-        <Form onSubmit={handleSubmit}>
-          <Form.Group controlId="name">
-            <Form.Label>Name:</Form.Label>
-            <Form.Control type="text" name="from_name" value={name} onChange={(e) => setName(e.target.value)} required />
-          </Form.Group>
 
-          <Form.Group controlId="email">
-            <Form.Label>Email:</Form.Label>
-            <Form.Control type="email" name="reply_to" value={email} onChange={(e) => setEmail(e.target.value)} required />
-          </Form.Group>
+      <div className="contact-section">
 
-          <Form.Group controlId="subject">
-            <Form.Label>Subject:</Form.Label>
-            <Form.Control type="text" name="subject" value={subject} onChange={(e) => setSubject(e.target.value)} required />
-          </Form.Group>
+        <p>You can reach me by
+          <a href="#mail-form"> email </a>
+          or on one of my social media profiles below:
+        </p>
+        
+        <ul>
+          <li>
+            <a href="https://linkedin.com/in/garry-hasintsilavina"><FaLinkedin className="icon" /></a>
+            LinkedIn Profile
+          </li>
+          <li>
+            <a href="https://github.com/Antsamotady"><FaGithub className="icon" /></a>
+            GitHub Profile
+          </li>
+          <li>
+            <a href="https://stackoverflow.com/users/9532910/antsamotady"><FaStackOverflow className="icon" /></a>
+            Stack Overflow Profile
+          </li>
+        </ul>
+        <p>Thank you for your interest in contacting me.</p>
+        <p>Please note that I often use the pseudonym <span>Antsamotady</span> on online platforms.</p>
 
-          <Form.Group controlId="message">
-            <Form.Label>Message:</Form.Label>
-            <Form.Control as="textarea" rows={5} name="message" value={message} onChange={(e) => setMessage(e.target.value)} required />
-          </Form.Group>
-
-          <Button className="contact-email-btn" type="submit">Send</Button>
-        </Form>
       </div>
 
+      <p className="name-underlining"></p>
 
-      <p>Thank you for your interest in contacting me. You can reach me by email or on one of my social media profiles below:</p>
-      <ul>
-        <li>
-          <a href="mailto:tsilavinarj02@gmail.com?subject=Interested%20visitor&body=Hi%20Garry!">
-            <FaEnvelope className="icon" /> tsilavinarj02@gmail.com
-          </a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/in/garry-hasintsilavina">
-            <FaLinkedin className="icon" /> LinkedIn Profile
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Antsamotady">
-            <FaGithub className="icon" /> GitHub Profile
-          </a>
-        </li>
-        <li>
-          <a href="https://stackoverflow.com/users/9532910/antsamotady">
-            <FaStackOverflow className="icon" /> Stack Overflow Profile
-          </a>
-        </li>
-      </ul>
-      <p>Please note that I often use the pseudonym <span>Antsamotady</span> on online platforms.</p>
+      <div className="contact-section">
+
+        <div className="contact-form">
+          <Form onSubmit={handleSubmit} id="mail-form">
+            <Form.Group className="mb-3" controlId="name">
+              <Form.Control className="rounded-0" type="text" name="from_name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Your name" required />
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="email">
+              <Form.Control className="rounded-0" type="email" name="reply_to" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Your email" required />
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="subject">
+              <Form.Control className="rounded-0" type="text" name="subject" value={subject} onChange={(e) => setSubject(e.target.value)} placeholder="Subject" required />
+            </Form.Group>
+
+            <Form.Group className="mb-1" controlId="message">
+              <Form.Control className="rounded-0" as="textarea" rows={5} name="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Your message" required />
+            </Form.Group>
+
+            <Button className="btn-block rounded-0 contact-email-btn" type="submit">Send</Button>
+          </Form>
+        </div>
+
+      </div>
+
     </div>
   );
 }

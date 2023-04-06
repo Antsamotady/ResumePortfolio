@@ -30,8 +30,8 @@ function About() {
                 <a href="https://www.celaneo.com/"><img className="company-logo" src={celaneo} alt="" /></a>
               </div>
               <div className="work-experience">
-                <a href="http://corporate.autobiz.com/"><p>Web scraper</p></a>
-                <img className="company-logo" src={autobiz} alt="" />
+                <p>Web scraper</p>
+                <a href="http://corporate.autobiz.com/"><img className="company-logo" src={autobiz} alt="" /></a>
               </div>
               <div className="work-experience">
                 <p>CIO Assistant</p>
