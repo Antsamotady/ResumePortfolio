@@ -21,7 +21,7 @@ class App extends Component {
     showHeader: true,
     showMiddle: true,
     closeMenu: false,
-    theme: "theme-gray"
+    theme: "theme-orange"
   };
 
   handleLinkClick = () => {
