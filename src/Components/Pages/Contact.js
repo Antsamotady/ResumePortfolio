@@ -72,7 +72,7 @@ function Contact() {
 
       </div>
 
-      <p className="name-underlining"></p>
+      <p className="quater-underlining"></p>
 
       <div className="contact-section">
 

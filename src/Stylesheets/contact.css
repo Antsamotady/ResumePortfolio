@@ -64,7 +64,7 @@ p > span {
   background-color: var(--color-bg-footer);
   border: none;
 }
-.contact-container > .contact-section, .contact-container > .name-underlining {
+.contact-container > .contact-section, .contact-container > .quater-underlining {
   margin-bottom: 2rem;
 }
 .form-control:focus {
