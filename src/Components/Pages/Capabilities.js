@@ -66,19 +66,19 @@ class Capabilities extends Component {
             <div className="tasks">
               <div className="task">
                 <div className="tech-header">
-                  <span className="tech-title">Laravel </span><span className="icon-link"><a href="https://github.com/Antsamotady/laravel6-test-dashdoard"><BsGithub /></a></span>
+                  <span className="tech-title">Laravel </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/laravel6-test-dashdoard"><BsGithub /></a></span>
                 </div>
                 <p>Login; Form validation; Password resetting; Listing; Live search; Navigation menu; Dynamic DB update via AJAX...</p>
               </div>
               <div className="task">
                 <div className="tech-header">
-                  <span className="tech-title">Symfony </span><span className="icon-link"><a href="https://github.com/Antsamotady/"></a></span>
+                  <span className="tech-title">Symfony </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/"></a></span>
                 </div>
                 <p>Docker containerization; Debugging and Troubleshooting; Application security with login rate limiting and URL obfuscation; Deployment; Remotely managing app through APIs...</p>
               </div>
               <div className="task">
                 <div className="tech-header">
-                  <span className="tech-title">Reactj </span><span className="icon-link"><a href="https://github.com/Antsamotady/ResumePortfolio/tree/master"><BsGithub /></a></span>
+                  <span className="tech-title">Reactj </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/ResumePortfolio/tree/master"><BsGithub /></a></span>
                 </div>
                 <p>Portfolio design; <span className="mini-app-btn" onClick={this.hideMe}>Mini app</span></p>
               </div>
@@ -106,7 +106,7 @@ class Capabilities extends Component {
             <div className="tasks">
               <div className="task">
                 <div className="tech-header">
-                  <span className="tech-title">Bash Scripting </span><span className="icon-link"><a href="https://stackoverflow.com/users/9532910/antsamotady"><ImStackoverflow /></a></span>
+                  <span className="tech-title">Bash Scripting </span><span className="icon-link"><a title="My stack profile" href="https://stackoverflow.com/users/9532910/antsamotady"><ImStackoverflow /></a></span>
                 </div>
                 <p>Creating a script to automate page downloads; Cron automation; Web page parsing and data extraction; Database table optimization and data purification; Data integrity checks...</p>
               </div>
@@ -118,7 +118,7 @@ class Capabilities extends Component {
             <div className="tasks">
               <div className="task">
                 <div className="tech-header">
-                  <span className="tech-title">System & Network Engineering </span><span className="icon-link"><a href="https://github.com/Antsamotady/"></a></span>
+                  <span className="tech-title">System & Network Engineering </span><span className="icon-link"><a title="the repo" href="https://github.com/Antsamotady/"></a></span>
                 </div>
                 <p>Operating system installation; Structured network cabling; Firewall rule-based filtering of network connections...</p>
               </div>

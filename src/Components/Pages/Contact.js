@@ -49,21 +49,21 @@ function Contact() {
       <div className="contact-section">
 
         <p>You can reach me by
-          <a href="#mail-form"> email </a>
+          <a title="Write an email" href="#mail-form"> email </a>
           or on one of my social media profiles below:
         </p>
         
         <ul>
           <li>
-            <a href="https://linkedin.com/in/garry-hasintsilavina"><FaLinkedin className="icon" /></a>
+            <a title="My linkedIn profile" href="https://linkedin.com/in/garry-hasintsilavina"><FaLinkedin className="icon" /></a>
             LinkedIn Profile
           </li>
           <li>
-            <a href="https://github.com/Antsamotady"><FaGithub className="icon" /></a>
+            <a title="My github profile" href="https://github.com/Antsamotady"><FaGithub className="icon" /></a>
             GitHub Profile
           </li>
           <li>
-            <a href="https://stackoverflow.com/users/9532910/antsamotady"><FaStackOverflow className="icon" /></a>
+            <a title="My stackoverflow profile" href="https://stackoverflow.com/users/9532910/antsamotady"><FaStackOverflow className="icon" /></a>
             Stack Overflow Profile
           </li>
         </ul>

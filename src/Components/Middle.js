@@ -42,10 +42,10 @@ function Middle() {
       <div ref={sectionRef} className={isVisible ? 'visible' : 'hidden'}>
         <div className="right-floating-links_container">
           <ul>
-            <li className="right-floating-links-box"><a href="https://linkedin.com/in/garry-hasintsilavina"><TfiLinkedin /></a></li>
-            <li className="right-floating-links-box"><a href="https://stackoverflow.com/users/9532910/antsamotady"><ImStackoverflow /></a></li>
-            <li className="right-floating-links-box"><a href="https://github.com/Antsamotady"><BsGithub /></a></li>
-            <li className="right-floating-links-box"><a href="mailto:tsilavinarj02@gmail.com?subject=Interested%20visitor&body=Hi%20Garry!"><SiGmail /></a></li>
+            <li className="right-floating-links-box"><a title="My linkedIn profile" href="https://linkedin.com/in/garry-hasintsilavina"><TfiLinkedin /></a></li>
+            <li className="right-floating-links-box"><a title="My stackoverflow profile" href="https://stackoverflow.com/users/9532910/antsamotady"><ImStackoverflow /></a></li>
+            <li className="right-floating-links-box"><a title="My github profile" href="https://github.com/Antsamotady"><BsGithub /></a></li>
+            <li className="right-floating-links-box"><a title="Email me" href="mailto:tsilavinarj02@gmail.com?subject=Interested%20visitor&body=Hi%20Garry!"><SiGmail /></a></li>
           </ul>
         </div>
       </div>

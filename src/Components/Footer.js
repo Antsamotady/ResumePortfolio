@@ -21,7 +21,7 @@ function Footer() {
           <div className="footer-logo"><img className="tsifoh-logo-footer" src={tsifoh} alt="" /></div>
           <div className="line-column">
             <span>Introvert</span>
-            <span><a href="https://tsl-portfolio.netlify.app/">Design</a></span>
+            <span><a title="My design showcase" href="https://tsl-portfolio.netlify.app/">Design</a></span>
             <span>Tech enthusiast</span>
             <span>Creative</span>
             <span>IT roles</span>
@@ -38,10 +38,10 @@ function Footer() {
           </div>
           <div className="horizontal-links">
             <ul>
-              <li className="bottom-links-box"><a href="https://linkedin.com/in/garry-hasintsilavina"><TfiLinkedin /></a></li>
-              <li className="bottom-links-box"><a href="https://stackoverflow.com/users/9532910/antsamotady"><ImStackoverflow /></a></li>
-              <li className="bottom-links-box"><a href="https://github.com/Antsamotady"><BsGithub /></a></li>
-              <li className="bottom-links-box"><a href="mailto:tsilavinarj02@gmail.com?subject=Interested%20visitor&body=Hi%20Garry!"><SiGmail /></a></li>
+              <li className="bottom-links-box"><a title="My linkedIn profile" href="https://linkedin.com/in/garry-hasintsilavina"><TfiLinkedin /></a></li>
+              <li className="bottom-links-box"><a title="My stackoverflow profile" href="https://stackoverflow.com/users/9532910/antsamotady"><ImStackoverflow /></a></li>
+              <li className="bottom-links-box"><a title="My github profile" href="https://github.com/Antsamotady"><BsGithub /></a></li>
+              <li className="bottom-links-box"><a title="Email me" href="mailto:tsilavinarj02@gmail.com?subject=Interested%20visitor&body=Hi%20Garry!"><SiGmail /></a></li>
             </ul>
           </div>
         </div>
