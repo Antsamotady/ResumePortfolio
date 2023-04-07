@@ -36,7 +36,7 @@
 }
 .my-name, .update-title {
   font-family: var(--font-family-fox_trot);
-  font-size: calc(1rem + 1.5vw);
+  font-size: calc(1rem + 0.8vw);
   color: var(--color-bg-footer);
   margin-bottom: 1.1rem;
 }
@@ -90,7 +90,7 @@
   align-items: center;
 }
 div.image-container:nth-child(2) {
-  flex-basis: 50%;
+  flex-basis: 60%;
 }
  
 

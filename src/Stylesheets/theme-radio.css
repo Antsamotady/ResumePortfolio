@@ -60,8 +60,8 @@ label span.theme-gray {
 }
 
 label span.theme-red {
-  background: #ff0f0c;
-  border: 1px solid #c60719;
+  background: #c60719;
+  border: 1px solid #ff0f0c;
 }
 
 label span.theme-turquoise {
@@ -70,6 +70,6 @@ label span.theme-turquoise {
 }
 
 label span.theme-purple {
-  background: #a07db1;
-  border: 1px solid #a725e1;
+  background: #a725e1;
+  border: 1px solid #a07db1;
 }
