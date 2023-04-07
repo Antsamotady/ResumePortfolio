@@ -1,7 +1,7 @@
 .about-me {
   display: flex;
   flex-direction: row;
-  padding: 40px 20px;
+  padding: 40px 20px 0;
 }
 
 .image-container {
@@ -34,12 +34,13 @@
   justify-content: center;
   align-items: center;
 }
-.my-name {
+.my-name, .update-title {
   font-family: var(--font-family-fox_trot);
-  font-size: 2rem;
+  font-size: calc(1rem + 1.5vw);
   color: var(--color-bg-footer);
   margin-bottom: 1.1rem;
 }
+
 .name-underlining {
     width: 25%;
     border-bottom: 1px solid var(--color-bg-header);
@@ -51,9 +52,12 @@
   text-align: center;
   font-size: larger;
 }
+.bottom-text {
+  margin: 1rem 1rem 3rem;
+}
 .bottom-text > span {
   font-family: var(--font-family-fox_trot);
-  font-size: 1.3rem;
+  font-size: calc(1rem + 1.5vw);
   border-bottom: 1px solid var(--color-bg-header);
 }
 .small-titles {
@@ -74,8 +78,39 @@
 .company-logo {
   width: 75px;
 }
+.updates {
+  display: flex;
+  justify-content: space-around;
+}
+.update-title-container {
+  flex-basis: 33%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.image-container:nth-child(2) {
+  flex-basis: 50%;
+}
+ 
 
-
+@media screen and (max-width:800px) {
+  .updates {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto 0;
+  }
+  .update-title-container {
+    order: 1;
+  }
+  .section-underlining {
+    width: 25%;
+    border-bottom: 1px solid var(--color-bg-header);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+}
 @media screen and (max-width:450px) {
   .about-me {
     padding: 20px 40px;
@@ -83,7 +118,6 @@
     display: block;
   }
   .text-container {
-    margin: 1.2rem auto;
+    margin: 0.2rem auto;
   }
 }
-
