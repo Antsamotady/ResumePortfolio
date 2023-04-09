@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import dotenv from 'dotenv';
 import { Form, Button } from 'react-bootstrap';
-import { FaEnvelope, FaLinkedin, FaGithub, FaStackOverflow } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaStackOverflow } from 'react-icons/fa';
+import { FiDribbble } from 'react-icons/fi';
 
 import '../../Stylesheets/contact.css';
 
@@ -57,6 +58,10 @@ function Contact() {
           <li>
             <a title="My linkedIn profile" href="https://linkedin.com/in/garry-hasintsilavina"><FaLinkedin className="icon" /></a>
             LinkedIn Profile
+          </li>
+          <li>
+            <a title="My dribbble profile" href="https://dribbble.com/Antsamotady"><FiDribbble className="icon" /></a>
+            Dribbble Portfolio
           </li>
           <li>
             <a title="My github profile" href="https://github.com/Antsamotady"><FaGithub className="icon" /></a>
