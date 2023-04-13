@@ -78,7 +78,7 @@ class Capabilities extends Component {
               </div>
               <div className="task">
                 <div className="tech-header">
-                  <span className="tech-title">Reactj </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/ResumePortfolio/tree/master"><BsGithub /></a></span>
+                  <span className="tech-title">Reactjs </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/ResumePortfolio/tree/master"><BsGithub /></a></span>
                 </div>
                 <p>Portfolio design; <span className="mini-app-btn" onClick={this.hideMe}>Mini app</span></p>
               </div>
