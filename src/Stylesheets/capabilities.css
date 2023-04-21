@@ -7,6 +7,7 @@
 
 .job-position {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .job-position h2 {
@@ -35,9 +36,10 @@
   font-size: 1.1rem;
 }
 
-.task p {
+.task li {
   font-family: var(--font-family-handwriting);
   font-size: 1rem;
+  text-align: center;
 }
 .mini-app-btn {
   font-family: var(--font-family-handwriting);

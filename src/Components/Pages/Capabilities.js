@@ -68,13 +68,27 @@ class Capabilities extends Component {
                 <div className="tech-header">
                   <span className="tech-title">Laravel </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/laravel6-test-dashdoard"><BsGithub /></a></span>
                 </div>
-                <p>Login; Form validation; Password resetting; Listing; Live search; Navigation menu; Dynamic DB update via AJAX...</p>
+                <ul className="list-inline">
+                  <li>Login</li>
+                  <li>Form validation</li>
+                  <li>Password resetting</li>
+                  <li>Listing</li>
+                  <li>Live search</li>
+                  <li>Navigation menu</li>
+                  <li>Dynamic DB update via AJAX</li>
+                </ul>
               </div>
               <div className="task">
                 <div className="tech-header">
                   <span className="tech-title">Symfony </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/"></a></span>
                 </div>
-                <p>Docker containerization; Debugging and Troubleshooting; Application security with login rate limiting and URL obfuscation; Deployment; Remotely managing app through APIs...</p>
+                <ul className="list-inline">
+                  <li>Docker containerization</li>
+                  <li>Debugging and Troubleshooting</li>
+                  <li>Application security with login rate limiting and URL obfuscation</li>
+                  <li>Deployment</li>
+                  <li>Remotely managing app through APIs</li>
+                </ul>
               </div>
               <div className="task">
                 <div className="tech-header">
@@ -108,7 +122,13 @@ class Capabilities extends Component {
                 <div className="tech-header">
                   <span className="tech-title">Bash Scripting </span><span className="icon-link"><a title="My stack profile" href="https://stackoverflow.com/users/9532910/antsamotady"><ImStackoverflow /></a></span>
                 </div>
-                <p>Creating a script to automate page downloads; Cron automation; Web page parsing and data extraction; Database table optimization and data purification; Data integrity checks...</p>
+                <ul className="list-inline">
+                  <li>Creating a script to automate page downloads</li>
+                  <li>Cron automation</li>
+                  <li>Web page parsing and data extraction</li>
+                  <li>Database table optimization and data purification</li>
+                  <li>Data integrity checks</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -120,7 +140,11 @@ class Capabilities extends Component {
                 <div className="tech-header">
                   <span className="tech-title">System & Network Engineering </span><span className="icon-link"><a title="the repo" href="https://github.com/Antsamotady/"></a></span>
                 </div>
-                <p>Operating system installation; Structured network cabling; Firewall rule-based filtering of network connections...</p>
+                <ul className="list-inline">
+                  <li>Operating system installation</li>
+                  <li>Structured network cabling</li>
+                  <li>Firewall rule-based filtering of network connections</li>
+                </ul>
               </div>
             </div>
           </div>
