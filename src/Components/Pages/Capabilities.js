@@ -69,13 +69,14 @@ class Capabilities extends Component {
                   <span className="tech-title">Laravel </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/laravel6-test-dashdoard"><BsGithub /></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>Login</li>
+                  <li>Login & authentification</li>
                   <li>Form validation</li>
                   <li>Password resetting</li>
-                  <li>Listing</li>
+                  <li>Dashboard controle</li>
                   <li>Live search</li>
                   <li>Navigation menu</li>
                   <li>Dynamic DB update via AJAX</li>
+                  <li>Unit testing</li>
                 </ul>
               </div>
               <div className="task">
@@ -95,6 +96,8 @@ class Capabilities extends Component {
                   <span className="tech-title">Reactjs </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/ResumePortfolio/tree/master"><BsGithub /></a></span>
                 </div>
                 <ul className="list-inline">
+                  <li>Responsive design</li>
+                  <li>Mobile friendly design</li>
                   <li>Portfolio design</li>
                   <li><span className="mini-app-btn" onClick={this.hideMe}>Mini app</span></li>
                 </ul>

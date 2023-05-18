@@ -41,6 +41,11 @@ a, a:visited {
     font-family: var(--font-family-fox_trot);
     font-size: calc(1rem + 2vw);
     color: var(--color-bg-footer);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .underlining {
     width: 50%;
@@ -110,7 +115,8 @@ a, a:visited {
         margin-bottom: 0;
     }
     .left-side-container p {
-        font-size: calc(0.5rem + 1vw);
+        /* font-size: calc(0.5rem + 1vw); */
+        font-size: calc(0.7rem + 1vw);
     }
     .underlining {
         width: 50%;

@@ -39,7 +39,7 @@
 .task li {
   font-family: var(--font-family-handwriting);
   font-size: 1rem;
-  text-align: center;
+  text-align: right;
 }
 .mini-app-btn {
   font-family: var(--font-family-handwriting);

@@ -71,14 +71,20 @@ blockquote:before, blockquote:after, q:before, q:after {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Bernadette';
+  src: url('../fonts/BERNDT_0.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Variables */
 
 :root {
     --font-family-fox_trot: "Fox Trot", "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-family-handwriting: "Segoesc", "AmbersHand",  Arial, sans-serif;
+    --font-family-handwriting: "Bernadette", "AmbersHand",  Arial, sans-serif;
   
-    font-size: 125%;
+    font-size: 150%;
 
     --golden-ratio: 1.61803398875;
 }

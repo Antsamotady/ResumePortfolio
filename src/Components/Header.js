@@ -20,7 +20,7 @@ function Header() {
         <div className="header-body">
           <div className="left-side">
             <div className="left-side-container">
-              <h1>Garry Hasintsilavina</h1>
+              <h1><span>Garry</span><span>Hasintsilavina</span></h1>
               <div className="underlining"></div>
               <p>Introverted Web Developer and Tech Enthusiast with a Passion for Design</p>
               <button><a title="My gallerie" href="https://test-tsl-portfolio.netlify.app/">More</a></button>
