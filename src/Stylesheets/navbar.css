@@ -56,6 +56,36 @@ a, a:visited {
 .text-link:hover {
     border-bottom: 1px dashed var(--color-bg-header);
 }
+.back-to-top-btn {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 1000;
+
+    /* width: 30px;
+    height: 30px;
+    background: var(--color-bg-header);
+    margin: 0 0 5px;
+    border-radius: 15%; */
+    opacity: 0.5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-to-top-btn a,
+.back-to-top-btn a:hover,
+.back-to-top-btn a:visited {
+    color: var(--color-bg-header);
+    font-size: larger;
+}
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+.visible {
+    opacity: 1;
+}
 
 /* Mobile behaviors */
 @media screen and (max-width:450px) {
