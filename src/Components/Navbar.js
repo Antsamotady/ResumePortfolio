@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
+
 import { Link } from 'react-router-dom';
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
+import {IoIosArrowDropupCircle} from 'react-icons/io';
 
 import '../Stylesheets/navbar.css';
 import '../Stylesheets/theme-radio.css';
@@ -10,11 +12,38 @@ import tsifoh from '../Images/Tsifoh_224.jpg';
 
 function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }) {
 
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsVisible(true);
+    }, 3000);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [isVisible]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div className="app-navbar">
         <div className="app-container">
-          <div className="primary-header">
+          <div className="primary-header" id="the-top">
             <Link to="/">
               <span className="logo"><img className="tsifoh-logo" src={tsifoh} alt="" /></span>
             </Link>
@@ -79,7 +108,6 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
 
             </div>
 
-
             <div className="menu-links">
               <Link to="/about" onClick={onLinkClick}><span>About me</span></Link>
               <Link to="/capabilities" onClick={onLinkClick}><span>Capabilities</span></Link>
@@ -100,6 +128,10 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
                   <Link to="/contact" onClick={onLinkClick}><span className="text-link">Contact me</span></Link>
                 </div>
               )}
+            </div>
+              
+            <div ref={sectionRef} className={isVisible ? 'visible' : 'hidden'}>
+              <div className="back-to-top-btn"><a href="#the-top"><IoIosArrowDropupCircle /></a></div>
             </div>
           </div>
         </div>
