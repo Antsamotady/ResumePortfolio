@@ -27,7 +27,8 @@ class App extends Component {
   handleLinkClick = () => {
     this.setState({
       showHeader: false,
-      showMiddle: false
+      showMiddle: false,
+      closeMenu: !this.state.closeMenu
     });
   };
 
