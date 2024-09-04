@@ -16,8 +16,8 @@
     margin: 0;
 }
 .right-floating-links_container li{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     background: var(--color-bg-footer);
     margin: 0 0 5px;
 
@@ -42,11 +42,12 @@
 
 @media screen and (max-width:450px) {
     .right-floating-links_container {
+        top: 15%;
         right: 10px;
     }
     .right-floating-links_container li{
-        width: 15px;
-        height: 15px;
+        width: 30px;
+        height: 30px;
     }
 }
 
