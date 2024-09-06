@@ -111,8 +111,10 @@
 
 	width: 100%;
     font-family: var(--font-family-handwriting);
+    font-size: 0.7rem;
     color: var(--color-bg-footer);
 	background: var(--color-bg-middle);
+    padding: 0.1rem 0 0.1rem 0;
 }
 .author-part span {
     padding: 0 0.4rem;

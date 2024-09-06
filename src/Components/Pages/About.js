@@ -33,15 +33,15 @@ function About() {
           <span>I've been a...</span>
           <div className="small-titles">
             <div className="work-experience">
-              <p>Web developer</p>
+              <div className='experience-title'>Web developer</div>
               <a title="Official site" href="https://www.celaneo.com/"><img className="company-logo" src={celaneo} alt="" /></a>
             </div>
             <div className="work-experience">
-              <p>Web scraper</p>
+              <div className='experience-title'>Web scraper</div>
               <a title="Official site" href="http://corporate.autobiz.com/"><img className="company-logo" src={autobiz} alt="" /></a>
             </div>
             <div className="work-experience">
-              <p>CIO Assistant</p>
+              <div className='experience-title'>CIO Assistant</div>
               <a title="Official site" href="https://oti-madagascar.net/"><img className="company-logo" src={oti} alt="" /></a>
             </div>
           </div>
