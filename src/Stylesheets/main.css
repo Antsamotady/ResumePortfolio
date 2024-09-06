@@ -81,8 +81,8 @@ blockquote:before, blockquote:after, q:before, q:after {
 /* Variables */
 
 :root {
-    --font-family-fox_trot: "Fox Trot", "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-family-handwriting: "Bernadette", "AmbersHand",  Arial, sans-serif;
+    --font-family-fox_trot: "Segoesc", "Fox Trot", "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-handwriting: "AmbersHand",  "Bernadette", Arial, sans-serif;
   
     font-size: 150%;
 
