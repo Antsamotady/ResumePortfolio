@@ -3,6 +3,7 @@
     background: var(--color-bg-footer);
     height: auto;
 }
+
 .footer-body {
     padding-top: 2rem;
     font-family: var(--font-family-fox_trot);
@@ -11,25 +12,31 @@
     display: flex;
     justify-content: space-between;
 }
+
 .footer-body div:nth-child(1) {
-    flex-basis: 25%;
+    flex-basis: 20%;
 }
+
 .footer-body div:nth-child(2) {
-    flex-basis: 28%;
+    flex-basis: 30%;
 }
+
 .footer-body div:nth-child(3) {
-    flex-basis: 27%;
+    flex-basis: 30%;
 }
+
 .footer-body div:nth-child(4) {
     flex-basis: 20%;
 }
+
 .footer-logo {
     font-size: 2rem;
 
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
+
 .line-column {
     font-size: 0.7rem;
 
@@ -37,20 +44,25 @@
     flex-direction: column;
     justify-content: center;
 }
+
 .line-column span a {
     color: var(--color-lightyellow);
 }
+
 .line-column span a:hover {
     color: var(--color-bg-header);
 }
+
 .line-column.to-center {
     text-align: center;
 }
+
 .horizontal-links {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .horizontal-links ul {
     list-style: none;
     margin: 0;
@@ -58,6 +70,7 @@
 
     display: flex;
 }
+
 .horizontal-links li {
     width: 17px;
     height: 17px;
@@ -69,24 +82,29 @@
     justify-content: center;
     align-items: center;
 }
+
 .horizontal-links li a {
     color: var(--color-bg-footer);
 }
+
 .horizontal-links ul li:nth-child(1) {
     position: relative;
-    top:4px
+    top: 4px
 }
+
 .horizontal-links ul li:nth-child(2) {
     position: relative;
-    top:-2px
+    top: -2px
 }
+
 .horizontal-links ul li:nth-child(3) {
     position: relative;
-    top:3px
+    top: 3px
 }
+
 .horizontal-links ul li:nth-child(4) {
     position: relative;
-    top:-3px
+    top: -3px
 }
 
 .horizontal-links li:last-child {
@@ -105,24 +123,49 @@
 .dedicace {
     font-size: 0.8rem;
 }
+
 .author-part {
     display: flex;
     justify-content: center;
 
-	width: 100%;
+    width: 100%;
     font-family: var(--font-family-handwriting);
     font-size: 0.7rem;
     color: var(--color-bg-footer);
-	background: var(--color-bg-middle);
+    background: var(--color-bg-middle);
     padding: 0.1rem 0 0.1rem 0;
 }
+
 .author-part span {
     padding: 0 0.4rem;
 }
+
 .tsifoh-logo-footer {
     vertical-align: unset;
     border-radius: 50%;
     width: 66px;
     height: 66px;
     border: 2px solid var(--color-bg-middle);
+}
+
+
+@media screen and (max-width:450px) {
+
+    .horizontal-links {
+        display: flex;
+        justify-content: center;
+        align-items: unset;
+    }
+
+    .horizontal-links ul {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    .horizontal-links li {
+        width: 30px;
+        height: 25px;
+        border-radius: 50%;
+    }
 }

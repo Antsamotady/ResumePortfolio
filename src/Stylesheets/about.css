@@ -22,10 +22,11 @@
   flex-basis: 67%;
   margin-left: 20px;
   font-family: var(--font-family-handwriting);
-  
+
   display: flex;
   flex-direction: column;
 }
+
 .upper-text {
   margin-bottom: 2rem;
 
@@ -34,32 +35,30 @@
   justify-content: center;
   align-items: center;
 }
-.my-name, .update-title {
+
+.my-name,
+.update-title {
   font-family: var(--font-family-fox_trot);
   font-size: calc(1rem + 0.8vw);
   color: var(--color-bg-footer);
   margin-bottom: 1.1rem;
 }
 
-.quater-underlining {
-    width: 25%;
-    border-bottom: 1px solid var(--color-bg-header);
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-}
 .parag {
   text-align: end;
   font-size: larger;
 }
+
 .bottom-text {
-  margin: 1rem 1rem 2rem;
+  margin: 1rem 1rem 3rem;
 }
-.bottom-text > span {
+
+.bottom-text>span {
   font-family: var(--font-family-fox_trot);
   font-size: calc(1rem + 1.5vw);
   border-bottom: 1px solid var(--color-bg-header);
 }
+
 .small-titles {
   font-family: var(--font-family-fox_trot);
   margin-top: 1.1rem;
@@ -69,19 +68,23 @@
   justify-content: space-between;
   align-items: baseline;
 }
+
 .work-experience {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .company-logo {
   width: 75px;
 }
+
 .updates {
   display: flex;
   justify-content: space-around;
 }
+
 .update-title-container {
   flex-basis: 33%;
   text-align: center;
@@ -89,11 +92,13 @@
   justify-content: center;
   align-items: center;
 }
+
 div.image-container:nth-child(2) {
   flex-basis: 60%;
 }
+
 .work-experience .experience-title {
-   font-family: var(--font-family-handwriting);
+  font-family: var(--font-family-handwriting);
 }
 
 @media screen and (max-width:800px) {
@@ -102,9 +107,11 @@ div.image-container:nth-child(2) {
     flex-direction: column;
     margin: 1rem auto 0;
   }
+
   .update-title-container {
     order: 1;
   }
+
   .section-underlining {
     width: 25%;
     border-bottom: 1px solid var(--color-bg-header);
@@ -113,18 +120,22 @@ div.image-container:nth-child(2) {
     margin-bottom: 2rem;
   }
 }
+
 @media screen and (max-width:450px) {
   .about-me {
     padding: 20px 40px;
 
     display: block;
   }
+
   .text-container {
     margin: 0.2rem auto;
   }
+
   .work-experience {
     margin-bottom: 1.4rem;
   }
+
   .small-titles {
     font-family: var(--font-family-fox_trot);
     margin-top: 1.1rem;
@@ -135,5 +146,13 @@ div.image-container:nth-child(2) {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+  }
+
+  .quater-underlining {
+    width: 25%;
+    border-bottom: 1px solid var(--color-bg-header);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
   }
 }

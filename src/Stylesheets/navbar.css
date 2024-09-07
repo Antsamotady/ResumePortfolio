@@ -1,12 +1,15 @@
 /* header part */
-a, a:visited {
+a,
+a:visited {
     text-decoration: none;
 }
+
 .app-navbar {
     background: var(--color-bg-header);
     height: auto;
 }
-.primary-header {
+
+/* .primary-header {
     font-family: var(--font-family-fox_trot);
     color: var(--color-lightyellow);
     padding-top: 20px;
@@ -14,14 +17,17 @@ a, a:visited {
 
     display: flex;
     justify-content: space-between;
-}
+} */
+
 .logo {
     color: var(--color-bg-footer);
     font-size: 2rem;
 }
+
 .logo:hover {
     color: var(--color-bg-middle);
 }
+
 .tsifoh-logo {
     vertical-align: unset;
     border-radius: 50%;
@@ -31,7 +37,7 @@ a, a:visited {
 }
 
 
-.menu-links{
+.menu-links {
     font-size: 0.8rem;
 
     display: flex;
@@ -39,23 +45,29 @@ a, a:visited {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .menu-links span {
     color: var(--color-bg-footer);
     padding-left: 1rem;
     padding-right: 0px;
 }
+
 .menu-links span:hover {
     color: var(--color-bg-middle);
 }
+
 .menu-mobile {
     display: none;
 }
+
 .text-link {
     color: var(--color-lightyellow);
 }
+
 .text-link:hover {
     border-bottom: 1px dashed var(--color-bg-header);
 }
+
 .back-to-top-btn {
     position: fixed;
     right: 15px;
@@ -73,29 +85,34 @@ a, a:visited {
     justify-content: center;
     align-items: center;
 }
+
 .back-to-top-btn a,
 .back-to-top-btn a:hover,
 .back-to-top-btn a:visited {
     color: var(--color-bg-header);
     font-size: larger;
 }
+
 .hidden {
     opacity: 0;
     transition: opacity 0.5s ease-out;
 }
+
 .visible {
     opacity: 1;
 }
 
 /* Mobile behaviors */
 @media screen and (max-width:450px) {
-    .menu-links{
+    .menu-links {
         display: none;
     }
+
     .menu-mobile {
         display: block;
         text-align: right;
     }
+
     .menu-mobile-links {
         display: flex;
         flex-direction: column;
@@ -108,12 +125,14 @@ a, a:visited {
         padding: 1rem;
         position: fixed;
         right: 12px;
-        z-index: 999;
+        z-index: 1001;
     }
+
     .menu-mobile-icon {
         color: var(--color-bg-footer);
         cursor: pointer;
     }
+
     .menu-mobile-links a {
         color: var(--color-lightyellow);
         font-size: 0.7rem;
