@@ -1,0 +1,64 @@
+#dark {
+    width: 12px;
+    fill: var(--secondary-color);
+    cursor: pointer;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--pre-primary-color);
+    padding: 8px 11px;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px hsla(var(--hue), 50%, 10%, .3), 0 4px 4px hsla(var(--hue), 50%, 10%, .15);
+
+}
+
+a {
+    font: 800 1rem/1em var(--ff);
+    color: var(--accent-color);
+    margin-right: 20px;
+    text-underline-offset: 4px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 70%;
+    height: 4px;
+    background: var(--tertiary-color);
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 8px;
+    height: 24px;
+    background: var(--tertiary-color);
+    border-radius: 4px;
+}
+
+input[type="number"] {
+    -webkit-appearance: none;
+    appearance: none;
+    color: var(--secondary-color);
+    font: var(--p);
+    padding: 8px;
+    width: 40px;
+    height: 20px;
+    border: solid 1px var(--tertiary-color);
+    border-radius: 4px;
+    background: transparent;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

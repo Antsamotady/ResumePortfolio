@@ -1,11 +1,12 @@
 import React, { useRef, useEffect, useState } from 'react';
 
 import { Link } from 'react-router-dom';
-import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
-import {IoIosArrowDropupCircle} from 'react-icons/io';
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { IoIosArrowDropupCircle } from 'react-icons/io';
 
 import '../Stylesheets/navbar.css';
 import '../Stylesheets/theme-radio.css';
+import '../Stylesheets/the-4-color-formula.css';
 
 import tsifoh from '../Images/Tsifoh_224.jpg';
 
@@ -14,6 +15,8 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
 
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+  const [hue, setHue] = useState(332);
+  const [hueValue, setHueValue] = useState(0);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -39,6 +42,20 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
     };
   }, []);
 
+  useEffect(() => {
+    document.documentElement.style.setProperty('--hue', hue);
+  }, [hue]);
+
+  const handleSliderChange = (event) => {
+    const newHue = event.target.value;
+    setHue(newHue);
+    setHueValue(newHue);
+  };
+
+  const toggleDarkMode = () => {
+    document.body.classList.toggle('dark');
+  };
+
   return (
     <>
       <div className="app-navbar">
@@ -48,65 +65,21 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
               <span className="logo"><img className="tsifoh-logo" src={tsifoh} alt="" /></span>
             </Link>
 
-            <div className="theme-selector-btn">
-
-              <div className="theme-btn">
-                <input type="radio" name="color" id="theme-purple" value="theme-purple"
-                      checked={theme === "theme-purple"}
-                      onChange={onThemeSelected} />
-                <label htmlFor="theme-purple"><span className="theme-purple"></span></label>
-              </div>
-
-              <div className="theme-btn">
-                <input type="radio" name="color" id="theme-pink" value="theme-pink"
-                      checked={theme === "theme-pink"}
-                      onChange={onThemeSelected} />
-                <label htmlFor="theme-pink"><span className="theme-pink"></span></label>
-              </div>
-
-              <div className="theme-btn">
-                <input type="radio" name="color" id="theme-orange" value="theme-orange"
-                      checked={theme === "theme-orange"}
-                      onChange={onThemeSelected} />
-                <label htmlFor="theme-orange"><span className="theme-orange"></span></label>
-              </div>
-
-              <div className="theme-btn">
-                <input type="radio" name="color" id="theme-red" value="theme-red"
-                      checked={theme === "theme-red"}
-                      onChange={onThemeSelected} />
-                <label htmlFor="theme-red"><span className="theme-red"></span></label>
-              </div>
-
-              <div className="theme-btn">
-                <input type="radio" name="color" id="theme-pastel" value="theme-pastel"
-                      checked={theme === "theme-pastel"}
-                      onChange={onThemeSelected} />
-                <label htmlFor="theme-pastel"><span className="theme-pastel"></span></label>
-              </div>
-
-              <div className="theme-btn">
-                <input type="radio" name="color" id="theme-green" value="theme-green"
-                      checked={theme === "theme-green"}
-                      onChange={onThemeSelected} />
-                <label htmlFor="theme-green"><span className="theme-green"></span></label>
-              </div>
-
-              <div className="theme-btn">
-                <input type="radio" name="color" id="theme-turquoise" value="theme-turquoise"
-                      checked={theme === "theme-turquoise"}
-                      onChange={onThemeSelected} />
-                <label htmlFor="theme-turquoise"><span className="theme-turquoise"></span></label>
-              </div>
-
-              <div className="theme-btn">
-                <input type="radio" name="color" id="theme-gray" value="theme-gray"
-                      checked={theme === "theme-gray"}
-                      onChange={onThemeSelected} />
-                <label htmlFor="theme-gray"><span className="theme-gray"></span></label>
-              </div>
-
-            </div>
+            <span className="controls">
+              <input
+                type="range"
+                id="hue-slider"
+                min="0"
+                max="360"
+                value={hue}
+                onChange={handleSliderChange}
+              />
+              <button onClick={toggleDarkMode} id="dark"></button>
+              {/* <svg onClick={toggleDarkMode} id="dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path
+                  d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" />
+              </svg> */}
+            </span>
 
             <div className="menu-links">
               <Link to="/about" onClick={onLinkClick}><span>About me</span></Link>
@@ -116,8 +89,8 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
             <div className="menu-mobile">
               <div className="menu-mobile-icon">
                 {toggleMenu
-                  ? <RiCloseLine className="ri-closeline" size={27} onClick={onCloseMenu}/>
-                  : <RiMenu3Line className="ri-menu3line" size={27} onClick={onCloseMenu}/>
+                  ? <RiCloseLine className="ri-closeline" size={27} onClick={onCloseMenu} />
+                  : <RiMenu3Line className="ri-menu3line" size={27} onClick={onCloseMenu} />
                 }
               </div>
               {toggleMenu && (
@@ -129,7 +102,7 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
                 </div>
               )}
             </div>
-              
+
             <div ref={sectionRef} className={isVisible ? 'visible' : 'hidden'}>
               <div className="back-to-top-btn"><a href="#the-top"><IoIosArrowDropupCircle /></a></div>
             </div>
@@ -138,6 +111,24 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
       </div>
     </>
   )
+
+  // function updateHue(hue) {
+  //   hueSlider.value = hue;
+  //   hueValueInput.value = hue;
+  //   document.documentElement.style.setProperty('--hue', hue);
+  //   hue = Number(hue);
+  //   let ahue = hue + 60;;
+  //   let a2hue = hue + 300;
+
+  //   if (hue > 300) {
+  //     ahue = hue + 60 - 360;
+  //   }
+
+  //   if (hue > 60) {
+  //     a2hue = hue + 300 - 360;
+  //   }
+
+  // }
 }
 
 export default Navbar

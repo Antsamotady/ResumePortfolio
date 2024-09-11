@@ -7,7 +7,7 @@
 .footer-body {
     padding-top: 2rem;
     font-family: var(--font-family-fox_trot);
-    color: var(--color-lightyellow);
+    color: var(--color-bg-middle);
 
     display: flex;
     justify-content: space-between;

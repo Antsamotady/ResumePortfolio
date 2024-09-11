@@ -171,12 +171,41 @@ q:after {
 /* Variables */
 
 :root {
-    --font-family-fox_trot: "Segoesc", "Fox Trot", "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-family-handwriting: "AmbersHand", "Bernadette", Arial, sans-serif;
-
     font-size: 150%;
-
     --golden-ratio: 1.61803398875;
+
+    --font-family-fox_trot: "Fox Trot", "Segoesc", "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-handwriting: "Bernadette", "AmbersHand", Arial, sans-serif;
+
+    --ff: var(--font-family-fox_trot), "Syne", sans-serif;
+    --ff2: var(--font-family-handwriting), "Fira Code", monospace;
+    --h1: 800 2rem/1.2em var(--ff);
+    --p: 400 1rem/1.5em var(--ff);
+    --p-code: 300 .7rem/2em var(--ff2);
+    --hue: 0;
+
+    /* The formula starts here */
+    --tertiary-hue: calc(var(--hue) + 300);
+    --accent-hue: calc(var(--hue) + 60);
+    --primary-color: hsl(var(--hue), 50%, 90%);
+    --pre-primary-color: hsl(var(--hue), 50%, 95%);
+    --secondary-color: hsl(var(--hue), 50%, 10%);
+    --tertiary-color: hsl(var(--tertiary-hue), 80%, 20%);
+    --accent-color: hsl(var(--accent-hue), 80%, 20%);
+
+    --color-lightyellow: var(--primary-color);
+    --color-bg-header: var(--secondary-color);
+    --color-bg-middle: var(--tertiary-color);
+    --color-bg-footer: var(--pre-primary-color);
+    --pop-up-menu-bg-color: var(--tertiary-hue);
+}
+
+.dark {
+    --primary-color: hsl(var(--hue), 50%, 10%);
+    --pre-primary-color: hsl(var(--hue), 50%, 15%);
+    --secondary-color: hsl(var(--hue), 50%, 90%);
+    --tertiary-color: hsl(var(--tertiary-hue), 80%, 80%);
+    --accent-color: hsl(var(--accent-hue), 80%, 80%);
 }
 
 .app-container {
@@ -198,6 +227,8 @@ q:after {
     flex: 1 1;
     display: flex;
     flex-direction: column;
+    background: var(--color-bg-footer);
+    color: var(--color-bg-middle);
 }
 
 @media screen and (max-width:450px) {

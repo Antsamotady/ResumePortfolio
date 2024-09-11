@@ -14,7 +14,7 @@ import img6 from '../Images/logo_texture_2.png';
 
 
 function Header() {
-  return (      
+  return (
     <div className="header">
       <div className="app-container">
         <div className="header-body">
@@ -26,7 +26,7 @@ function Header() {
               <button><a title="My gallerie" href="https://test-tsl-portfolio.netlify.app/">More</a></button>
             </div>
           </div>
-          <div className="right-side">
+          {/* <div className="right-side">
             <div className="right-side-container carousel-wrapper">
               <Carousel indicators={false}>
                 <Carousel.Item>
@@ -49,7 +49,7 @@ function Header() {
                 </Carousel.Item>
               </Carousel>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

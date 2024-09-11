@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './Stylesheets/main.css';
 import './Stylesheets/themes.css';
@@ -34,12 +34,12 @@ class App extends Component {
 
   handleOnCloseMenu = obj => {
     obj.closeMenu
-      ? this.setState({closeMenu: false})
-      : this.setState({closeMenu: !this.state.closeMenu});
+      ? this.setState({ closeMenu: false })
+      : this.setState({ closeMenu: !this.state.closeMenu });
   }
 
   handleThemeChange = e => {
-    this.setState({theme: e.target.value})
+    this.setState({ theme: e.target.value })
   }
 
   render() {
@@ -49,13 +49,13 @@ class App extends Component {
       <Router>
         <div className={`main-container ${theme}`}>
           <Navbar onLinkClick={this.handleLinkClick}
-                  onCloseMenu={this.handleOnCloseMenu}
-                  toggleMenu={closeMenu}
-                  onThemeSelected={this.handleThemeChange}
-                  theme={theme}
+            onCloseMenu={this.handleOnCloseMenu}
+            toggleMenu={closeMenu}
+            onThemeSelected={this.handleThemeChange}
+            theme={theme}
           />
-          
-          <div className="app-body" onClick={ () => this.handleOnCloseMenu({closeMenu: true})}>
+
+          <div className="app-body" onClick={() => this.handleOnCloseMenu({ closeMenu: true })}>
 
             {showHeader && <Header />}
 
@@ -67,9 +67,9 @@ class App extends Component {
             </Routes>
 
             {showMiddle && <Middle />}
-            
+
           </div>
-          
+
           <Footer />
 
         </div>

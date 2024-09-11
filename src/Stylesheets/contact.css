@@ -46,10 +46,11 @@
   margin-right: 10px;
 }
 
-p > span {
+p>span {
   font-family: var(--font-family-fox_trot);
-  color: var(--color-bg-footer);
+  color: var(--color-bg-header);
 }
+
 .contact-email-btn {
   width: 100%;
   margin: 1rem 0;
@@ -57,6 +58,7 @@ p > span {
   background-color: var(--color-bg-header);
   border: none;
 }
+
 .contact-email-btn:hover {
   width: 100%;
   margin: 1rem 0;
@@ -64,9 +66,12 @@ p > span {
   background-color: var(--color-bg-footer);
   border: none;
 }
-.contact-container > .contact-section, .contact-container > .quater-underlining {
+
+.contact-container>.contact-section,
+.contact-container>.quater-underlining {
   margin-bottom: 2rem;
 }
+
 .form-control:focus {
   border-color: var(--color-bg-footer) !important;
   box-shadow: 0 0 0 0.2rem var(--color-bg-header) !important;
