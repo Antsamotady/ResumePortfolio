@@ -30,7 +30,7 @@ function About() {
 
       <div className="text-container">
         <div className="bottom-text">
-          <span>I've been a...</span>
+          <span>I've been a</span>
           <div className="small-titles">
             <div className="work-experience">
               <div className='experience-title'>Web developer</div>
@@ -50,7 +50,7 @@ function About() {
         <p className="quater-underlining"></p>
 
         <div className="bottom-text">
-          <span>Recently...</span>
+          <span>Recently</span>
           <div className="updates">
             <div className="update-title-container">
               <p className="update-title">C2 Level English Certification</p>

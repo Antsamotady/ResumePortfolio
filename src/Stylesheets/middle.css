@@ -29,7 +29,7 @@
 }
 
 .right-floating-links_container li a {
-    color: var(--color-lightyellow);
+    color: var(--color-bg-middle);
     font-size: small;
 }
 

@@ -15,7 +15,7 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
 
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
-  const [hue, setHue] = useState(332);
+  const [hue, setHue] = useState(273);
   const [hueValue, setHueValue] = useState(0);
 
   useEffect(() => {

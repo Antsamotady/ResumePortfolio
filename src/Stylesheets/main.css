@@ -227,8 +227,8 @@ q:after {
     flex: 1 1;
     display: flex;
     flex-direction: column;
-    background: var(--color-bg-footer);
-    color: var(--color-bg-middle);
+    background: var(--color-bg-middle);
+    color: var(--color-bg-footer);
 }
 
 @media screen and (max-width:450px) {

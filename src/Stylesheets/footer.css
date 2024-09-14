@@ -2,12 +2,30 @@
 .app-footer {
     background: var(--color-bg-footer);
     height: auto;
+    position: relative;
+
+    border-top-left-radius: 40%;
+}
+
+.app-footer::before {
+    content: '';
+    background: var(--color-bg-middle);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 .footer-body {
     padding-top: 2rem;
     font-family: var(--font-family-fox_trot);
     color: var(--color-bg-middle);
+    margin: 0 auto;
+    max-width: 1080px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     display: flex;
     justify-content: space-between;
@@ -171,5 +189,12 @@
         width: 30px;
         height: 25px;
         border-radius: 50%;
+    }
+
+    .app-footer {
+        border-top-style: dashed;
+        border-top-width: 0.5rem;
+        border-top-color: var(--color-bg-middle);
+        border-top-left-radius: unset;
     }
 }
