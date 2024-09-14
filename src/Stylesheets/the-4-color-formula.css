@@ -12,13 +12,6 @@
 
 }
 
-a {
-    font: 800 1rem/1em var(--ff);
-    color: var(--accent-color);
-    margin-right: 20px;
-    text-underline-offset: 4px;
-}
-
 .controls {
     display: flex;
     align-items: center;
