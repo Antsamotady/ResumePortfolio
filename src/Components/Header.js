@@ -23,7 +23,7 @@ function Header() {
               <h1><span>Garry</span><span>Hasintsilavina</span></h1>
               <div className="underlining"></div>
               <p>Introverted Web Developer and Tech Enthusiast with a Passion for Design</p>
-              <button><a title="My gallerie" href="https://test-tsl-portfolio.netlify.app/">More</a></button>
+              {/* <button><a title="My gallerie" href="https://test-tsl-portfolio.netlify.app/">More</a></button> */}
             </div>
           </div>
           {/* <div className="right-side">

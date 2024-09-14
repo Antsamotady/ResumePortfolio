@@ -40,7 +40,7 @@
 .update-title {
   font-family: var(--font-family-fox_trot);
   font-size: calc(1rem + 0.8vw);
-  color: var(--color-bg-header);
+  color: var(--color-lightyellow);
   margin-bottom: 1.1rem;
 }
 

@@ -66,9 +66,8 @@ a:visited {
     padding-top: 20px;
     font-family: var(--font-family-handwriting);
     font-size: calc(0.4rem + 0.8vw);
-    font-weight: 600;
     padding-bottom: 10px;
-    color: var(--color-bg-middle);
+    color: var(--color-lightyellow);
 }
 
 .right-side {
@@ -136,7 +135,6 @@ a:visited {
     }
 
     .left-side-container p {
-        /* font-size: calc(0.5rem + 1vw); */
         font-size: calc(0.7rem + 1vw);
     }
 
