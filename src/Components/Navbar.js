@@ -86,6 +86,7 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
               <Link to="/capabilities" onClick={onLinkClick}><span>Achievements</span></Link>
               <Link to="/contact" onClick={onLinkClick}><span>Contact me</span></Link>
             </div>
+
             <div className="menu-mobile">
               <div className="menu-mobile-icon">
                 {toggleMenu
@@ -102,10 +103,10 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
                 </div>
               )}
             </div>
+          </div>
 
-            <div ref={sectionRef} className={isVisible ? 'visible' : 'hidden'}>
-              <div className="back-to-top-btn"><a href="#the-top"><IoIosArrowDropupCircle /></a></div>
-            </div>
+          <div ref={sectionRef} className={isVisible ? 'visible' : 'hidden'}>
+            <div className="back-to-top-btn"><a href="#the-top"><IoIosArrowDropupCircle /></a></div>
           </div>
         </div>
       </div>
