@@ -7,10 +7,11 @@ import { ImStackoverflow } from 'react-icons/im';
 import { BsGithub } from 'react-icons/bs';
 import { SiGmail } from 'react-icons/si';
 import { FiDribbble } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 import '../Stylesheets/footer.css';
 
-function Footer() {
+function Footer({ onGallerieLinkClick }) {
   const now = new Date();
   const month = now.toLocaleString('default', { month: 'long' });
   const year = now.getFullYear();
@@ -18,13 +19,18 @@ function Footer() {
   return (
     <div className="app-footer">
       <div className="footer-body">
-        <div className="footer-logo"><img className="tsifoh-logo-footer" src={tsifoh} alt="" /></div>
+        <div className="footer-logo">
+          <Link to="/"><img className="tsifoh-logo-footer" src={tsifoh} alt="" /></Link>
+        </div>
         <div className="line-column">
           <span>Introvert</span>
-          <span><a title="My design showcase" href="https://tsl-portfolio.netlify.app/">Design</a></span>
+          <span><a title="My design showcase" href="https://tsl-portfolio.netlify.app/">Other project</a></span>
           <span>Tech enthusiast</span>
           <span>Creative</span>
           <span>IT roles</span>
+          <Link to="/gallerie" className="gallerie-link" >
+            <span onClick={onGallerieLinkClick}>Gallerie</span>
+          </Link>
           <span>Client-focused</span>
         </div>
         <div className="line-column to-center">

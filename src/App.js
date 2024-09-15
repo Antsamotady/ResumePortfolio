@@ -14,12 +14,14 @@ import Home from './Components/Pages/Home';
 import About from './Components/Pages/About';
 import Capabilities from './Components/Pages/Capabilities';
 import Contact from './Components/Pages/Contact';
+import Gallerie from './Components/Pages/Gallerie';
 
 class App extends Component {
 
   state = {
     showHeader: true,
     showMiddle: true,
+    showGallerie: false,
     closeMenu: false,
     theme: "theme-gray"
   };
@@ -28,7 +30,16 @@ class App extends Component {
     this.setState({
       showHeader: false,
       showMiddle: false,
+      showGallerie: false,
       closeMenu: !this.state.closeMenu
+    });
+  };
+
+  handleGallerieLinkClick = () => {
+    this.setState({
+      showHeader: false,
+      showMiddle: false,
+      showGallerie: true,
     });
   };
 
@@ -43,7 +54,7 @@ class App extends Component {
   }
 
   render() {
-    const { showHeader, showMiddle, closeMenu, theme } = this.state;
+    const { showHeader, showMiddle, showGallerie, closeMenu, theme } = this.state;
 
     return (
       <Router>
@@ -56,21 +67,18 @@ class App extends Component {
           />
 
           <div className="app-body" onClick={() => this.handleOnCloseMenu({ closeMenu: true })}>
-
             {showHeader && <Header />}
-
             <Routes>
               <Route path="/" element={!showHeader && <Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/capabilities" element={<Capabilities />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/gallerie" element={<Gallerie />} />
             </Routes>
-
             {showMiddle && <Middle />}
-
           </div>
 
-          <Footer />
+          <Footer onGallerieLinkClick={this.handleGallerieLinkClick} />
 
         </div>
       </Router>
