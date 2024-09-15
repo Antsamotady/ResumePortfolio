@@ -11,14 +11,14 @@ import Counters from '../Counters';
 class Capabilities extends Component {
   state = {
     shown: false,
-    counters: [{id:0, value:0}]
+    counters: [{ id: 0, value: 0 }]
   }
   hideMe = () => {
-    this.setState({shown : !this.state.shown})
+    this.setState({ shown: !this.state.shown })
   }
 
   handleAddItem = () => {
-    const newItem = {id: Date.now(), value: 0}
+    const newItem = { id: Date.now(), value: 0 }
     const counters = [...this.state.counters, newItem];
 
     this.setState({ counters });
@@ -35,7 +35,7 @@ class Capabilities extends Component {
   handleIncrement = counter => {
     const counters = [...this.state.counters];
     const index = counters.indexOf(counter);
-    
+
     counters[index] = { ...counter };
     counters[index].value++;
 
@@ -45,7 +45,7 @@ class Capabilities extends Component {
   handleDecrement = counter => {
     const counters = [...this.state.counters];
     const index = counters.indexOf(counter);
-    
+
     counters[index] = { ...counter };
     counters[index].value--;
 
@@ -54,16 +54,50 @@ class Capabilities extends Component {
 
   handleDelete = counterId => {
     const counters = this.state.counters.filter(c => c.id !== counterId);
-    this.setState({counters})             // {counters: counters} key has the same name as value here
+    this.setState({ counters })             // {counters: counters} key has the same name as value here
   }
 
-  render () {
+  render() {
     return (
       <div className="app-container">
         <div className="capabilities-container">
           <div className="job-position">
             <h2>Web Development</h2>
             <div className="tasks">
+              <div className="task">
+                <div className="tech-header">
+                  <span className="tech-title">Symfony </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/"></a></span>
+                </div>
+                <ul className="list-inline">
+                  <li>Docker containerization</li>
+                  <li>Debugging and Troubleshooting</li>
+                  <li>Application security with login rate limiting and URL obfuscation</li>
+                  <li>Deployment</li>
+                  <li>Remotely managing app through APIs</li>
+                </ul>
+              </div>
+              <div className="task">
+                <div className="tech-header">
+                  <span className="tech-title">Prestashop </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady"><BsGithub /></a></span>
+                </div>
+                <ul className="list-inline">
+                  <li>Module development</li>
+                  <li>Application upgrading</li>
+                  <li>Debugging and Troubleshooting</li>
+                  <li>Deployment</li>
+                </ul>
+              </div>
+              <div className="task">
+                <div className="tech-header">
+                  <span className="tech-title">Reactjs </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/ResumePortfolio/tree/master"><BsGithub /></a></span>
+                </div>
+                <ul className="list-inline">
+                  <li>Responsive design</li>
+                  <li>Mobile friendly design</li>
+                  <li>Portfolio design</li>
+                  <li><span className="mini-app-btn" onClick={this.hideMe}>Mini app</span></li>
+                </ul>
+              </div>
               <div className="task">
                 <div className="tech-header">
                   <span className="tech-title">Laravel </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/laravel6-test-dashdoard"><BsGithub /></a></span>
@@ -79,42 +113,19 @@ class Capabilities extends Component {
                   <li>Unit testing</li>
                 </ul>
               </div>
-              <div className="task">
-                <div className="tech-header">
-                  <span className="tech-title">Symfony </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/"></a></span>
-                </div>
-                <ul className="list-inline">
-                  <li>Docker containerization</li>
-                  <li>Debugging and Troubleshooting</li>
-                  <li>Application security with login rate limiting and URL obfuscation</li>
-                  <li>Deployment</li>
-                  <li>Remotely managing app through APIs</li>
-                </ul>
-              </div>
-              <div className="task">
-                <div className="tech-header">
-                  <span className="tech-title">Reactjs </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/ResumePortfolio/tree/master"><BsGithub /></a></span>
-                </div>
-                <ul className="list-inline">
-                  <li>Responsive design</li>
-                  <li>Mobile friendly design</li>
-                  <li>Portfolio design</li>
-                  <li><span className="mini-app-btn" onClick={this.hideMe}>Mini app</span></li>
-                </ul>
-              </div>
               <div className="mini-app">
                 {this.state.shown
                   ? <div className="mini-app-container scale-up-ver-center">
-                      <Counters 
-                        counters = {this.state.counters}
-                        totalCounters = {this.totalCount()}
-                        onAddItem = {this.handleAddItem}
-                        onReset={this.handleReset}
-                        onIncrement={this.handleIncrement}
-                        onDecrement={this.handleDecrement}
-                        onDelete={this.handleDelete}
-                      />
-                    </div>
+                    <Counters
+                      counters={this.state.counters}
+                      totalCounters={this.totalCount()}
+                      onAddItem={this.handleAddItem}
+                      onReset={this.handleReset}
+                      onIncrement={this.handleIncrement}
+                      onDecrement={this.handleDecrement}
+                      onDelete={this.handleDelete}
+                    />
+                  </div>
                   : null
                 }
               </div>
@@ -165,7 +176,7 @@ class Capabilities extends Component {
       total += c.value;
       return null;
     })
-    
+
     return total;
   }
 }
