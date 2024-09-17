@@ -98,21 +98,6 @@ class Capabilities extends Component {
                   <li><span className="mini-app-btn" onClick={this.hideMe}>Mini app</span></li>
                 </ul>
               </div>
-              <div className="task">
-                <div className="tech-header">
-                  <span className="tech-title">Laravel </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/laravel6-test-dashdoard"><BsGithub /></a></span>
-                </div>
-                <ul className="list-inline">
-                  <li>Login & authentification</li>
-                  <li>Form validation</li>
-                  <li>Password resetting</li>
-                  <li>Dashboard controle</li>
-                  <li>Live search</li>
-                  <li>Navigation menu</li>
-                  <li>Dynamic DB update via AJAX</li>
-                  <li>Unit testing</li>
-                </ul>
-              </div>
               <div className="mini-app">
                 {this.state.shown
                   ? <div className="mini-app-container scale-up-ver-center">
@@ -128,6 +113,21 @@ class Capabilities extends Component {
                   </div>
                   : null
                 }
+              </div>
+              <div className="task">
+                <div className="tech-header">
+                  <span className="tech-title">Laravel </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/laravel6-test-dashdoard"><BsGithub /></a></span>
+                </div>
+                <ul className="list-inline">
+                  <li>Login & authentification</li>
+                  <li>Form validation</li>
+                  <li>Password resetting</li>
+                  <li>Dashboard controle</li>
+                  <li>Live search</li>
+                  <li>Navigation menu</li>
+                  <li>Dynamic DB update via AJAX</li>
+                  <li>Unit testing</li>
+                </ul>
               </div>
             </div>
           </div>

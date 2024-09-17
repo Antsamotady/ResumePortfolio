@@ -7,8 +7,7 @@
 .right-floating-links_container {
     position: fixed;
     right: 15px;
-    top: 50%;
-    margin-top: -40px;
+    top: 25%;
     z-index: 1000;
 }
 
