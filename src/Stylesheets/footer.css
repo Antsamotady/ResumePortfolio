@@ -36,6 +36,7 @@
 }
 
 .gallerie-link span:hover {
+    color: var(--color-bg-middle);
     outline-style: dotted;
     outline-color: var(--color-bg-middle);
 }
