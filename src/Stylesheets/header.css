@@ -100,9 +100,9 @@ a:visited {
     background-color: var(--color-lightyellow);
 }
 
-.carousel-wrapper {
+/* .carousel-wrapper {
     height: 372px;
-}
+} */
 
 
 /* Mobile behaviors */
@@ -145,9 +145,9 @@ a:visited {
         margin-right: auto;
     }
 
-    .carousel-wrapper {
+    /* .carousel-wrapper {
         height: 290px;
-    }
+    } */
 }
 
 @media screen and (min-width: 1500px) {

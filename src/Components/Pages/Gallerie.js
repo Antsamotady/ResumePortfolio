@@ -2,6 +2,7 @@ import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
+import '../../Stylesheets/gallerie.css';
 
 import img1 from '../../Images/img1.png';
 import img2 from '../../Images/Neh_9_20.jpg';
