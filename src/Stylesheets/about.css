@@ -49,6 +49,13 @@
   font-size: larger;
 }
 
+
+@media screen and (max-width:450px) {
+  .parag {
+    font-size: 1rem;
+  }
+}
+
 .bottom-text {
   margin: 1rem 1rem 3rem;
 }
@@ -77,7 +84,23 @@
 }
 
 .company-logo {
-  width: 75px;
+  width: 100%;           /* Allow the image to scale within its container */
+  max-width: 200px;      /* Cap the width at 200px */
+  min-width: 50px;       /* Optional: Minimum width to avoid the image getting too small */
+  height: auto;          /* Maintain aspect ratio */
+  object-fit: contain;   /* Ensure the image maintains its aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .company-logo {
+    max-width: 170px; /* A bit smaller for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .company-logo {
+    max-width: 150px; /* Even smaller for mobile devices */
+  }
 }
 
 .updates {
@@ -124,8 +147,6 @@ div.image-container:nth-child(2) {
 
 @media screen and (max-width:450px) {
   .about-me {
-    padding: 20px 40px;
-
     display: block;
   }
 

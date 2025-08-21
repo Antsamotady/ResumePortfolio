@@ -69,12 +69,14 @@ class Capabilities extends Component {
                   <span className="tech-title">Symfony </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/"></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>Docker containerization</li>
-                  <li>Debugging and Troubleshooting</li>
-                  <li>Application security with login rate limiting and URL obfuscation</li>
-                  <li>Deployment</li>
-                  <li>Remotely managing app through APIs</li>
-                  <li>Managing WORDPRESS through Symfony backend</li>
+                  <li>Back-end development using Symfony (versions 2, 3.4, 5.4, 6.4)</li>
+                  <li>Project maintenance and evolution, including upgrades</li>
+                  <li>API management and integration</li>
+                  <li>Spreadsheet file import/export (large files)</li>
+                  <li>User management (permissions, session handling, password reset, etc.)</li>
+                  <li>Asset management with Symfony-UX and Stimulus</li>
+                  <li>Email system automation</li>
+                  <li>Docker containerization for local development</li>
                 </ul>
               </div>
               <div className="task">
@@ -82,10 +84,10 @@ class Capabilities extends Component {
                   <span className="tech-title">Prestashop </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady"><BsGithub /></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>Module development</li>
-                  <li>Application upgrading</li>
-                  <li>Debugging and Troubleshooting</li>
-                  <li>Deployment</li>
+                  <li>Module development for Prestashop</li>
+                  <li>Application upgrades from versions 1.5/1.7 to 8</li>
+                  <li>Debugging and troubleshooting existing applications</li>
+                  <li>Deployment and version control</li>
                 </ul>
               </div>
               <div className="task">
@@ -93,9 +95,9 @@ class Capabilities extends Component {
                   <span className="tech-title">Reactjs </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/ResumePortfolio/tree/master"><BsGithub /></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>Responsive design</li>
-                  <li>Mobile friendly design</li>
-                  <li>Portfolio design</li>
+                  <li>Responsive and mobile-friendly portfolio design</li>
+                  <li>Component-based UI design</li>
+                  <li>Interactive UI elements and dynamic content rendering</li>
                   <li><span className="mini-app-btn" onClick={this.hideMe}>Mini app</span></li>
                 </ul>
               </div>
@@ -120,14 +122,13 @@ class Capabilities extends Component {
                   <span className="tech-title">Laravel </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/laravel6-test-dashdoard"><BsGithub /></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>Login & authentification</li>
-                  <li>Form validation</li>
-                  <li>Password resetting</li>
-                  <li>Dashboard controle</li>
-                  <li>Live search</li>
-                  <li>Navigation menu</li>
-                  <li>Dynamic DB update via AJAX</li>
-                  <li>Unit testing</li>
+                  <li>User login and authentication</li>
+                  <li>Form validation with real-time feedback</li>
+                  <li>Password reset functionality via email</li>
+                  <li>Live search and dynamic filtering of data</li>
+                  <li>Dashboard control and data visualization</li>
+                  <li>Dynamic database updates with AJAX</li>
+                  <li>Unit testing for core functionalities</li>
                 </ul>
               </div>
             </div>
@@ -141,11 +142,11 @@ class Capabilities extends Component {
                   <span className="tech-title">Bash Scripting </span><span className="icon-link"><a title="My stack profile" href="https://stackoverflow.com/users/9532910/antsamotady"><ImStackoverflow /></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>Script to automate page downloads</li>
-                  <li>Cron automation</li>
-                  <li>Web page parsing and data extraction</li>
-                  <li>Database table optimization and data purification</li>
-                  <li>Data integrity checks</li>
+                  <li>Automated web page downloads with bash scripts</li>
+                  <li>Cron jobs for scheduling tasks</li>
+                  <li>Web page parsing and extracting structured data</li>
+                  <li>Optimizing database tables and purging obsolete data</li>
+                  <li>Data integrity checks and error correction</li>
                 </ul>
               </div>
             </div>
@@ -159,9 +160,9 @@ class Capabilities extends Component {
                   <span className="tech-title">System & Network Engineering </span><span className="icon-link"><a title="the repo" href="https://github.com/Antsamotady/"></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>Operating system installation</li>
-                  <li>Structured network cabling</li>
-                  <li>Firewall rule-based filtering of network connections</li>
+                  <li>Installation and configuration of operating systems</li>
+                  <li>Structured network cabling and setup</li>
+                  <li>Firewall configuration and rule-based access control</li>
                 </ul>
               </div>
             </div>

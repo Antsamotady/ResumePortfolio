@@ -41,7 +41,7 @@ function About() {
         </div>
 
         <div className="bottom-text">
-          <span>Place I've been</span>
+          <span>I've been</span>
           <div className="small-titles">
             <div className="work-experience">
               <div className='experience-title'>Web developer</div>
@@ -61,7 +61,7 @@ function About() {
         <p className="quater-underlining"></p>
 
         <div className="bottom-text">
-          <span>Recently</span>
+          <span>Not far from now</span>
           <div className="updates">
             <div className="update-title-container">
               <p className="update-title">C2 Level English Certification</p>
