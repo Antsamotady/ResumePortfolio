@@ -22,34 +22,9 @@ function Header() {
             <div className="left-side-container">
               <h1><span>Garry</span><span>Hasintsilavina</span></h1>
               <div className="underlining"></div>
-              <p>Introverted Web Developer and Tech Enthusiast with a Passion for Design</p>
-              {/* <button><a title="My gallerie" href="https://test-tsl-portfolio.netlify.app/">More</a></button> */}
+              <p>Back-end wizard in the shadows, turning code into seamless systems - and I may occasionally make things look pretty too!</p>
             </div>
           </div>
-          {/* <div className="right-side">
-            <div className="right-side-container carousel-wrapper">
-              <Carousel indicators={false}>
-                <Carousel.Item>
-                  <img src={img1} alt="img1" />
-                </Carousel.Item>
-                <Carousel.Item interval={7000}>
-                  <img src={img2} alt="img2" />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src={img3} alt="img1" />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src={img4} alt="img2" />
-                </Carousel.Item>
-                <Carousel.Item interval={7000}>
-                  <img src={img5} alt="img1" />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src={img6} alt="img2" />
-                </Carousel.Item>
-              </Carousel>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

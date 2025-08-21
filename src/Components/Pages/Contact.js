@@ -51,17 +51,13 @@ function Contact() {
 
         <p>You can reach me by
           <a title="Write an email" href="#mail-form"> email </a>
-          or on one of my social media profiles below:
+          or on one of my socials below:
         </p>
         
         <ul>
           <li>
             <a title="My linkedIn profile" href="https://linkedin.com/in/garry-hasintsilavina"><FaLinkedin className="icon" /></a>
             LinkedIn Profile
-          </li>
-          <li>
-            <a title="My dribbble profile" href="https://dribbble.com/Antsamotady"><FiDribbble className="icon" /></a>
-            Dribbble Portfolio
           </li>
           <li>
             <a title="My github profile" href="https://github.com/Antsamotady"><FaGithub className="icon" /></a>

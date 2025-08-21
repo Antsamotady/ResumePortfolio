@@ -45,7 +45,6 @@ function Middle() {
         <div className="right-floating-links_container">
           <ul>
             <li className="right-floating-links-box"><a title="My linkedIn profile" href="https://linkedin.com/in/garry-hasintsilavina"><TfiLinkedin /></a></li>
-            <li className="right-floating-links-box"><a title="My linkedIn profile" href="https://dribbble.com/Antsamotady"><FiDribbble /></a></li>
             <li className="right-floating-links-box"><a title="My stackoverflow profile" href="https://stackoverflow.com/users/9532910/antsamotady"><ImStackoverflow /></a></li>
             <li className="right-floating-links-box"><a title="My github profile" href="https://github.com/Antsamotady"><BsGithub /></a></li>
             <li className="right-floating-links-box"><a title="Email me" href="mailto:tsilavinarj02@gmail.com?subject=Interested%20visitor&body=Hi%20Garry!"><SiGmail /></a></li>
@@ -53,13 +52,15 @@ function Middle() {
         </div>
       </div>
         <div className="app-container">
+        <div className="app-container">
           <div className="middle-info-box">
-            <div className="info-box-item">Genuine introvert, I am deeply passionate about design</div>
-            <div className="info-box-item">From drawing to typography and beyond</div>
-            <div className="info-box-item">Adventurous tech enthusiast always eager to embrace the unknown</div>
-            <div className="info-box-item">Limits are always pushed beyond</div>
-            <div className="info-box-item">Multidisciplinary professional with a strong ability to focus on solving complex problems</div>
-            <div className="info-box-item">Atypical interests fueled by a vivid imagination</div>
+            <div className="info-box-item">A passionate Back-end Developer with expertise in Symfony, Laravel, and Prestashop</div>
+            <div className="info-box-item">Experience in maintaining, evolving, and developing large-scale projects across multiple platforms</div>
+            <div className="info-box-item">A problem-solver, skilled in API management, data processing, and secure system architecture</div>
+            <div className="info-box-item">Continuously upgrading my skills with the latest technologies, from Symfony 2 to 6.4</div>
+            <div className="info-box-item">Dedicated to optimizing performance, debugging, and ensuring seamless user experiences</div>
+            <div className="info-box-item">Driven by innovation, with a keen interest in automation, Docker, and containerization</div>
+          </div>
         </div>
       </div>
     </div>

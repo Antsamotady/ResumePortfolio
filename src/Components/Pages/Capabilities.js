@@ -74,6 +74,7 @@ class Capabilities extends Component {
                   <li>Application security with login rate limiting and URL obfuscation</li>
                   <li>Deployment</li>
                   <li>Remotely managing app through APIs</li>
+                  <li>Managing WORDPRESS through Symfony backend</li>
                 </ul>
               </div>
               <div className="task">
@@ -140,7 +141,7 @@ class Capabilities extends Component {
                   <span className="tech-title">Bash Scripting </span><span className="icon-link"><a title="My stack profile" href="https://stackoverflow.com/users/9532910/antsamotady"><ImStackoverflow /></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>Creating a script to automate page downloads</li>
+                  <li>Script to automate page downloads</li>
                   <li>Cron automation</li>
                   <li>Web page parsing and data extraction</li>
                   <li>Database table optimization and data purification</li>

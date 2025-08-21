@@ -4,6 +4,7 @@ import '../../Stylesheets/about.css'
 import profile from '../../Images/glitch_1_1.png';
 import celaneo from '../../Images/celaneo.png';
 import autobiz from '../../Images/autobiz.png';
+import softibox from '../../Images/logo_softibox1.png';
 import oti from '../../Images/oti.png';
 import certificate from '../../Images/English_certif.jpg';
 
@@ -20,7 +21,7 @@ function About() {
             <p className="my-name">RAJAONARISON Garry Hasintsilavina</p>
             <p className="quater-underlining"></p>
             <p className="parag">
-              As a true introvert, I have a deep passion for design in all its forms - from drawing to typography and beyond. I am also a tech enthusiast and love exploring new gadgets and software, which is why I enjoy watching sci-fi movies. I have developed a strong proficiency in utilizing PHP Symfony framework and Laravel through my recent experience as a web developer.
+              As a proud introvert, I thrive behind the screen, transforming complex code into seamless back-end solutions. My passion for design spans from sketches to typography, but it's the logic and structure of back-end development that truly excites me. A true tech enthusiast, I'm always exploring new gadgets, software, and geeky sci-fi movies. Over the years, I've honed my skills in PHP, Symfony, and Laravel, building robust systems and scalable applications that power digital experiences.
             </p>
           </div>
         </div>
@@ -30,7 +31,17 @@ function About() {
 
       <div className="text-container">
         <div className="bottom-text">
-          <span>I've been a</span>
+          <span>Today</span>
+          <div className="small-titles">
+            <div className="work-experience">
+              <div className='experience-title'>Backend developer</div>
+              <a title="Official site" href="https://www.softibox.com/"><img className="company-logo" src={softibox} alt="" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div className="bottom-text">
+          <span>Place I've been</span>
           <div className="small-titles">
             <div className="work-experience">
               <div className='experience-title'>Web developer</div>
