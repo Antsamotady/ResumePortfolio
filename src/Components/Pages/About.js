@@ -31,7 +31,7 @@ function About() {
 
       <div className="text-container">
         <div className="bottom-text">
-          <span>Today</span>
+          <span>Present day, I'm a</span>
           <div className="small-titles">
             <div className="work-experience">
               <div className='experience-title'>Backend developer</div>

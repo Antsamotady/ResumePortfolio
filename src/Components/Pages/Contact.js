@@ -44,14 +44,12 @@ function Contact() {
 
   return (
     <div className="contact-container">
-      <h2>Contact Me</h2>
+      <h2>Wanna reach me out?</h2>
 
 
       <div className="contact-section">
 
-        <p>You can reach me by
-          <a title="Write an email" href="#mail-form"> email </a>
-          or on one of my socials below:
+        <p>Send me an <a title="Write an email" href="#mail-form"> email </a> or check my socials below :
         </p>
         
         <ul>
@@ -68,7 +66,7 @@ function Contact() {
             Stack Overflow Profile
           </li>
         </ul>
-        <p>Thank you for your interest in contacting me.</p>
+        <p>Thank you for your interest!</p>
         <p>Please note that I often use the pseudonym <span>Antsamotady</span> on online platforms.</p>
 
       </div>

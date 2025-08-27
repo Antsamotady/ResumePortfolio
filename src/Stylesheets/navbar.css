@@ -21,7 +21,6 @@ a:visited {
 
 .logo {
     color: var(--color-bg-footer);
-    font-size: 2rem;
 }
 
 .logo:hover {
@@ -121,6 +120,8 @@ a:visited {
         background-color: var(--pop-up-menu-bg-color);
         border-radius: 3px;
 
+        box-shadow: 2px 4px 6px var(--color-bg-footer);
+          
         margin-top: 1rem;
         padding: 1rem;
         position: fixed;

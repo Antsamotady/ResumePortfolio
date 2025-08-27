@@ -73,6 +73,6 @@ p>span {
 }
 
 .form-control:focus {
-  border-color: var(--color-bg-footer) !important;
-  box-shadow: 0 0 0 0.2rem var(--color-bg-header) !important;
+  border-color: var(--color-bg-header) !important;
+  box-shadow: 0 0 0 0.2rem var(--color-bg-footer) !important;
 }

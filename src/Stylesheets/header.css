@@ -19,6 +19,7 @@ a:visited {
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-body {
@@ -60,6 +61,7 @@ a:visited {
     border-bottom: 1px solid var(--color-lightyellow);
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1rem;
 }
 
 .left-side-container p {
