@@ -182,16 +182,18 @@ q:after {
     --h1: 800 2rem/1.2em var(--ff);
     --p: 400 1rem/1.5em var(--ff);
     --p-code: 300 .7rem/2em var(--ff2);
-    --hue: 0;
+    --hue: 180;
 
     /* The formula starts here */
     --tertiary-hue: calc(var(--hue) + 300);
     --accent-hue: calc(var(--hue) + 60);
-    --primary-color: hsl(var(--hue), 50%, 90%);
-    --pre-primary-color: hsl(var(--hue), 50%, 95%);
-    --secondary-color: hsl(var(--hue), 50%, 10%);
-    --tertiary-color: hsl(var(--tertiary-hue), 80%, 20%);
-    --accent-color: hsl(var(--accent-hue), 80%, 20%);
+
+    /* Permute these lines to switch default dark/light mode */
+    --primary-color: hsl(var(--hue), 50%, 10%);
+    --pre-primary-color: hsl(var(--hue), 50%, 15%);
+    --secondary-color: hsl(var(--hue), 50%, 90%);
+    --tertiary-color: hsl(var(--tertiary-hue), 80%, 80%);
+    --accent-color: hsl(var(--accent-hue), 80%, 80%);
 
     --color-lightyellow: var(--primary-color);
     --color-bg-header: var(--secondary-color);
@@ -201,11 +203,12 @@ q:after {
 }
 
 .dark {
-    --primary-color: hsl(var(--hue), 50%, 10%);
-    --pre-primary-color: hsl(var(--hue), 50%, 15%);
-    --secondary-color: hsl(var(--hue), 50%, 90%);
-    --tertiary-color: hsl(var(--tertiary-hue), 80%, 80%);
-    --accent-color: hsl(var(--accent-hue), 80%, 80%);
+    /* Permute these lines to switch default dark/light mode */
+    --primary-color: hsl(var(--hue), 50%, 90%);
+    --pre-primary-color: hsl(var(--hue), 50%, 95%);
+    --secondary-color: hsl(var(--hue), 50%, 10%);
+    --tertiary-color: hsl(var(--tertiary-hue), 80%, 20%);
+    --accent-color: hsl(var(--accent-hue), 80%, 20%);
 }
 
 .app-container {
@@ -213,8 +216,6 @@ q:after {
 
     margin: 0 auto;
     max-width: 1080px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .main-container {
@@ -242,4 +243,10 @@ q:after {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .app-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
 }
