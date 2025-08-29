@@ -15,6 +15,8 @@ import About from './Components/Pages/About';
 import Capabilities from './Components/Pages/Capabilities';
 import Contact from './Components/Pages/Contact';
 import Gallerie from './Components/Pages/Gallerie';
+import FormSubmissions from './Components/Pages/FormSubmissions';
+
 
 class App extends Component {
 
@@ -74,6 +76,7 @@ class App extends Component {
               <Route path="/capabilities" element={<Capabilities />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/gallerie" element={<Gallerie />} />
+              <Route path="/submissions" element={<FormSubmissions />} />
             </Routes>
             {showMiddle && <Middle />}
           </div>

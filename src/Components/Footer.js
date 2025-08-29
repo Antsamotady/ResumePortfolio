@@ -6,7 +6,6 @@ import { TfiLinkedin } from 'react-icons/tfi';
 import { ImStackoverflow } from 'react-icons/im';
 import { BsGithub } from 'react-icons/bs';
 import { SiGmail } from 'react-icons/si';
-import { FiDribbble } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 import '../Stylesheets/footer.css';
