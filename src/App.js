@@ -33,6 +33,7 @@ class App extends Component {
       showHeader: false,
       showMiddle: false,
       showGallerie: false,
+      showFormSubmission: false,
       closeMenu: !this.state.closeMenu
     });
   };
@@ -42,6 +43,16 @@ class App extends Component {
       showHeader: false,
       showMiddle: false,
       showGallerie: true,
+      showFormSubmission: false,
+    });
+  };
+  
+  handleFormSubmissionLinkClick = () => {
+    this.setState({
+      showHeader: false,
+      showMiddle: false,
+      showGallerie: false,
+      showFormSubmission: true,
     });
   };
 
@@ -81,7 +92,10 @@ class App extends Component {
             {showMiddle && <Middle />}
           </div>
 
-          <Footer onGallerieLinkClick={this.handleGallerieLinkClick} />
+          <Footer 
+            onGallerieLinkClick={this.handleGallerieLinkClick}
+            onFormSubmissionLinkClick={this.handleFormSubmissionLinkClick}
+          />
 
         </div>
       </Router>

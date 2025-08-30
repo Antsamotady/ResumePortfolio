@@ -49,38 +49,46 @@ const Submissions = () => {
   };
 
   return (
-    <div className="submission-page">
-      <div className="form-container">
-        <h2>Submit Info</h2>
-        <form onSubmit={handleSubmit}>
-          <input
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            placeholder="Name"
-            required
-          />
-          <input
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            placeholder="Email"
-            required
-          />
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-      <div className="data-container">
-        <h2>Submissions</h2>
-        {submissions.length === 0 ? (
-          <p>No submissions yet.</p>
-        ) : (
-          <ul>
-            {submissions.map((s, idx) => (
-              <li key={idx}>{s.name} - {s.email}</li>
-            ))}
-          </ul>
-        )}
+    <div className="form-page">
+      <div className="app-container">
+        <div className="contact-container">
+          <div className="submission-page">
+            <div className="form-container form-left-side">
+              <div className="name-mail-submit-title">Please register</div>
+              <form onSubmit={handleSubmit}>
+                <input
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
+                  placeholder="Name"
+                  required
+                  className="rounded-0 form-control"
+                />
+                <input
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
+                  placeholder="Email"
+                  required
+                  className="rounded-0 form-control"
+                />
+                <button className="form-email-btn" type="submit">Submit</button>
+              </form>
+            </div>
+            <div className="form-right-side">
+              <div className="name-mail-submit-title">Thank you</div>
+              {submissions.length === 0 ? (
+                <p>No submissions yet.</p>
+              ) : (
+                <ul>
+                  {submissions.slice().reverse().map((s) => (
+                    <li key={s.id}>{s.name} | {s.email}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

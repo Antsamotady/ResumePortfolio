@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 import '../Stylesheets/footer.css';
 
-function Footer({ onGallerieLinkClick }) {
+function Footer({ onGallerieLinkClick, onFormSubmissionLinkClick }) {
   const now = new Date();
   const month = now.toLocaleString('default', { month: 'long' });
   const year = now.getFullYear();
@@ -34,8 +34,10 @@ function Footer({ onGallerieLinkClick }) {
         </div>
         <div className="line-column to-center">
           <span>Web development</span>
-          <span>PHP</span>
-          <span>Symfony framework</span>
+          <Link to="/submissions" className="gallerie-link" >
+            <span onClick={onFormSubmissionLinkClick}>Form exp</span>
+          </Link>
+          <span>Symfony</span>
           <span>Laravel</span>
           <span>Reactjs</span>
           <span>Linux</span>
