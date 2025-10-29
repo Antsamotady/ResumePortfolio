@@ -49,7 +49,8 @@ function Contact() {
 
       <div className="contact-section">
 
-        <p>Send me an <a title="Write an email" href="#mail-form"> email </a> or check my socials below :
+        <p>
+          Send me an email at <a title="Email me" href="mailto:tsilavinarj02@gmail.com?subject=Interested%20visitor&body=Hi%20Garry!">tsilavinarj02@gmail.com</a> or check my socials below :
         </p>
         
         <ul>
@@ -67,13 +68,13 @@ function Contact() {
           </li>
         </ul>
         <p>Thank you for your interest!</p>
-        <p>Please note that I often use the pseudonym <span>Antsamotady</span> on online platforms.</p>
+        <p>(Please note that I often use the pseudonym <span>Antsamotady</span> on online platforms.)</p>
 
       </div>
 
       <p className="quater-underlining"></p>
 
-      <div className="contact-section">
+      <div className="contact-section api-mailing">
 
         <div className="contact-form">
           <Form onSubmit={handleSubmit} id="mail-form">

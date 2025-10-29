@@ -67,6 +67,10 @@ p>span {
   border: none;
 }
 
+.api-mailing {
+  display: none;
+}
+
 .contact-container>.contact-section,
 .contact-container>.quater-underlining {
   margin-bottom: 2rem;

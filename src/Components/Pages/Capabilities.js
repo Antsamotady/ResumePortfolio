@@ -70,13 +70,21 @@ class Capabilities extends Component {
                 </div>
                 <ul className="list-inline">
                   <li>Back-end development using Symfony (versions 2, 3.4, 5.4, 6.4)</li>
-                  <li>Project maintenance and evolution, including upgrades</li>
-                  <li>API management and integration</li>
-                  <li>Spreadsheet file import/export (large files)</li>
-                  <li>User management (permissions, session handling, password reset, etc.)</li>
+                  <li>Project maintenance and evolution, including upgrades (Symfony v3.4 &rarr; v5.4 &rarr; v6.4)</li>
+                  <li>Development of new projects using Symfony 5.4</li>
+                  <li>API management and integration, including API Platform for internal APIs</li>
+                  <li>Implementation of online payment via PayPal using the SDK</li>
+                  <li>Payment gateway integration with Sogecommerce (credit card processing)</li>
+                  <li>Spreadsheet file import/export, handling large files</li>
+                  <li>User management: permissions, session handling, password reset, "remember me" functionality</li>
+                  <li>Security integration: JWT token authentication for secure login</li>
                   <li>Asset management with Symfony-UX and Stimulus</li>
+                  <li>Real-time notification system using Symfony Mercure (Server-Sent Events, SSE)</li>
                   <li>Email system automation</li>
                   <li>Docker containerization for local development</li>
+                  <li>Dashboard customisation in EasyAdmin v4 with overrides and new feature integrations</li>
+                  <li>Code refactoring using Large Language Models (LLMs)</li>
+                  <li>Static analysis and code quality: implementation of PHPStan for passive testing and improvements</li>
                 </ul>
               </div>
               <div className="task">

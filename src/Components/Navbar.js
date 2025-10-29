@@ -8,7 +8,8 @@ import '../Stylesheets/navbar.css';
 import '../Stylesheets/theme-radio.css';
 import '../Stylesheets/the-4-color-formula.css';
 
-import tsifoh from '../Images/Tsifoh_224.jpg';
+// import tsifoh from '../Images/Tsifoh_224.jpg';
+import tsifoh from '../Images/me_portrait_2022_zoomed_sm.jpg';
 
 
 function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }) {
