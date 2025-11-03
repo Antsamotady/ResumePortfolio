@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useLanguage } from '../LanguageContext';
 
 import tsifoh from '../Images/Tsifoh_224.jpg';
 import { TfiLinkedin } from 'react-icons/tfi';
@@ -14,6 +14,7 @@ function Footer({ onGallerieLinkClick, onFormSubmissionLinkClick }) {
   const now = new Date();
   const month = now.toLocaleString('default', { month: 'long' });
   const year = now.getFullYear();
+  const { t } = useLanguage();
 
   return (
     <div className="app-footer">
@@ -22,20 +23,20 @@ function Footer({ onGallerieLinkClick, onFormSubmissionLinkClick }) {
           <Link to="/"><img className="tsifoh-logo-footer" src={tsifoh} alt="" /></Link>
         </div>
         <div className="line-column to-center">
-          <span>Introvert</span>
-          <span><a title="My design showcase" href="https://tsl-portfolio.netlify.app/">Other project</a></span>
-          <span>Tech enthusiast</span>
-          <span>Creative</span>
-          <span>IT roles</span>
+          <span>{t('introvert')}</span>
+          <span><a title="My design showcase" href="https://tsl-portfolio.netlify.app/">{t('otherProject')}</a></span>
+          <span>{t('techEnthusiast')}</span>
+          <span>{t('creative')}</span>
+          <span>{t('roles')}</span>
           <Link to="/gallerie" className="gallerie-link" >
-            <span onClick={onGallerieLinkClick}>Gallerie</span>
+            <span onClick={onGallerieLinkClick}>{t('gallerie')}</span>
           </Link>
-          <span>Client-focused</span>
+          <span>{t('clientFocused')}</span>
         </div>
         <div className="line-column to-center">
-          <span>Web development</span>
+          <span>{t('webDevelopment')}</span>
           <Link to="/submissions" className="gallerie-link" >
-            <span onClick={onFormSubmissionLinkClick}>Form exp</span>
+            <span onClick={onFormSubmissionLinkClick}>{t('formExp')}</span>
           </Link>
           <span>Symfony</span>
           <span>Laravel</span>

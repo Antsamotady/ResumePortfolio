@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { LanguageProvider } from './LanguageContext';
 
 import './Stylesheets/main.css';
 import './Stylesheets/themes.css';
@@ -16,7 +17,6 @@ import Capabilities from './Components/Pages/Capabilities';
 import Contact from './Components/Pages/Contact';
 import Gallerie from './Components/Pages/Gallerie';
 import FormSubmissions from './Components/Pages/FormSubmissions';
-
 
 class App extends Component {
 
@@ -70,35 +70,37 @@ class App extends Component {
     const { showHeader, showMiddle, showGallerie, closeMenu, theme } = this.state;
 
     return (
-      <Router>
-        <div className={`main-container ${theme}`}>
-          <Navbar onLinkClick={this.handleLinkClick}
-            onCloseMenu={this.handleOnCloseMenu}
-            toggleMenu={closeMenu}
-            onThemeSelected={this.handleThemeChange}
-            theme={theme}
-          />
+      <LanguageProvider>
+        <Router>
+          <div className={`main-container ${theme}`}>
+            <Navbar onLinkClick={this.handleLinkClick}
+              onCloseMenu={this.handleOnCloseMenu}
+              toggleMenu={closeMenu}
+              onThemeSelected={this.handleThemeChange}
+              theme={theme}
+            />
 
-          <div className="app-body" onClick={() => this.handleOnCloseMenu({ closeMenu: true })}>
-            {showHeader && <Header />}
-            <Routes>
-              <Route path="/" element={!showHeader && <Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/capabilities" element={<Capabilities />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/gallerie" element={<Gallerie />} />
-              <Route path="/submissions" element={<FormSubmissions />} />
-            </Routes>
-            {showMiddle && <Middle />}
+            <div className="app-body" onClick={() => this.handleOnCloseMenu({ closeMenu: true })}>
+              {showHeader && <Header />}
+              <Routes>
+                <Route path="/" element={!showHeader && <Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/capabilities" element={<Capabilities />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/gallerie" element={<Gallerie />} />
+                <Route path="/submissions" element={<FormSubmissions />} />
+              </Routes>
+              {showMiddle && <Middle />}
+            </div>
+
+            <Footer 
+              onGallerieLinkClick={this.handleGallerieLinkClick}
+              onFormSubmissionLinkClick={this.handleFormSubmissionLinkClick}
+            />
+
           </div>
-
-          <Footer 
-            onGallerieLinkClick={this.handleGallerieLinkClick}
-            onFormSubmissionLinkClick={this.handleFormSubmissionLinkClick}
-          />
-
-        </div>
-      </Router>
+        </Router>
+      </LanguageProvider>
     );
   }
 
