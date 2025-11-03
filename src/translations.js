@@ -20,7 +20,7 @@ export const translations = {
   },
   fr: {
     home: "Accueil",
-    aboutMe: "À propos de moi",
+    aboutMe: "Perso",
     achievements: "Réalisations",
     contactMe: "Contactez-moi",
     

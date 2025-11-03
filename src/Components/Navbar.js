@@ -59,9 +59,12 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
     document.body.classList.toggle('dark');
   };
 
-  const handleLanguageChange = (lang) => {
-    switchLanguage(lang);
+  const handleLanguageToggle = (e) => {
+    const newLang = e.target.checked ? 'fr' : 'en'; // Change these as needed
+    switchLanguage(newLang);
   };
+
+  const isChecked = currentLanguage === 'fr'; // Change 'fr' to your second language
 
   return (
     <>
@@ -75,19 +78,20 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
             <span className="controls">
               {/* Language Switcher */}
               <div className="language-switcher">
-                <button 
-                  className={currentLanguage === 'en' ? 'active' : ''} 
-                  onClick={() => handleLanguageChange('en')}
-                >
-                  EN
-                </button>
-                <button 
-                  className={currentLanguage === 'fr' ? 'active' : ''} 
-                  onClick={() => handleLanguageChange('fr')}
-                >
-                  FR
-                </button>
+                <div className="switch">
+                  <input 
+                    id="language-toggle" 
+                    className="check-toggle check-toggle-round-flat" 
+                    type="checkbox"
+                    checked={isChecked}
+                    onChange={handleLanguageToggle}
+                  />
+                  <label htmlFor="language-toggle"></label>
+                  <span className="on">EN</span> {/* Change to your first language code */}
+                  <span className="off">FR</span> {/* Change to your second language code */}
+                </div>
               </div>
+
               <input
                 type="range"
                 id="hue-slider"
