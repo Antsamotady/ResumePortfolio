@@ -14,9 +14,9 @@
 
 .switch > span {
   position: absolute;
-  top: 9px;
+  top: 10px;
   pointer-events: none;
-  font-family: 'Helvetica', Arial, sans-serif;
+  font-family: var(--font-family-fox_trot), 'Helvetica', Arial, sans-serif;
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;

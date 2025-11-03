@@ -87,8 +87,8 @@ function Navbar({ onLinkClick, onCloseMenu, toggleMenu, onThemeSelected, theme }
                     onChange={handleLanguageToggle}
                   />
                   <label htmlFor="language-toggle"></label>
-                  <span className="on">EN</span> {/* Change to your first language code */}
-                  <span className="off">FR</span> {/* Change to your second language code */}
+                  <span className="on">En</span> {/* Change to your first language code */}
+                  <span className="off">Fr</span> {/* Change to your second language code */}
                 </div>
               </div>
 
