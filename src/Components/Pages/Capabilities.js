@@ -67,29 +67,29 @@ class Capabilities extends Component {
       <div className="app-container">
         <div className="capabilities-container">
           <div className="job-position">
-            <h2>{t('capWebDevelopment')}</h2>
+            <h2>{t('jobPositionItem1')}</h2>
             <div className="tasks">
               <div className="task">
                 <div className="tech-header">
                   <span className="tech-title">Symfony </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/"></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>Back-end development using Symfony (versions 2, 3.4, 5.4, 6.4)</li>
-                  <li>Project maintenance and evolution, including upgrades (Symfony v3.4 &rarr; v5.4 &rarr; v6.4)</li>
-                  <li>Development of new projects using Symfony 5.4</li>
-                  <li>API management and integration, including API Platform for internal APIs</li>
-                  <li>Implementation of online payment via PayPal using the SDK</li>
-                  <li>Payment gateway integration with Sogecommerce (credit card processing)</li>
-                  <li>Spreadsheet file import/export, handling large files</li>
-                  <li>User management: permissions, session handling, password reset, "remember me" functionality</li>
-                  <li>Security integration: JWT token authentication for secure login</li>
-                  <li>Asset management with Symfony-UX and Stimulus</li>
-                  <li>Real-time notification system using Symfony Mercure (Server-Sent Events, SSE)</li>
-                  <li>Email system automation</li>
-                  <li>Docker containerization for local development</li>
-                  <li>Dashboard customisation in EasyAdmin v4 with overrides and new feature integrations</li>
-                  <li>Code refactoring using Large Language Models (LLMs)</li>
-                  <li>Static analysis and code quality: implementation of PHPStan for passive testing and improvements</li>
+                  <li>{t('capSymfonyItem1')}</li>
+                  <li>{t('capSymfonyItem2')}</li>
+                  <li>{t('capSymfonyItem3')}</li>
+                  <li>{t('capSymfonyItem4')}</li>
+                  <li>{t('capSymfonyItem5')}</li>
+                  <li>{t('capSymfonyItem6')}</li>
+                  <li>{t('capSymfonyItem7')}</li>
+                  <li>{t('capSymfonyItem8')}</li>
+                  <li>{t('capSymfonyItem9')}</li>
+                  <li>{t('capSymfonyItem10')}</li>
+                  <li>{t('capSymfonyItem11')}</li>
+                  <li>{t('capSymfonyItem12')}</li>
+                  <li>{t('capSymfonyItem13')}</li>
+                  <li>{t('capSymfonyItem14')}</li>
+                  <li>{t('capSymfonyItem15')}</li>
+                  <li>{t('capSymfonyItem16')}</li>
                 </ul>
               </div>
               <div className="task">
@@ -97,10 +97,10 @@ class Capabilities extends Component {
                   <span className="tech-title">Prestashop </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady"><BsGithub /></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>Module development for Prestashop</li>
-                  <li>Application upgrades from versions 1.5/1.7 to 8</li>
-                  <li>Debugging and troubleshooting existing applications</li>
-                  <li>Deployment and version control</li>
+                  <li>{t('capPrestashopItem1')}</li>
+                  <li>{t('capPrestashopItem2')}</li>
+                  <li>{t('capPrestashopItem3')}</li>
+                  <li>{t('capPrestashopItem4')}</li>
                 </ul>
               </div>
               <div className="task">
@@ -108,10 +108,10 @@ class Capabilities extends Component {
                   <span className="tech-title">Reactjs </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/ResumePortfolio/tree/master"><BsGithub /></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>Responsive and mobile-friendly portfolio design</li>
-                  <li>Component-based UI design</li>
-                  <li>Interactive UI elements and dynamic content rendering</li>
-                  <li><span className="mini-app-btn" onClick={this.hideMe}>Mini app</span></li>
+                  <li>{t('capReactjsItem1')}</li>
+                  <li>{t('capReactjsItem2')}</li>
+                  <li>{t('capReactjsItem3')}</li>
+                  <li><span className="mini-app-btn" onClick={this.hideMe}>{t('capReactjsItem4')}</span></li>
                 </ul>
               </div>
               <div className="mini-app">
@@ -135,47 +135,47 @@ class Capabilities extends Component {
                   <span className="tech-title">Laravel </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/laravel6-test-dashdoard"><BsGithub /></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>User login and authentication</li>
-                  <li>Form validation with real-time feedback</li>
-                  <li>Password reset functionality via email</li>
-                  <li>Live search and dynamic filtering of data</li>
-                  <li>Dashboard control and data visualization</li>
-                  <li>Dynamic database updates with AJAX</li>
-                  <li>Unit testing for core functionalities</li>
+                  <li>{t('capLaravelItem1')}</li>
+                  <li>{t('capLaravelItem2')}</li>
+                  <li>{t('capLaravelItem3')}</li>
+                  <li>{t('capLaravelItem4')}</li>
+                  <li>{t('capLaravelItem5')}</li>
+                  <li>{t('capLaravelItem6')}</li>
+                  <li>{t('capLaravelItem7')}</li>
                 </ul>
               </div>
             </div>
           </div>
 
           <div className="job-position">
-            <h2>Linux Programming</h2>
+            <h2>{t('jobPositionItem2')}</h2>
             <div className="tasks">
               <div className="task">
                 <div className="tech-header">
                   <span className="tech-title">Bash Scripting </span><span className="icon-link"><a title="My stack profile" href="https://stackoverflow.com/users/9532910/antsamotady"><ImStackoverflow /></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>Automated web page downloads with bash scripts</li>
-                  <li>Cron jobs for scheduling tasks</li>
-                  <li>Web page parsing and extracting structured data</li>
-                  <li>Optimizing database tables and purging obsolete data</li>
-                  <li>Data integrity checks and error correction</li>
+                  <li>{t('capBashItem1')}</li>
+                  <li>{t('capBashItem2')}</li>
+                  <li>{t('capBashItem3')}</li>
+                  <li>{t('capBashItem4')}</li>
+                  <li>{t('capBashItem5')}</li>
                 </ul>
               </div>
             </div>
           </div>
 
           <div className="job-position">
-            <h2>CIO Assistant</h2>
+            <h2>{t('jobPositionItem3')}</h2>
             <div className="tasks">
               <div className="task">
                 <div className="tech-header">
                   <span className="tech-title">System & Network Engineering </span><span className="icon-link"><a title="the repo" href="https://github.com/Antsamotady/"></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>Installation and configuration of operating systems</li>
-                  <li>Structured network cabling and setup</li>
-                  <li>Firewall configuration and rule-based access control</li>
+                  <li>{t('capNetworkItem1')}</li>
+                  <li>{t('capNetworkItem2')}</li>
+                  <li>{t('capNetworkItem3')}</li>
                 </ul>
               </div>
             </div>

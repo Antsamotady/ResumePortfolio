@@ -1,15 +1,16 @@
 import React, { useRef, useEffect, useState } from 'react';
+import { useLanguage } from '../LanguageContext';
 
 import { TfiLinkedin } from 'react-icons/tfi';
 import { ImStackoverflow } from 'react-icons/im';
 import { BsGithub } from 'react-icons/bs';
 import { SiGmail } from 'react-icons/si';
-import { FiDribbble } from 'react-icons/fi';
 
 
 import '../Stylesheets/middle.css';
 
 function Middle() {
+  const { t } = useLanguage();
 
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
@@ -54,12 +55,12 @@ function Middle() {
         <div className="app-container">
         <div className="app-container">
           <div className="middle-info-box">
-            <div className="info-box-item">A passionate Back-end Developer with expertise in Symfony, Laravel, and Prestashop</div>
-            <div className="info-box-item">Experience in maintaining, evolving, and developing large-scale projects across multiple platforms</div>
-            <div className="info-box-item">A problem-solver, skilled in API management, data processing, and secure system architecture</div>
-            <div className="info-box-item">Continuously upgrading my skills with the latest technologies, from Symfony 2 to 6.4</div>
-            <div className="info-box-item">Dedicated to optimizing performance, debugging, and ensuring seamless user experiences</div>
-            <div className="info-box-item">Driven by innovation, with a keen interest in automation, Docker, and containerization</div>
+            <div className="info-box-item">{t('middleParagItem1')}</div>
+            <div className="info-box-item">{t('middleParagItem2')}</div>
+            <div className="info-box-item">{t('middleParagItem3')}</div>
+            <div className="info-box-item">{t('middleParagItem4')}</div>
+            <div className="info-box-item">{t('middleParagItem5')}</div>
+            <div className="info-box-item">{t('middleParagItem6')}</div>
           </div>
         </div>
       </div>

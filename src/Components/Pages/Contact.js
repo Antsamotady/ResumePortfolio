@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../../LanguageContext';
+
 import emailjs from '@emailjs/browser';
 import dotenv from 'dotenv';
 import { Form, Button } from 'react-bootstrap';
@@ -10,6 +12,7 @@ import '../../Stylesheets/contact.css';
 dotenv.config();
 
 function Contact() {
+  const { t } = useLanguage();
 
   const serviceID = process.env.REACT_APP_SERVICEID;
   const templateID = process.env.REACT_APP_TEMPLATEID;
@@ -44,32 +47,59 @@ function Contact() {
 
   return (
     <div className="contact-container">
-      <h2>Wanna reach me out?</h2>
-
+      <h2>{t('contactTitle')}</h2>
 
       <div className="contact-section">
-
         <p>
-          Send me an email at <a title="Email me" href="mailto:tsilavinarj02@gmail.com?subject=Interested%20visitor&body=Hi%20Garry!">tsilavinarj02@gmail.com</a> or check my socials below :
+          {t('contactIntro')}{' '}
+          <a
+            title="Email me"
+            href="mailto:tsilavinarj02@gmail.com?subject=Interested%20visitor&body=Hi%20Garry!"
+          >
+            tsilavinarj02@gmail.com
+          </a>{' '}
+          {t('contactOrCheck')}
         </p>
-        
+
         <ul>
           <li>
-            <a title="My linkedIn profile" href="https://linkedin.com/in/garry-hasintsilavina"><FaLinkedin className="icon" /></a>
-            LinkedIn Profile
+            <a
+              title="My LinkedIn profile"
+              href="https://linkedin.com/in/garry-hasintsilavina"
+            >
+              <FaLinkedin className="icon" />
+            </a>
+            {t('contactLinkedin')}
           </li>
           <li>
-            <a title="My github profile" href="https://github.com/Antsamotady"><FaGithub className="icon" /></a>
-            GitHub Profile
+            <a
+              title="My GitHub profile"
+              href="https://github.com/Antsamotady"
+            >
+              <FaGithub className="icon" />
+            </a>
+            {t('contactGithub')}
           </li>
           <li>
-            <a title="My stackoverflow profile" href="https://stackoverflow.com/users/9532910/antsamotady"><FaStackOverflow className="icon" /></a>
-            Stack Overflow Profile
+            <a
+              title="My StackOverflow profile"
+              href="https://stackoverflow.com/users/9532910/antsamotady"
+            >
+              <FaStackOverflow className="icon" />
+            </a>
+            {t('contactStackOverflow')}
           </li>
         </ul>
-        <p>Thank you for your interest!</p>
-        <p>(Please note that I often use the pseudonym <span>Antsamotady</span> on online platforms.)</p>
 
+        <p>{t('contactThanks')}</p>
+        <p
+          dangerouslySetInnerHTML={{
+            __html: t('contactNote').replace(
+              '<1>',
+              '<span>'
+            ).replace('</1>', '</span>')
+          }}
+        />
       </div>
 
       <p className="quater-underlining"></p>
