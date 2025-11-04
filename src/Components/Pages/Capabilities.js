@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { LanguageContext } from '../../LanguageContext';
 
 import { BsGithub } from 'react-icons/bs';
 import { ImStackoverflow } from 'react-icons/im';
@@ -9,6 +10,8 @@ import "../../Stylesheets/miniapp.css";
 import Counters from '../Counters';
 
 class Capabilities extends Component {
+  static contextType = LanguageContext;
+
   state = {
     shown: false,
     counters: [{ id: 0, value: 0 }]
@@ -58,11 +61,13 @@ class Capabilities extends Component {
   }
 
   render() {
+    const { t } = this.context;
+
     return (
       <div className="app-container">
         <div className="capabilities-container">
           <div className="job-position">
-            <h2>Web Development</h2>
+            <h2>{t('capWebDevelopment')}</h2>
             <div className="tasks">
               <div className="task">
                 <div className="tech-header">
