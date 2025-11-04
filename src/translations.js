@@ -34,7 +34,7 @@ export const translations = {
     aboutText4: "Web developer",
     aboutText5: "Web scraper",
     aboutText6: "CIO Assistant",
-    aboutText7: "Not far from now",
+    aboutText7: "In the past",
     aboutText8: "C2 Level English Certification",
     aboutText9: "Backend developer",
 
@@ -116,7 +116,7 @@ export const translations = {
     webDevelopment: "Développement web",
     formExp: "Form exp",
 
-    hpHeroParag: "Spécialiste du back-end dans l'ombre, transformant le code en systèmes fluides - tout en apportant un soin particulier à l'expérience utilisateur.",
+    hpHeroParag: "Spécialiste du back-end dans l'ombre, transformant le code en systèmes fluides tout en apportant un soin particulier à l'expérience utilisateur.",
 
     middleParagItem1: "Développeur back-end passionné, expert en Symfony, Laravel et Prestashop",
     middleParagItem2: "Expérience dans la maintenance, l'évolution et le développement de projets à grande échelle sur plusieurs plateformes",
@@ -132,7 +132,7 @@ export const translations = {
     aboutText4: "Développeur web",
     aboutText5: "Web scraper",
     aboutText6: "Assistant DSI",
-    aboutText7: "Prochainement",
+    aboutText7: "Précédemment",
     aboutText8: "Certification d'anglais niveau C2",
     aboutText9: "Développeur back-end",
 
