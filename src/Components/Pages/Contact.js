@@ -4,8 +4,7 @@ import { useLanguage } from '../../LanguageContext';
 import emailjs from '@emailjs/browser';
 import dotenv from 'dotenv';
 import { Form, Button } from 'react-bootstrap';
-import { FaLinkedin, FaGithub, FaStackOverflow } from 'react-icons/fa';
-import { FiDribbble } from 'react-icons/fi';
+import { FaLinkedin, FaGithub, FaStackOverflow, FaPhoneAlt } from 'react-icons/fa';
 
 import '../../Stylesheets/contact.css';
 
@@ -89,9 +88,19 @@ function Contact() {
             </a>
             {t('contactStackOverflow')}
           </li>
+          <li>
+            <a
+              title="My StackOverflow profile"
+              href="https://stackoverflow.com/users/9532910/antsamotady"
+            >
+              <FaPhoneAlt className="icon" />
+            </a>
+            +261 32 83 205 22
+          </li>
         </ul>
 
         <p>{t('contactThanks')}</p>
+
         <p
           dangerouslySetInnerHTML={{
             __html: t('contactNote').replace(
