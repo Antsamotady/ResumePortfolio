@@ -6,8 +6,15 @@ import { ImStackoverflow } from 'react-icons/im';
 import { BsGithub } from 'react-icons/bs';
 import { SiGmail } from 'react-icons/si';
 
+import wpq from '../Images/worldpadelquest-logo.webp';
+import myflow from '../Images/myflow.png';
+import groupito from '../Images/groupito.png';
+import resma from '../Images/resma.png';
+import piplanner from '../Images/piplanner.png';
+import autobiz from '../Images/autobiz.png';
 
 import '../Stylesheets/middle.css';
+import '../Stylesheets/page/listing.css';
 
 function Middle() {
   const { t } = useLanguage();
@@ -39,9 +46,56 @@ function Middle() {
     };
   }, []);
 
-
   return (
     <div className="middle">
+
+      <div className="content">
+        <ul className="team">
+          <li className="member co-funder">
+            <div className="thumb"><img src={wpq} alt="" /></div>
+            <div className="description">
+              <h3>Worldpadelquest</h3>
+              <p>{t('middleParagItem1')}<br /><a href="https://www.worldpadelquest.com/">www.worldpadelquest.com</a></p>
+            </div>
+          </li>
+          <li className="member co-funder">
+            <div className="thumb"><img src={myflow} alt="" /></div>
+            <div className="description">
+              <h3>MyFlow</h3>
+              <p>{t('middleParagItem2')}<br /><a href="https://my-flow.fr/">my-flow.fr</a></p>
+            </div>
+          </li>
+          <li className="member">
+            <div className="thumb"><img src={groupito} alt="" /></div>
+            <div className="description">
+              <h3>Groupito</h3>
+              <p>{t('middleParagItem3')}<br /><a href="https://www.groupito.com/">www.groupito.com</a></p>
+            </div>
+          </li>
+          <li className="member">
+            <div className="thumb"><img src={resma} alt="" /></div>
+            <div className="description">
+              <h3>Resma</h3>
+              <p>{t('middleParagItem4')}<br /><a href="https://www.resma.com/">www.resma.com</a></p>
+            </div>
+          </li>
+          <li className="member co-funder">
+            <div className="thumb"><img src={piplanner} alt="" /></div>
+            <div className="description">
+              <h3>PI Planner</h3>
+              <p>{t('middleParagItem5')}<br /><a href="https://pi-motion.fr/">pi-motion.fr</a></p>
+            </div>
+          </li>
+          <li className="member">
+            <div className="thumb"><img src={autobiz} alt="" /></div>
+            <div className="description">
+              <h3>Autobiz</h3>
+              <p>{t('middleParagItem6')}<br /><a href="https://vendre.autobiz.fr/">vendre.autobiz.fr</a></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
       <div ref={sectionRef} className={isVisible ? 'visible' : 'hidden'}>
         <div className="right-floating-links_container">
           <ul>
@@ -52,18 +106,7 @@ function Middle() {
           </ul>
         </div>
       </div>
-        <div className="app-container">
-        <div className="app-container">
-          <div className="middle-info-box">
-            <div className="info-box-item">{t('middleParagItem1')}</div>
-            <div className="info-box-item">{t('middleParagItem2')}</div>
-            <div className="info-box-item">{t('middleParagItem3')}</div>
-            <div className="info-box-item">{t('middleParagItem4')}</div>
-            <div className="info-box-item">{t('middleParagItem5')}</div>
-            <div className="info-box-item">{t('middleParagItem6')}</div>
-          </div>
-        </div>
-      </div>
+      
     </div>
   )
 }
