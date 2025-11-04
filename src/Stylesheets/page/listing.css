@@ -41,7 +41,6 @@
 }
 
 .middle .thumb {
-	/* width: 13vmin; */
 	height: 13vmin;
 	float: left;
 	margin-right: 1.25em;
@@ -188,12 +187,19 @@
 	margin-right: 2px;
 }
 
-
 @media screen and (max-width: 450px) {
 	.middle h3 {
 		margin-top: -2.5em;
 	}
-
+	.middle .member:nth-of-type(even) .thumb {
+		--deg: 86deg;
+		float: right;
+		margin-left: 2em;
+		margin-right: 0;
+	}
+	.middle .description p {
+		padding: 0;
+	}
   .middle .content {
     padding-right: 60px;
   }

@@ -54,7 +54,7 @@ function Middle() {
           <li className="member co-funder">
             <div className="thumb"><img src={wpq} alt="" /></div>
             <div className="description">
-              <h3>Worldpadelquest</h3>
+              <h3>Padelquest</h3>
               <p>{t('middleParagItem1')}<br /><a href="https://www.worldpadelquest.com/">www.worldpadelquest.com</a></p>
             </div>
           </li>
@@ -82,7 +82,7 @@ function Middle() {
           <li className="member co-funder">
             <div className="thumb"><img src={piplanner} alt="" /></div>
             <div className="description">
-              <h3>PI Planner</h3>
+              <h3>PIPlanner</h3>
               <p>{t('middleParagItem5')}<br /><a href="https://pi-motion.fr/">pi-motion.fr</a></p>
             </div>
           </li>
