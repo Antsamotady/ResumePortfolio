@@ -45,6 +45,7 @@ mini-app {
   font-family: var(--font-family-handwriting);
   font-size: 1rem;
   text-align: right;
+  padding-bottom: 0.2rem;
 }
 
 .mini-app-btn {
@@ -59,4 +60,14 @@ mini-app {
 
 .icon-link svg {
   vertical-align: unset;
+}
+
+@media screen and (max-width: 450px) {
+  .task li {
+    padding-bottom: 0.8rem;
+  }
+  
+  .job-position ul li {
+    list-style: radial-gradient(closest-side,var(--color-bg-middle),var(--color-bg-middle) 60%,var(--color-bg-header) 60%,var(--color-bg-header) 95%,transparent);
+  }
 }
