@@ -1,0 +1,87 @@
+.capabilities-container .form__group {
+  position: relative; /* Ensure the label is positioned relative to this container */
+  width: 100%; /* Ensure the input takes the full width of the parent */
+  margin-bottom: 1rem;
+}
+
+.capabilities-container .form__field {
+  font-family: var(--font-family-fox_trot);
+  width: 100%;
+  border: 0;
+  border-bottom: 0.5px solid var(--color-bg-header);
+  outline: 0;
+  font-size: 1.3rem;
+  color: var(--color-bg-header);
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  text-align: right;
+  caret-color: #11998e; /* Make sure the caret is visible and set to a color */
+}
+
+/* Hide the label when there is text or when the input is focused */
+.capabilities-container .form__field:focus ~ .form__label,
+.capabilities-container .form__field:not(:placeholder-shown) ~ .form__label {
+  display: none;
+}
+
+.capabilities-container .form__field::placeholder {
+  color: transparent;
+}
+
+.capabilities-container .form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.capabilities-container .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: var(--color-bg-header);
+  pointer-events: none; /* Prevent label from interfering with input interaction */
+  right: 0;
+}
+
+.capabilities-container .form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 400;
+  }
+  padding-bottom: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+
+.capabilities-container .form__field:required,
+.capabilities-container .form__field:invalid {
+  box-shadow: none;
+}
+
+.capabilities-container .clear-input-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the icon */
+  cursor: pointer;
+  font-size: 1rem; /* Size of the "X" */
+  transition: color 0.3s ease;
+  background-image: linear-gradient(to right, #11998e, #38ef7d);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.capabilities-container .clear-input-icon:hover {
+  color: #11998e; /* Color change on hover */
+}

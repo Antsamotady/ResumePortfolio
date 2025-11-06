@@ -3,9 +3,11 @@ import { LanguageContext } from '../../LanguageContext';
 
 import { BsGithub } from 'react-icons/bs';
 import { ImStackoverflow } from 'react-icons/im';
+import { FaSearch } from 'react-icons/fa';
 
 import "../../Stylesheets/capabilities.css";
 import "../../Stylesheets/miniapp.css";
+import "../../Stylesheets/page/search-input.css";
 
 import Counters from '../Counters';
 
@@ -65,9 +67,14 @@ class Capabilities extends Component {
     this.setState({ searchQuery: e.target.value.toLowerCase() });
   }
 
+  clearInput = () => {
+    this.setState({ searchQuery: "" }); // Clear the input field when clicked
+  };
+
   render() {
     const { t } = this.context;
     const { searchQuery } = this.state;
+    console.log(this.state.searchQuery);
 
     // Function to filter the list items based on the search query
     const filterItems = (items) => {
@@ -77,17 +84,33 @@ class Capabilities extends Component {
     return (
       <div className="app-container">
         <div className="capabilities-container">
+
+          {/* Search Input */}
+          <div className="form__group field">
+            <input
+              id="search"
+              type="input"
+              className="form__field"
+              placeholder={t('searchPlaceholder')}
+              onChange={this.handleSearchChange}
+              value={searchQuery}
+              required
+            />
+            <label htmlFor="search" className="form__label">
+              <FaSearch className="icon" />
+            </label>
+            {searchQuery && (
+              <span
+                className="clear-input-icon"
+                onClick={this.clearInput}
+              >
+                &#10006;
+              </span>
+            )}
+          </div>
+
           <div className="job-position">
             <h2>{t('jobPositionItem1')}</h2>
-
-            <div className="search-bar">
-              <input 
-                type="text" 
-                placeholder={t('searchPlaceholder')} 
-                onChange={this.handleSearchChange} 
-              />
-            </div>
-
             <div className="tasks">
               <div className="task">
                 <div className="tech-header">

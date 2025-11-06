@@ -38,6 +38,8 @@ export const translations = {
     aboutText8: "C2 Level English Certification",
     aboutText9: "Backend developer",
 
+    searchPlaceholder: "Search capabilities...",
+
     jobPositionItem1: "Web Development",
     jobPositionItem2: "Linux Programming",
     jobPositionItem3: "CIO Assistant",
@@ -135,6 +137,8 @@ export const translations = {
     aboutText7: "Précédemment",
     aboutText8: "Certification d'anglais niveau C2",
     aboutText9: "Développeur back-end",
+
+    searchPlaceholder: "Chercher des technologies...",
 
     jobPositionItem1: "Développement web",
     jobPositionItem2: "Programmation Linux",
