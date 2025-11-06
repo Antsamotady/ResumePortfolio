@@ -71,6 +71,10 @@ p>span {
   display: none;
 }
 
+.contact-container .contact-section a {
+  text-decoration: underline;
+}
+
 .contact-container>.contact-section,
 .contact-container>.quater-underlining {
   margin-bottom: 2rem;

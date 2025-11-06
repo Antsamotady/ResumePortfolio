@@ -74,7 +74,6 @@ class Capabilities extends Component {
   render() {
     const { t } = this.context;
     const { searchQuery } = this.state;
-    console.log(this.state.searchQuery);
 
     // Function to filter the list items based on the search query
     const filterItems = (items) => {

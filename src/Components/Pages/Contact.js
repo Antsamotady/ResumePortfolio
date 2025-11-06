@@ -53,7 +53,7 @@ function Contact() {
           {t('contactIntro')}{' '}
           <a
             title="Email me"
-            href="mailto:tsilavinarj02@gmail.com?subject=Interested%20visitor&body=Hi%20Garry!"
+            href="mailto:tsilavinarj02@gmail.com?subject=Interested%20visitor&body=Hello%20Garry!"
           >
             tsilavinarj02@gmail.com
           </a>{' '}
@@ -90,8 +90,8 @@ function Contact() {
           </li>
           <li>
             <a
-              title="My StackOverflow profile"
-              href="https://stackoverflow.com/users/9532910/antsamotady"
+              title="Call me"
+              href="tel:+261328320522"
             >
               <FaPhoneAlt className="icon" />
             </a>
