@@ -14,7 +14,8 @@ class Capabilities extends Component {
 
   state = {
     shown: false,
-    counters: [{ id: 0, value: 0 }]
+    counters: [{ id: 0, value: 0 }],
+    searchQuery: "" // Add state to track the search query
   }
   hideMe = () => {
     this.setState({ shown: !this.state.shown })
@@ -60,36 +61,42 @@ class Capabilities extends Component {
     this.setState({ counters })             // {counters: counters} key has the same name as value here
   }
 
+  handleSearchChange = (e) => {
+    this.setState({ searchQuery: e.target.value.toLowerCase() });
+  }
+
   render() {
     const { t } = this.context;
+    const { searchQuery } = this.state;
+
+    // Function to filter the list items based on the search query
+    const filterItems = (items) => {
+      return items.filter(item => t(item).toLowerCase().includes(searchQuery));
+    }
 
     return (
       <div className="app-container">
         <div className="capabilities-container">
           <div className="job-position">
             <h2>{t('jobPositionItem1')}</h2>
+
+            <div className="search-bar">
+              <input 
+                type="text" 
+                placeholder={t('searchPlaceholder')} 
+                onChange={this.handleSearchChange} 
+              />
+            </div>
+
             <div className="tasks">
               <div className="task">
                 <div className="tech-header">
                   <span className="tech-title">Symfony </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/"></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>{t('capSymfonyItem1')}</li>
-                  <li>{t('capSymfonyItem2')}</li>
-                  <li>{t('capSymfonyItem3')}</li>
-                  <li>{t('capSymfonyItem4')}</li>
-                  <li>{t('capSymfonyItem5')}</li>
-                  <li>{t('capSymfonyItem6')}</li>
-                  <li>{t('capSymfonyItem7')}</li>
-                  <li>{t('capSymfonyItem8')}</li>
-                  <li>{t('capSymfonyItem9')}</li>
-                  <li>{t('capSymfonyItem10')}</li>
-                  <li>{t('capSymfonyItem11')}</li>
-                  <li>{t('capSymfonyItem12')}</li>
-                  <li>{t('capSymfonyItem13')}</li>
-                  <li>{t('capSymfonyItem14')}</li>
-                  <li>{t('capSymfonyItem15')}</li>
-                  <li>{t('capSymfonyItem16')}</li>
+                  {filterItems(['capSymfonyItem1', 'capSymfonyItem2', 'capSymfonyItem3', 'capSymfonyItem4', 'capSymfonyItem5', 'capSymfonyItem6', 'capSymfonyItem7', 'capSymfonyItem8', 'capSymfonyItem9', 'capSymfonyItem10', 'capSymfonyItem11', 'capSymfonyItem12', 'capSymfonyItem13', 'capSymfonyItem14', 'capSymfonyItem15', 'capSymfonyItem16']).map((itemKey) => (
+                    <li key={itemKey}>{t(itemKey)}</li>
+                  ))}
                 </ul>
               </div>
               <div className="task">
@@ -97,10 +104,9 @@ class Capabilities extends Component {
                   <span className="tech-title">Prestashop </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady"><BsGithub /></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>{t('capPrestashopItem1')}</li>
-                  <li>{t('capPrestashopItem2')}</li>
-                  <li>{t('capPrestashopItem3')}</li>
-                  <li>{t('capPrestashopItem4')}</li>
+                  {filterItems(['capPrestashopItem1', 'capPrestashopItem2', 'capPrestashopItem3', 'capPrestashopItem4']).map((itemKey) => (
+                    <li key={itemKey}>{t(itemKey)}</li>
+                  ))}
                 </ul>
               </div>
               <div className="task">
@@ -108,10 +114,9 @@ class Capabilities extends Component {
                   <span className="tech-title">Reactjs </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/ResumePortfolio/tree/master"><BsGithub /></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>{t('capReactjsItem1')}</li>
-                  <li>{t('capReactjsItem2')}</li>
-                  <li>{t('capReactjsItem3')}</li>
-                  <li><span className="mini-app-btn" onClick={this.hideMe}>{t('capReactjsItem4')}</span></li>
+                  {filterItems(['capReactjsItem1', 'capReactjsItem2', 'capReactjsItem3']).map((itemKey) => (
+                    <li key={itemKey}>{t(itemKey)}</li>
+                  ))}
                 </ul>
               </div>
               <div className="mini-app">
@@ -135,13 +140,9 @@ class Capabilities extends Component {
                   <span className="tech-title">Laravel </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/laravel6-test-dashdoard"><BsGithub /></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>{t('capLaravelItem1')}</li>
-                  <li>{t('capLaravelItem2')}</li>
-                  <li>{t('capLaravelItem3')}</li>
-                  <li>{t('capLaravelItem4')}</li>
-                  <li>{t('capLaravelItem5')}</li>
-                  <li>{t('capLaravelItem6')}</li>
-                  <li>{t('capLaravelItem7')}</li>
+                  {filterItems(['capLaravelItem1', 'capLaravelItem2', 'capLaravelItem3', 'capLaravelItem4', 'capLaravelItem5', 'capLaravelItem6', 'capLaravelItem7']).map((itemKey) => (
+                    <li key={itemKey}>{t(itemKey)}</li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -155,11 +156,9 @@ class Capabilities extends Component {
                   <span className="tech-title">Bash Scripting </span><span className="icon-link"><a title="My stack profile" href="https://stackoverflow.com/users/9532910/antsamotady"><ImStackoverflow /></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>{t('capBashItem1')}</li>
-                  <li>{t('capBashItem2')}</li>
-                  <li>{t('capBashItem3')}</li>
-                  <li>{t('capBashItem4')}</li>
-                  <li>{t('capBashItem5')}</li>
+                  {filterItems(['capBashItem1', 'capBashItem2', 'capBashItem3', 'capBashItem4', 'capBashItem5']).map((itemKey) => (
+                    <li key={itemKey}>{t(itemKey)}</li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -173,9 +172,9 @@ class Capabilities extends Component {
                   <span className="tech-title">System & Network Engineering </span><span className="icon-link"><a title="the repo" href="https://github.com/Antsamotady/"></a></span>
                 </div>
                 <ul className="list-inline">
-                  <li>{t('capNetworkItem1')}</li>
-                  <li>{t('capNetworkItem2')}</li>
-                  <li>{t('capNetworkItem3')}</li>
+                  {filterItems(['capNetworkItem1', 'capNetworkItem2', 'capNetworkItem3']).map((itemKey) => (
+                    <li key={itemKey}>{t(itemKey)}</li>
+                  ))}
                 </ul>
               </div>
             </div>
