@@ -46,6 +46,12 @@ mini-app {
   font-size: 1rem;
   text-align: right;
   padding-bottom: 0.2rem;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+.task li:hover {
+  background-color: var(--color-bg-header);
+  font-size: 1.1rem;
 }
 
 .mini-app-btn {
