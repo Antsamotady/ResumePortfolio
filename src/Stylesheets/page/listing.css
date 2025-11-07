@@ -109,7 +109,7 @@
 	text-align: center;
   font-family: var(--font-family-fox_trot);
 	
-	background: linear-gradient(182deg, #fff0 60%, var(--color-bg-middle) 0 100%);
+	background: linear-gradient(182deg, #fff0 50%, var(--color-bg-middle) 0 100%);
 	display: inline;
 	transform: rotate(-2deg);
 	position: absolute;
@@ -128,7 +128,7 @@
 	right: 9vmin;
 	transform: rotate(2deg);
 	transform-origin: right bottom;
-	background: linear-gradient(-182deg, #fff0 60%, var(--color-bg-middle) 0 100%);
+	background: linear-gradient(-182deg, #fff0 50%, var(--color-bg-middle) 0 100%);
 }
 
 .middle .member:hover h3 {
