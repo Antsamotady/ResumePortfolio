@@ -69,6 +69,11 @@ mini-app {
 }
 
 @media screen and (max-width: 450px) {
+
+  .job-position h2 {
+    font-size: 1.5rem;
+  }
+
   .task li {
     padding-bottom: 0.8rem;
   }
