@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from './LanguageContext';
 
-import './Stylesheets/main.css';
+import './Stylesheets/main.css?v=2.0';
 import './Stylesheets/themes.css';
 import './Stylesheets/animations.css';
 

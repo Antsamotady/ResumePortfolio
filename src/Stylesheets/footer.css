@@ -183,6 +183,10 @@
 
 @media screen and (max-width:450px) {
 
+    .line-column {
+        font-size: 0.5rem;
+    }
+
     .horizontal-links {
         display: flex;
         justify-content: center;
