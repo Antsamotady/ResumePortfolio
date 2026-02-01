@@ -64,7 +64,7 @@ mini-app {
   color: var(--color-bg-header);
 }
 
-.icon-link svg {
+.form__group.field svg {
   vertical-align: unset;
 }
 

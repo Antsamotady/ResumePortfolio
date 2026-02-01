@@ -131,7 +131,7 @@ a:visited {
     }
 
     .left-side-container h1 {
-        font-size: calc(1.5rem + 3vw);
+        font-size: calc(1.5rem + 2vw);
         padding-top: 25px;
         border-bottom: none;
     }
