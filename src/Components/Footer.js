@@ -23,7 +23,7 @@ function Footer({ onGallerieLinkClick, onFormSubmissionLinkClick }) {
           <Link to="/"><img className="tsifoh-logo-footer" src={tsifoh} alt="" /></Link>
         </div>
         <div className="line-column to-center">
-          <span>{t('introvert')}</span>
+          <span>PHP</span>
           <span><a title="My design showcase" href="https://tsl-portfolio.netlify.app/">{t('otherProject')}</a></span>
           <span>{t('techEnthusiast')}</span>
           <span>{t('creative')}</span>

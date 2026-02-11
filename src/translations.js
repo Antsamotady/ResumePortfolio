@@ -18,7 +18,7 @@ export const translations = {
     webDevelopment: "Web development",
     formExp: "Form exp",
 
-    hpHeroParag: "Back-end wizard in the shadows, turning code into seamless systems - and I may occasionally make things look pretty too!",
+    hpHeroParag: "PHP back-end wizard, turning code into seamless systems - and I may occasionally make things look pretty too!",
 
     middleParagItem1: "A passionate Back-end Developer with expertise in Symfony, Laravel, and Prestashop",
     middleParagItem2: "Experience in maintaining, evolving, and developing large-scale projects across multiple platforms",
@@ -34,7 +34,7 @@ export const translations = {
     aboutText4: "Web developer",
     aboutText5: "Web scraper",
     aboutText6: "CIO Assistant",
-    aboutText7: "In the past",
+    aboutText7: "Certification",
     aboutText8: "C2 Level English Certification",
     aboutText9: "Backend developer",
 
@@ -60,6 +60,7 @@ export const translations = {
     capSymfonyItem14: "Dashboard customization in EasyAdmin v4 with overrides and new feature integrations",
     capSymfonyItem15: "Code refactoring using Large Language Models (LLMs)",
     capSymfonyItem16: "Static analysis and code quality: implementation of PHPStan for passive testing and improvements",
+    capSymfonyItem17: "Vanilla PHP when testing with Selenium",
 
     capPrestashopItem1: "Module development for Prestashop",
     capPrestashopItem2: "Application upgrades from versions 1.5/1.7 to 8",
@@ -118,7 +119,7 @@ export const translations = {
     webDevelopment: "Développement web",
     formExp: "Form exp",
 
-    hpHeroParag: "Spécialiste du back-end dans l'ombre, transformant le code en systèmes fluides tout en apportant un soin particulier à l'expérience utilisateur.",
+    hpHeroParag: "Spécialiste du back-end PHP, transformant le code en systèmes fluides tout en apportant un soin particulier à l'expérience utilisateur.",
 
     middleParagItem1: "Développeur back-end passionné, expert en Symfony, Laravel et Prestashop",
     middleParagItem2: "Expérience dans la maintenance, l'évolution et le développement de projets à grande échelle sur plusieurs plateformes",
@@ -134,7 +135,7 @@ export const translations = {
     aboutText4: "Développeur web",
     aboutText5: "Web scraper",
     aboutText6: "Assistant DSI",
-    aboutText7: "Précédemment",
+    aboutText7: "Autre formation",
     aboutText8: "Certification d'anglais niveau C2",
     aboutText9: "Développeur back-end",
 
@@ -160,6 +161,7 @@ export const translations = {
     capSymfonyItem14: "Personnalisation du tableau de bord dans EasyAdmin v4 avec extensions et intégrations",
     capSymfonyItem15: "Refactorisation du code avec des modèles de langage (LLMs)",
     capSymfonyItem16: "Analyse statique et qualité du code : implémentation de PHPStan pour des tests passifs et améliorations",
+    capSymfonyItem17: "PHP natif sur des tests avec Selenium",
 
     capPrestashopItem1: "Développement de modules pour Prestashop",
     capPrestashopItem2: "Mise à niveau d'applications des versions 1.5/1.7 vers 8",

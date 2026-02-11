@@ -116,7 +116,25 @@ class Capabilities extends Component {
                   <span className="tech-title">Symfony </span><span className="icon-link"><a title="The project repo" href="https://github.com/Antsamotady/"></a></span>
                 </div>
                 <ul className="list-inline">
-                  {filterItems(['capSymfonyItem1', 'capSymfonyItem2', 'capSymfonyItem3', 'capSymfonyItem4', 'capSymfonyItem5', 'capSymfonyItem6', 'capSymfonyItem7', 'capSymfonyItem8', 'capSymfonyItem9', 'capSymfonyItem10', 'capSymfonyItem11', 'capSymfonyItem12', 'capSymfonyItem13', 'capSymfonyItem14', 'capSymfonyItem15', 'capSymfonyItem16']).map((itemKey) => (
+                  {filterItems(
+                    ['capSymfonyItem1', 
+                      'capSymfonyItem2', 
+                      'capSymfonyItem3', 
+                      'capSymfonyItem4', 
+                      'capSymfonyItem5', 
+                      'capSymfonyItem6', 
+                      'capSymfonyItem7', 
+                      'capSymfonyItem8', 
+                      'capSymfonyItem9', 
+                      'capSymfonyItem10', 
+                      'capSymfonyItem11', 
+                      'capSymfonyItem12', 
+                      'capSymfonyItem13', 
+                      'capSymfonyItem14', 
+                      'capSymfonyItem15', 
+                      'capSymfonyItem16',
+                      'capSymfonyItem17'
+                    ]).map((itemKey) => (
                     <li key={itemKey}>{t(itemKey)}</li>
                   ))}
                 </ul>
